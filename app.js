@@ -71,9 +71,19 @@ function renderStories(visibleStories) {
     for (const award of [...story.awards].sort((a, b) => b.year - a.year)) {
       badges.appendChild(createAwardBadge(award));
     }
+    if (story.resultType === "no-award") {
+      const warning = document.createElement("span");
+      warning.className = "result-warning";
+      warning.setAttribute("aria-hidden", "true");
+      warning.textContent = "!";
+      badges.appendChild(warning);
+    }
 
     const title = document.createElement("h3");
-    title.textContent = story.title;
+    title.textContent =
+      story.resultType === "no-award"
+        ? "No story received the award"
+        : story.title;
     card.append(badges, title);
 
     if (story.resultType === "winner") {
@@ -93,12 +103,6 @@ function renderStories(visibleStories) {
 
       meta.append(author, separator, publication);
       card.appendChild(meta);
-    } else {
-      const note = document.createElement("p");
-      note.className = "meta meta-note";
-      note.textContent =
-        "Voters selected No Award in this category; no winning story was named.";
-      card.appendChild(note);
     }
 
     const links = document.createElement("div");
@@ -106,12 +110,25 @@ function renderStories(visibleStories) {
 
     if (story.storyUrl) {
       links.appendChild(
-        createExternalLink(story.storyUrl, "Read story", "read-link"),
+        createExternalLink(
+          story.storyUrl,
+          "Read story",
+          "read-action read-link",
+        ),
       );
     } else if (story.resultType === "winner") {
       const unavailable = document.createElement("span");
-      unavailable.className = "unavailable";
-      unavailable.textContent = "No online text found";
+      unavailable.className = "read-action read-action--unavailable";
+
+      const visibleLabel = document.createElement("span");
+      visibleLabel.setAttribute("aria-hidden", "true");
+      visibleLabel.textContent = "NA";
+
+      const accessibleLabel = document.createElement("span");
+      accessibleLabel.className = "sr-only";
+      accessibleLabel.textContent = "Read story unavailable";
+
+      unavailable.append(visibleLabel, accessibleLabel);
       links.appendChild(unavailable);
     }
 

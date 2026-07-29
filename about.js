@@ -10,12 +10,12 @@ async function loadCorrectionsContact() {
 
     const link = document.createElement("a");
     link.href = `mailto:${config.correctionsEmail}`;
-    link.textContent = config.correctionsEmail;
+    link.textContent = "Report a correction";
     contactEl.replaceChildren(
-      document.createTextNode("Report corrections by email: "),
       link,
       document.createTextNode("."),
     );
+    contactEl.hidden = false;
   } catch (error) {
     console.error("Unable to load site configuration:", error);
   }

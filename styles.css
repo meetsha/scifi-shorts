@@ -10,6 +10,7 @@
   --line-strong: #3e5c4b;
   --phosphor: #5ee783;
   --amber: #e0a64b;
+  --signal-yellow: #e3ca62;
   --glow-soft: 0 0 12px rgba(94, 231, 131, 0.24);
   --glow-active: 0 0 16px rgba(94, 231, 131, 0.38);
   --body-mono: "IBM Plex Mono", monospace;
@@ -68,10 +69,6 @@ a {
   border-bottom: 1px solid var(--line);
 }
 
-.site-header--compact {
-  padding-bottom: 2.25rem;
-}
-
 h1,
 h2,
 h3,
@@ -80,6 +77,16 @@ p {
 }
 
 h1 {
+  margin-bottom: 0.75rem;
+  font-family: var(--display-mono);
+  font-size: clamp(1.8rem, 4.2vw, 2.65rem);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.055em;
+}
+
+.site-title {
+  margin-top: 0;
   margin-bottom: 0.75rem;
   font-family: var(--display-mono);
   font-size: clamp(1.8rem, 4.2vw, 2.65rem);
@@ -359,6 +366,15 @@ h1 {
 
 .story-card--no-award {
   border-style: dashed;
+  border-left: 3px solid var(--signal-yellow);
+  background:
+    linear-gradient(90deg, rgba(227, 202, 98, 0.045), transparent 24rem),
+    var(--surface);
+}
+
+.story-card--no-award:hover,
+.story-card--no-award:focus-within {
+  border-left-color: var(--signal-yellow);
 }
 
 .award-badges {
@@ -388,6 +404,20 @@ h1 {
   color: var(--amber);
 }
 
+.result-warning {
+  display: inline-grid;
+  width: 1.35rem;
+  height: 1.35rem;
+  place-items: center;
+  border: 1px solid var(--signal-yellow);
+  color: var(--signal-yellow);
+  font-family: var(--body-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  box-shadow: 0 0 10px rgba(227, 202, 98, 0.16);
+}
+
 .story-card h3 {
   max-width: 680px;
   margin-bottom: 0.4rem;
@@ -396,6 +426,11 @@ h1 {
   font-weight: 700;
   line-height: 1.35;
   letter-spacing: -0.025em;
+}
+
+.story-card--no-award h3 {
+  margin-bottom: 0.95rem;
+  color: var(--signal-yellow);
 }
 
 .meta {
@@ -412,10 +447,6 @@ h1 {
 }
 
 .meta-publication {
-  color: var(--muted);
-}
-
-.meta-note {
   color: var(--muted);
 }
 
@@ -459,13 +490,20 @@ h1 {
   color: var(--muted);
 }
 
-.links .read-link {
+.links .read-action {
+  box-sizing: border-box;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
+  width: 128px;
   min-height: 44px;
   padding: 0.6rem 0.8rem;
   border: 1px solid var(--line-strong);
   background: rgba(94, 231, 131, 0.035);
+  font-family: var(--body-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  white-space: nowrap;
 }
 
 .links .read-link:hover,
@@ -474,15 +512,23 @@ h1 {
   text-decoration: none;
 }
 
-.unavailable {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  padding: 0.6rem 0.8rem;
-  border: 1px solid var(--line);
+.read-action--unavailable {
+  border-color: var(--line);
+  background: rgba(255, 255, 255, 0.02);
   color: var(--muted);
-  font-family: var(--body-mono);
-  font-size: 0.8rem;
+  opacity: 0.72;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .empty,
@@ -610,41 +656,30 @@ h1 {
   padding: 3rem 0 4.5rem;
 }
 
-.about-main section {
+.about-copy {
   max-width: 68ch;
-  padding: 0 0 2.5rem;
-  border-bottom: 1px solid var(--line);
 }
 
-.about-main section + section {
-  padding-top: 2.5rem;
+.about-title {
+  margin-bottom: 1rem;
+  color: var(--phosphor);
+  font-family: var(--body-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.09em;
+  text-shadow: var(--glow-soft);
+  text-transform: uppercase;
 }
 
-.about-main h2 {
-  margin-bottom: 0.85rem;
-  font-family: var(--display-mono);
-  font-size: clamp(1.15rem, 3vw, 1.45rem);
-  line-height: 1.35;
-}
-
-.about-main p:not(.section-label) {
+.about-copy p {
   color: var(--muted);
   font-size: 0.9rem;
   line-height: 1.8;
 }
 
-.about-main p:last-child {
+.about-copy p:last-child {
   margin-bottom: 0;
-}
-
-.section-label {
-  margin-bottom: 0.65rem;
-  color: var(--phosphor);
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.09em;
-  text-shadow: var(--glow-soft);
-  text-transform: uppercase;
 }
 
 .about-main a {
@@ -668,10 +703,6 @@ h1 {
 
   .site-header {
     padding: 2.6rem 0 2.15rem;
-  }
-
-  .site-header--compact {
-    padding-bottom: 2rem;
   }
 
   .controls {
@@ -733,8 +764,8 @@ h1 {
     padding: 0.75rem 0;
   }
 
-  .links .read-link,
-  .unavailable {
+  .links .read-action {
+    width: 100%;
     justify-content: center;
     padding-right: 0.85rem;
     padding-left: 0.85rem;

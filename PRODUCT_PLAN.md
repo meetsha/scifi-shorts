@@ -28,7 +28,7 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - Keep publication as quiet secondary metadata
 - Use a separate **Read story** action rather than linking the title
 - Link only to verified full text on publisher, magazine, or author-controlled sites
-- Show **No online text found** when no verified public text is available
+- Show **NA** in a fixed reading-action slot when no verified public text is available
 - Keep the quiet terminal-library visual direction
 
 ## Next
@@ -51,7 +51,23 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - [x] Increase mobile page gutters and tighten pagination spacing
 - [x] Reduce mobile pagination controls to 40px while preserving equal widths
 
-### 2. Add Nebula results for 2001-2025
+### 2. Simplify About and finish minor website polish
+
+- [x] Use the same clickable site title on the homepage and About page
+- [x] Keep the header description to one line on both pages
+- [x] Replace the verbose About sections with two concise paragraphs
+- [x] Keep a small accessible About label instead of a second large page title
+- [x] Remove the in-content return link and keep **Browse the collection** in the footer
+- [x] Hide corrections information until a corrections email is configured
+- [x] Reserve a fixed reading-action position on every winner card
+- [x] Show a disabled-style **NA** placeholder when no reading link is available
+- [x] Give the placeholder an accessible **Read story unavailable** label
+- [x] Verify linked and unavailable cards on desktop and mobile
+- [x] Give No Award records a signal-yellow warning indicator and distinct card treatment
+- [x] Replace story-like No Award copy with **No story received the award**
+- [x] Keep the award/year badge and a source-only action row
+
+### 3. Add Nebula results for 2001-2025
 
 - [ ] Research Nebula Best Short Story results for award years 2001-2025
 - [ ] Verify every result against official Nebula Awards sources
@@ -66,7 +82,7 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - [ ] Validate complete Nebula coverage for the 2001-2025 award-year window
 - [ ] Test Nebula-only, Hugo-only, All Awards, and shared-winner views
 
-### 3. Finalize historical archive scope
+### 4. Finalize historical archive scope
 
 - [ ] Decide the Hugo start year
 - [ ] Choose between the current 2001 cutoff, another recent-year cutoff, or complete Best Short Story coverage beginning in 1955
@@ -76,7 +92,7 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - [ ] Confirm that No Award results remain visible where applicable
 - [ ] Document the difference between Hugo and Nebula award-year conventions
 
-### 4. Expand beyond the 2001-2025 window
+### 5. Expand beyond the 2001-2025 window
 
 - [ ] Research the approved Hugo year range against official award sources
 - [ ] Research the approved Nebula year range against official award sources
@@ -87,7 +103,7 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - [ ] Preserve separate award years and official source links on shared winners
 - [ ] Update page descriptions and About-page scope after the final dataset is loaded
 
-### 5. Verify the combined archive
+### 6. Verify the combined archive
 
 - [ ] Confirm the expected year coverage for each award
 - [ ] Confirm every award result appears exactly once, except legitimate ties
@@ -98,7 +114,7 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - [ ] Run the external-link checker and manually review blocked or redirected links
 - [ ] Complete the manual release checklist below
 
-### 6. Publish and maintain
+### 7. Publish and maintain
 
 - [ ] Choose a monitored corrections email
 - [ ] Set `correctionsEmail` in `data/site.json`
@@ -168,4 +184,5 @@ npm run check:links
 - [x] Added award-aware controls, labels, source links, 12-entry pagination, and URL state
 - [x] Added data validation, live link checking, and 16 automated catalogue tests
 - [x] Prepared the shared Hugo and Nebula model with tie support and duplicate review
+- [x] Simplified the About page and aligned linked and unavailable story actions
 - [x] Verified the current build at mobile, tablet, and desktop widths
