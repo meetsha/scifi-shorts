@@ -8,6 +8,7 @@ import {
   paginateStories,
   parseCatalogueState,
 } from "../catalogue.js";
+import { validateCatalogueData } from "../scripts/catalogue-validation.mjs";
 
 const stories = JSON.parse(
   await readFile(new URL("../data/stories.json", import.meta.url), "utf8"),
@@ -25,6 +26,20 @@ const dualWinner = {
     { award: "nebula", year: 2023, sourceUrl: "https://example.com/nebula" },
   ],
 };
+
+const tiedNebulaWinner = {
+  id: "tied-winner-another-author",
+  resultType: "winner",
+  title: "Tied Winner",
+  author: "Another Author",
+  publication: "Another Magazine",
+  storyUrl: null,
+  awards: [
+    { award: "nebula", year: 2023, sourceUrl: "https://example.com/nebula" },
+  ],
+};
+
+const testSiteConfig = { correctionsEmail: null };
 
 test("catalogue covers every Hugo award year from 2001 through 2025", () => {
   assert.deepEqual(
@@ -78,6 +93,98 @@ test("keeps a shared winner as one story in either award filter", () => {
   assert.deepEqual(filterAndSortStories([dualWinner], { award: "nebula" }), [
     dualWinner,
   ]);
+});
+
+test("allows legitimate ties as separate stories in the same award year", () => {
+  const fixture = [dualWinner, tiedNebulaWinner];
+  const validation = validateCatalogueData(fixture, testSiteConfig, {
+    expectedAwardYears: {},
+  });
+  const results = filterAndSortStories(fixture, {
+    award: "nebula",
+    year: 2023,
+  });
+
+  assert.deepEqual(validation.errors, []);
+  assert.deepEqual(
+    results.map((story) => story.id).sort(),
+    [dualWinner.id, tiedNebulaWinner.id].sort(),
+  );
+});
+
+test("rejects a duplicate award-year assignment within one story", () => {
+  const fixture = [
+    {
+      ...dualWinner,
+      awards: [...dualWinner.awards, { ...dualWinner.awards[0] }],
+    },
+  ];
+  const validation = validateCatalogueData(fixture, testSiteConfig, {
+    expectedAwardYears: {},
+  });
+
+  assert.ok(
+    validation.errors.some((error) =>
+      error.includes("duplicate award-year assignments: hugo:2024"),
+    ),
+  );
+});
+
+test("reports probable duplicate stories after normalizing title and author", () => {
+  const fixture = [
+    {
+      ...dualWinner,
+      id: "cafe-at-the-end-n-k-jemisin",
+      title: "Café, at the End!",
+      author: "N. K. Jemisin",
+    },
+    {
+      ...tiedNebulaWinner,
+      id: "cafe-at-end-nk-jemisin",
+      title: "Cafe at the End",
+      author: "N K Jemisin",
+    },
+  ];
+  const validation = validateCatalogueData(fixture, testSiteConfig, {
+    expectedAwardYears: {},
+  });
+
+  assert.equal(validation.warnings.length, 1);
+  assert.match(validation.warnings[0], /Probable duplicate story records/);
+});
+
+test("searches all award metadata visible on a shared story card", () => {
+  assert.deepEqual(
+    filterAndSortStories([dualWinner], {
+      award: "hugo",
+      query: "nebula",
+    }),
+    [dualWinner],
+  );
+  assert.deepEqual(
+    filterAndSortStories([dualWinner], {
+      award: "hugo",
+      query: "2023",
+    }),
+    [dualWinner],
+  );
+});
+
+test("sorts shared winners by the selected award year", () => {
+  const hugoOnly = {
+    ...tiedNebulaWinner,
+    id: "hugo-only",
+    awards: [
+      { award: "hugo", year: 2023, sourceUrl: "https://example.com/hugo-only" },
+    ],
+  };
+
+  assert.deepEqual(
+    filterAndSortStories([dualWinner, hugoOnly], { award: "hugo" }).map(
+      (story) => story.id,
+    ),
+    [dualWinner.id, hugoOnly.id],
+  );
 });
 
 test("paginates filtered stories in groups of 12", () => {

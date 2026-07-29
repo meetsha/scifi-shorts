@@ -45,7 +45,7 @@ export function filterAndSortStories(stories, filters = {}) {
         story.title,
         story.author,
         story.publication,
-        ...relevantAwards.flatMap((entry) => [entry.award, String(entry.year)]),
+        ...story.awards.flatMap((entry) => [entry.award, String(entry.year)]),
       ]
         .filter(Boolean)
         .join(" ")

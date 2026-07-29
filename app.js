@@ -4,7 +4,7 @@ import {
   getCatalogueYears,
   paginateStories,
   parseCatalogueState,
-} from "./catalogue.js?v=3";
+} from "./catalogue.js?v=4";
 
 const searchInput = document.querySelector("#search");
 const awardButtons = [...document.querySelectorAll("[data-award]")];
@@ -13,11 +13,15 @@ const sortSelect = document.querySelector("#sort-order");
 const resetButton = document.querySelector("#reset-filters");
 const listEl = document.querySelector("#story-list");
 const resultCountEl = document.querySelector("#result-count");
-const paginationEl = document.querySelector("#pagination");
-const pageNumbersEl = document.querySelector("#page-numbers");
-const pageStatusEl = document.querySelector("#page-status");
-const previousButton = document.querySelector("#previous-page");
-const nextButton = document.querySelector("#next-page");
+const paginationViews = [...document.querySelectorAll("[data-pagination]")].map(
+  (container) => ({
+    container,
+    pageNumbers: container.querySelector("[data-page-numbers]"),
+    pageStatus: container.querySelector("[data-page-status]"),
+    previousButton: container.querySelector('[data-page-action="previous"]'),
+    nextButton: container.querySelector('[data-page-action="next"]'),
+  }),
+);
 const catalogueEl = document.querySelector(".catalogue");
 
 let stories = [];
@@ -222,21 +226,23 @@ function getPageItems(current, total) {
 }
 
 function renderPagination(pageData) {
-  paginationEl.hidden = pageData.totalPages <= 1;
-  previousButton.disabled = pageData.page === 1;
-  nextButton.disabled = pageData.page === pageData.totalPages;
-  pageStatusEl.textContent = `Page ${pageData.page} of ${pageData.totalPages}`;
-  pageNumbersEl.replaceChildren();
+  for (const view of paginationViews) {
+    view.container.hidden = pageData.totalPages <= 1;
+    view.previousButton.disabled = pageData.page === 1;
+    view.nextButton.disabled = pageData.page === pageData.totalPages;
+    view.pageStatus.textContent = `Page ${pageData.page} of ${pageData.totalPages}`;
+    view.pageNumbers.replaceChildren();
 
-  for (const item of getPageItems(pageData.page, pageData.totalPages)) {
-    if (item === "gap") {
-      const gap = document.createElement("span");
-      gap.className = "page-gap";
-      gap.setAttribute("aria-hidden", "true");
-      gap.textContent = "…";
-      pageNumbersEl.appendChild(gap);
-    } else {
-      pageNumbersEl.appendChild(createPageButton(item, pageData.page));
+    for (const item of getPageItems(pageData.page, pageData.totalPages)) {
+      if (item === "gap") {
+        const gap = document.createElement("span");
+        gap.className = "page-gap";
+        gap.setAttribute("aria-hidden", "true");
+        gap.textContent = "…";
+        view.pageNumbers.appendChild(gap);
+      } else {
+        view.pageNumbers.appendChild(createPageButton(item, pageData.page));
+      }
     }
   }
 }
@@ -307,7 +313,7 @@ function handleAwardChange(button) {
 async function loadCatalogue() {
   renderMessage("Loading catalogue…", "loading");
   resultCountEl.textContent = "";
-  paginationEl.hidden = true;
+  for (const view of paginationViews) view.container.hidden = true;
 
   try {
     const response = await fetch("./data/stories.json?v=3");
@@ -352,8 +358,12 @@ sortSelect.addEventListener("change", () => {
 });
 
 resetButton.addEventListener("click", resetControls);
-previousButton.addEventListener("click", () => changePage(currentPage - 1));
-nextButton.addEventListener("click", () => changePage(currentPage + 1));
+for (const view of paginationViews) {
+  view.previousButton.addEventListener("click", () =>
+    changePage(currentPage - 1),
+  );
+  view.nextButton.addEventListener("click", () => changePage(currentPage + 1));
+}
 for (const button of awardButtons) {
   button.addEventListener("click", () => handleAwardChange(button));
 }

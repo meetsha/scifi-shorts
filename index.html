@@ -6,13 +6,13 @@
     <title>SciFi Short Story Collection</title>
     <meta
       name="description"
-      content="Hugo Best Short Story winners from 2001 through 2025."
+      content="An independent index of Hugo and Nebula Best Short Story winners. Currently covering Hugo award years 2001 through 2025."
     />
     <meta name="theme-color" content="#050807" />
     <meta property="og:title" content="SciFi Short Story Collection" />
     <meta
       property="og:description"
-      content="Hugo Best Short Story winners from 2001 through 2025."
+      content="An independent index of Hugo and Nebula Best Short Story winners. Currently covering Hugo award years 2001 through 2025."
     />
     <meta property="og:type" content="website" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -28,15 +28,14 @@
     <a class="skip-link" href="#main-content">Skip to catalogue</a>
     <header class="site-header">
       <div class="wrap">
-        <nav class="site-nav" aria-label="Primary navigation">
-          <a class="site-mark" href="index.html" aria-current="page">
-            <span aria-hidden="true"></span>
-            Collection 01
+        <h1 class="site-title">
+          <a href="index.html">
+            SciFi Short Story Collection<span class="title-cursor" aria-hidden="true"></span>
           </a>
-          <a href="about.html">About</a>
-        </nav>
-        <h1>SciFi Short Story Collection</h1>
-        <p class="subtitle">Hugo Best Short Story winners, 2001–2025.</p>
+        </h1>
+        <p class="subtitle">
+          Hugo and Nebula Best Short Story winners. Hugo 2001–2025 available now.
+        </p>
       </div>
     </header>
 
@@ -80,23 +79,38 @@
           <h2 id="catalogue-title">Award results</h2>
           <p id="result-count" aria-live="polite"></p>
         </div>
+        <nav
+          class="pagination pagination--top"
+          data-pagination
+          aria-label="Catalogue pages, top"
+          hidden
+        >
+          <button type="button" data-page-action="previous">Previous</button>
+          <div class="page-numbers" data-page-numbers></div>
+          <span class="page-status" data-page-status></span>
+          <button type="button" data-page-action="next">Next</button>
+        </nav>
         <ul id="story-list" class="story-list"></ul>
-        <nav id="pagination" class="pagination" aria-label="Catalogue pages" hidden>
-          <button id="previous-page" type="button">Previous</button>
-          <div id="page-numbers" class="page-numbers"></div>
-          <span id="page-status" class="page-status" aria-live="polite"></span>
-          <button id="next-page" type="button">Next</button>
+        <nav
+          class="pagination pagination--bottom"
+          data-pagination
+          aria-label="Catalogue pages, bottom"
+          hidden
+        >
+          <button type="button" data-page-action="previous">Previous</button>
+          <div class="page-numbers" data-page-numbers></div>
+          <span class="page-status" data-page-status aria-live="polite"></span>
+          <button type="button" data-page-action="next">Next</button>
         </nav>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="wrap">
-        <p>An independent index. Story links lead to external publications.</p>
-        <p><a href="about.html">Methodology and corrections</a></p>
+        <p><a href="about.html">About</a></p>
       </div>
     </footer>
 
-    <script type="module" src="app.js?v=3"></script>
+    <script type="module" src="app.js?v=5"></script>
   </body>
 </html>

@@ -35,12 +35,19 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 
 ### 1. Prepare the combined Hugo and Nebula model
 
-- [ ] Allow legitimate ties and multiple winners in one award year
-- [ ] Reject duplicate award-year assignments within the same story
-- [ ] Report probable duplicate stories using normalized title and author matching
-- [ ] Search all award metadata displayed on a story card
-- [ ] Test ties, shared winners, award-specific years, sorting, and search
-- [ ] Document how shared stories and differing award years are represented
+- [x] Allow legitimate ties and multiple winners in one award year
+- [x] Reject duplicate award-year assignments within the same story
+- [x] Report probable duplicate stories using normalized title and author matching
+- [x] Search all award metadata displayed on a story card
+- [x] Test ties, shared winners, award-specific years, sorting, and search
+- [x] Document how shared stories and differing award years are represented
+- [x] Describe the planned Hugo and Nebula scope without overstating current coverage
+- [x] Show synchronized pagination above and below multi-page results
+- [x] Replace the cryptic Collection 01 home link with the site name
+- [x] Remove the duplicate homepage header navigation and link the main title home
+- [x] Add a restrained cursor, underline, and glow treatment to the linked title
+- [x] Keep About in a minimal footer with a reciprocal collection link
+- [x] Reduce desktop pagination height and spacing while preserving its current style
 
 ### 2. Add Nebula results for 2001-2025
 
@@ -133,8 +140,8 @@ npm run check:links
 ### Manual release checklist
 
 - [ ] Confirm the default view shows at most 12 entries
-- [ ] Confirm Previous, numbered pages, and Next display correctly on desktop
-- [ ] Confirm Previous, page status, and Next display correctly on mobile
+- [ ] Confirm top and bottom pagination show Previous, numbered pages, and Next on desktop
+- [ ] Confirm top and bottom pagination show Previous, page status, and Next on mobile
 - [ ] Confirm pagination updates the URL and survives refresh
 - [ ] Confirm browser Back and Forward restore the previous catalogue state
 - [ ] Confirm search works across title, author, publication, award, and year
@@ -157,5 +164,6 @@ npm run check:links
 - [x] Added the About page, corrections configuration, Open Graph metadata, and theme metadata
 - [x] Migrated the catalogue to unique story records with award arrays
 - [x] Added award-aware controls, labels, source links, 12-entry pagination, and URL state
-- [x] Added data validation, live link checking, and 11 automated catalogue tests
+- [x] Added data validation, live link checking, and 16 automated catalogue tests
+- [x] Prepared the shared Hugo and Nebula model with tie support and duplicate review
 - [x] Verified the current build at mobile, tablet, and desktop widths
