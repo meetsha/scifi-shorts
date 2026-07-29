@@ -39,7 +39,7 @@ const tiedNebulaWinner = {
   ],
 };
 
-const testSiteConfig = { correctionsEmail: null };
+const testSiteConfig = { correctionsUrl: null };
 
 test("catalogue covers every Hugo award year from 2001 through 2025", () => {
   assert.deepEqual(
@@ -208,6 +208,16 @@ test("reports probable duplicate stories after normalizing title and author", ()
 
   assert.equal(validation.warnings.length, 1);
   assert.match(validation.warnings[0], /Probable duplicate story records/);
+});
+
+test("accepts an HTTP(S) corrections contact", () => {
+  const validation = validateCatalogueData(
+    [dualWinner],
+    { correctionsUrl: "https://x.com/ashmeetey" },
+    { expectedAwardYears: {} },
+  );
+
+  assert.deepEqual(validation.errors, []);
 });
 
 test("searches all award metadata visible on a shared story card", () => {

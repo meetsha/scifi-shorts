@@ -187,15 +187,15 @@ export function validateCatalogueData(
   if (
     !siteConfig ||
     typeof siteConfig !== "object" ||
-    !Object.hasOwn(siteConfig, "correctionsEmail")
+    !Object.hasOwn(siteConfig, "correctionsUrl")
   ) {
-    errors.push("site.json must define correctionsEmail");
+    errors.push("site.json must define correctionsUrl");
   } else if (
-    siteConfig.correctionsEmail !== null &&
-    (typeof siteConfig.correctionsEmail !== "string" ||
-      !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(siteConfig.correctionsEmail))
+    siteConfig.correctionsUrl !== null &&
+    (typeof siteConfig.correctionsUrl !== "string" ||
+      !isHttpUrl(siteConfig.correctionsUrl))
   ) {
-    errors.push("correctionsEmail must be null or a valid email address");
+    errors.push("correctionsUrl must be null or a valid HTTP(S) URL");
   }
 
   const validStories = Array.isArray(stories) ? stories : [];

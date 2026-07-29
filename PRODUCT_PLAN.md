@@ -120,9 +120,9 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 
 ### 7. Publish and maintain
 
-- [ ] Choose a monitored corrections email
-- [ ] Set `correctionsEmail` in `data/site.json`
-- [ ] Choose a static hosting provider
+- [x] Choose a monitored corrections contact
+- [x] Set `correctionsUrl` in `data/site.json`
+- [x] Choose ChatGPT Sites for the initial public deployment
 - [ ] Deploy the site publicly
 - [ ] Choose and connect a domain
 - [ ] Add canonical URLs and sitemap details

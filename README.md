@@ -25,7 +25,7 @@ npm run check:links
 
 ## Before deployment
 
-Set `correctionsEmail` in `data/site.json` to a real monitored address. Data validation accepts `null` for local and deployment-ready builds, but a public release should not ship without a corrections channel.
+Set `correctionsUrl` in `data/site.json` to a monitored contact page. Data validation accepts `null` for local and deployment-ready builds, but a public release should not ship without a corrections channel.
 
 The site is plain HTML, CSS, JavaScript, and JSON and can be hosted by any static file host.
 
