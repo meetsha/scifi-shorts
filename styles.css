@@ -663,7 +663,7 @@ h1 {
 
 @media (max-width: 600px) {
   .wrap {
-    width: min(100% - 28px, 860px);
+    width: min(100% - 36px, 860px);
   }
 
   .site-header {
@@ -754,11 +754,20 @@ h1 {
 
   .pagination {
     gap: 0.65rem;
+    margin-top: 0.625rem;
+    padding-top: 0.625rem;
+  }
+
+  .pagination--top {
+    margin-top: 0;
+    margin-bottom: 0.625rem;
+    padding-top: 0;
+    padding-bottom: 0.625rem;
   }
 
   .pagination button {
-    min-height: 44px;
-    padding: 0.6rem 0.75rem;
+    min-height: 40px;
+    padding: 0.45rem 0.75rem;
   }
 }
 

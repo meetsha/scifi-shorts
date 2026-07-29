@@ -48,6 +48,8 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - [x] Add a restrained cursor, underline, and glow treatment to the linked title
 - [x] Keep About in a minimal footer with a reciprocal collection link
 - [x] Reduce desktop pagination height and spacing while preserving its current style
+- [x] Increase mobile page gutters and tighten pagination spacing
+- [x] Reduce mobile pagination controls to 40px while preserving equal widths
 
 ### 2. Add Nebula results for 2001-2025
 
