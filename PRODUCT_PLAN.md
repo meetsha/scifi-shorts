@@ -86,7 +86,17 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - [x] Validate complete Nebula coverage for the 2001-2025 award-year window
 - [x] Test Nebula-only, Hugo-only, All Awards, and shared-winner views
 
-### 4. Finalize historical archive scope
+### 4. Polish mobile story-card actions
+
+- [ ] Reduce the vertical gap between Hugo and Nebula source links when they wrap onto separate lines
+- [ ] Decide whether source links should remain left-aligned or be centered on mobile
+- [ ] Keep source-link alignment consistent between stories with one award and stories with both awards
+- [ ] Prefer Hugo and Nebula source links on one line when they fit
+- [ ] Allow compact wrapping without excessive line spacing on narrower screens
+- [ ] Preserve the full-width **Read story** or **NA** action above the source links
+- [ ] Compare single-award and dual-award cards at 375px and 390px widths before finalizing
+
+### 5. Finalize historical archive scope
 
 - [ ] Decide the Hugo start year
 - [ ] Choose between the current 2001 cutoff, another recent-year cutoff, or complete Best Short Story coverage beginning in 1955
@@ -96,7 +106,7 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - [ ] Confirm that No Award results remain visible where applicable
 - [ ] Document the difference between Hugo and Nebula award-year conventions
 
-### 5. Expand beyond the 2001-2025 window
+### 6. Expand beyond the 2001-2025 window
 
 - [ ] Research the approved Hugo year range against official award sources
 - [ ] Research the approved Nebula year range against official award sources
@@ -107,7 +117,7 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - [ ] Preserve separate award years and official source links on shared winners
 - [ ] Update page descriptions and About-page scope after the final dataset is loaded
 
-### 6. Verify the combined archive
+### 7. Verify the combined archive
 
 - [ ] Confirm the expected year coverage for each award
 - [ ] Confirm every award result appears exactly once, except legitimate ties
@@ -118,7 +128,7 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - [ ] Run the external-link checker and manually review blocked or redirected links
 - [ ] Complete the manual release checklist below
 
-### 7. Publish and maintain
+### 8. Publish and maintain
 
 - [x] Choose a monitored corrections contact
 - [x] Set `correctionsUrl` in `data/site.json`
