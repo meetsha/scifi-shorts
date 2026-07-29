@@ -2,6 +2,7 @@ export const EXPECTED_HUGO_YEARS = Array.from(
   { length: 25 },
   (_, index) => 2025 - index,
 );
+export const EXPECTED_NEBULA_YEARS = [...EXPECTED_HUGO_YEARS];
 
 const VALID_AWARDS = new Set(["hugo", "nebula"]);
 
@@ -113,7 +114,12 @@ function validateStory(story, index, errors) {
 export function validateCatalogueData(
   stories,
   siteConfig,
-  { expectedAwardYears = { hugo: EXPECTED_HUGO_YEARS } } = {},
+  {
+    expectedAwardYears = {
+      hugo: EXPECTED_HUGO_YEARS,
+      nebula: EXPECTED_NEBULA_YEARS,
+    },
+  } = {},
 ) {
   const errors = [];
   const warnings = [];

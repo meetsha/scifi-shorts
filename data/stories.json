@@ -41,6 +41,11 @@
         "award": "hugo",
         "year": 2023,
         "sourceUrl": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/"
+      },
+      {
+        "award": "nebula",
+        "year": 2022,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/2022/"
       }
     ]
   },
@@ -56,6 +61,11 @@
         "award": "hugo",
         "year": 2022,
         "sourceUrl": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/"
+      },
+      {
+        "award": "nebula",
+        "year": 2021,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/2021/"
       }
     ]
   },
@@ -116,6 +126,11 @@
         "award": "hugo",
         "year": 2018,
         "sourceUrl": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/"
+      },
+      {
+        "award": "nebula",
+        "year": 2017,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/2017/"
       }
     ]
   },
@@ -131,6 +146,11 @@
         "award": "hugo",
         "year": 2017,
         "sourceUrl": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/"
+      },
+      {
+        "award": "nebula",
+        "year": 2016,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/2016/"
       }
     ]
   },
@@ -206,6 +226,11 @@
         "award": "hugo",
         "year": 2012,
         "sourceUrl": "https://www.thehugoawards.org/hugo-history/2012-hugo-awards/"
+      },
+      {
+        "award": "nebula",
+        "year": 2011,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/2011/"
       }
     ]
   },
@@ -371,6 +396,321 @@
         "award": "hugo",
         "year": 2001,
         "sourceUrl": "https://www.thehugoawards.org/hugo-history/2001-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "laser-eyes-aint-everything-effie-seiberg",
+    "resultType": "winner",
+    "title": "Laser Eyes Ain't Everything",
+    "author": "Effie Seiberg",
+    "publication": "Diabolical Plots",
+    "storyUrl": "https://www.diabolicalplots.com/dp-fiction-123b-laser-eyes-aint-everything-by-effie-seiberg/",
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 2025,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/2025/"
+      }
+    ]
+  },
+  {
+    "id": "why-dont-we-just-kill-the-kid-in-the-omelas-hole-isabel-j-kim",
+    "resultType": "winner",
+    "title": "Why Don't We Just Kill the Kid in the Omelas Hole",
+    "author": "Isabel J. Kim",
+    "publication": "Clarkesworld Magazine",
+    "storyUrl": "https://clarkesworldmagazine.com/kim_02_24/",
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 2024,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/2024/"
+      }
+    ]
+  },
+  {
+    "id": "tantie-merle-and-the-farmhand-4200-r-s-a-garcia",
+    "resultType": "winner",
+    "title": "Tantie Merle and the Farmhand 4200",
+    "author": "R. S. A. Garcia",
+    "publication": "Uncanny Magazine",
+    "storyUrl": "https://www.uncannymagazine.com/article/tantie-merle-and-the-farmhand-4200/",
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 2023,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/2023/"
+      }
+    ]
+  },
+  {
+    "id": "open-house-on-haunted-hill-john-wiswell",
+    "resultType": "winner",
+    "title": "Open House on Haunted Hill",
+    "author": "John Wiswell",
+    "publication": "Diabolical Plots",
+    "storyUrl": "https://www.diabolicalplots.com/dp-fiction-64a-open-house-on-haunted-hill-by-john-wiswell/",
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 2020,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/2020/"
+      }
+    ]
+  },
+  {
+    "id": "give-the-family-my-love-a-t-greenblatt",
+    "resultType": "winner",
+    "title": "Give the Family My Love",
+    "author": "A. T. Greenblatt",
+    "publication": "Clarkesworld Magazine",
+    "storyUrl": "https://clarkesworldmagazine.com/greenblatt_02_19/",
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 2019,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/2019/"
+      }
+    ]
+  },
+  {
+    "id": "the-secret-lives-of-the-nine-negro-teeth-of-george-washington-p-djeli-clark",
+    "resultType": "winner",
+    "title": "The Secret Lives of the Nine Negro Teeth of George Washington",
+    "author": "P. Djèlí Clark",
+    "publication": "Fireside Magazine",
+    "storyUrl": "https://firesidefiction.com/the-secret-lives-of-the-nine-negro-teeth-of-george-washington",
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 2018,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/2018/"
+      }
+    ]
+  },
+  {
+    "id": "hungry-daughters-of-starving-mothers-alyssa-wong",
+    "resultType": "winner",
+    "title": "Hungry Daughters of Starving Mothers",
+    "author": "Alyssa Wong",
+    "publication": "Nightmare Magazine",
+    "storyUrl": "https://www.nightmare-magazine.com/fiction/hungry-daughters-of-starving-mothers/",
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 2015,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/2015/"
+      }
+    ]
+  },
+  {
+    "id": "jackalope-wives-ursula-vernon",
+    "resultType": "winner",
+    "title": "Jackalope Wives",
+    "author": "Ursula Vernon",
+    "publication": "Apex Magazine",
+    "storyUrl": "https://apex-magazine.com/jackalope-wives/",
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 2014,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/2014/"
+      }
+    ]
+  },
+  {
+    "id": "if-you-were-a-dinosaur-my-love-rachel-swirsky",
+    "resultType": "winner",
+    "title": "If You Were a Dinosaur, My Love",
+    "author": "Rachel Swirsky",
+    "publication": "Apex Magazine",
+    "storyUrl": "https://www.apexbookcompany.com/blogs/apex-magazine/if-you-were-a-dinosaur-my-love",
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 2013,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/2013/"
+      }
+    ]
+  },
+  {
+    "id": "immersion-aliette-de-bodard",
+    "resultType": "winner",
+    "title": "Immersion",
+    "author": "Aliette de Bodard",
+    "publication": "Clarkesworld Magazine",
+    "storyUrl": "https://clarkesworldmagazine.com/debodard_06_12/",
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 2012,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/2012/"
+      }
+    ]
+  },
+  {
+    "id": "how-interesting-a-tiny-man-harlan-ellison",
+    "resultType": "winner",
+    "title": "How Interesting: A Tiny Man",
+    "author": "Harlan Ellison",
+    "publication": "Realms of Fantasy",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 2010,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/2010/"
+      }
+    ]
+  },
+  {
+    "id": "ponies-kij-johnson",
+    "resultType": "winner",
+    "title": "Ponies",
+    "author": "Kij Johnson",
+    "publication": "Tor.com",
+    "storyUrl": "https://reactormag.com/ponies/",
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 2010,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/2010/"
+      }
+    ]
+  },
+  {
+    "id": "spar-kij-johnson",
+    "resultType": "winner",
+    "title": "Spar",
+    "author": "Kij Johnson",
+    "publication": "Clarkesworld Magazine",
+    "storyUrl": "https://clarkesworldmagazine.com/johnson_10_09/",
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 2009,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/2009/"
+      }
+    ]
+  },
+  {
+    "id": "trophy-wives-nina-kiriki-hoffman",
+    "resultType": "winner",
+    "title": "Trophy Wives",
+    "author": "Nina Kiriki Hoffman",
+    "publication": "DAW",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 2008,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/2008/"
+      }
+    ]
+  },
+  {
+    "id": "always-karen-joy-fowler",
+    "resultType": "winner",
+    "title": "Always",
+    "author": "Karen Joy Fowler",
+    "publication": "Asimov's Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 2007,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/2007/"
+      }
+    ]
+  },
+  {
+    "id": "echo-elizabeth-hand",
+    "resultType": "winner",
+    "title": "Echo",
+    "author": "Elizabeth Hand",
+    "publication": "The Magazine of Fantasy & Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 2006,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/2006/"
+      }
+    ]
+  },
+  {
+    "id": "i-live-with-you-carol-emshwiller",
+    "resultType": "winner",
+    "title": "I Live With You",
+    "author": "Carol Emshwiller",
+    "publication": "The Magazine of Fantasy & Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 2005,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/2005/"
+      }
+    ]
+  },
+  {
+    "id": "coming-to-terms-eileen-gunn",
+    "resultType": "winner",
+    "title": "Coming to Terms",
+    "author": "Eileen Gunn",
+    "publication": "Stable Strategies and Others",
+    "storyUrl": "https://eileengunn.com/stable-strategies/coming-to-terms/",
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 2004,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/2004/"
+      }
+    ]
+  },
+  {
+    "id": "what-i-didnt-see-karen-joy-fowler",
+    "resultType": "winner",
+    "title": "What I Didn't See",
+    "author": "Karen Joy Fowler",
+    "publication": "Sci Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 2003,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/2003/"
+      }
+    ]
+  },
+  {
+    "id": "creature-carol-emshwiller",
+    "resultType": "winner",
+    "title": "Creature",
+    "author": "Carol Emshwiller",
+    "publication": "The Magazine of Fantasy & Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 2002,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/2002/"
+      }
+    ]
+  },
+  {
+    "id": "the-cure-for-everything-severna-park",
+    "resultType": "winner",
+    "title": "The Cure for Everything",
+    "author": "Severna Park",
+    "publication": "Sci Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 2001,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/2001/"
       }
     ]
   }

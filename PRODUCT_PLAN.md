@@ -6,14 +6,16 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 
 ## Current build
 
-- Hugo Best Short Story results for award years 2001-2025
-- 25 entries: 24 winners and the 2015 No Award result
-- 16 verified reading links and 8 winners without a verified online text
+- Hugo and Nebula Best Short Story results for award years 2001-2025
+- 46 unique entries: 45 winning stories and the 2015 Hugo No Award result
+- 51 award records: 25 Hugo results and 26 Nebula winners, including the 2010 tie
+- Five stories shared between the awards without duplicate cards
+- 29 verified reading links and 16 winners without a verified online text
 - Search, exact-year filtering, sorting, and Reset
 - 12 entries per page with responsive pagination
 - Shareable URL state for search, award, year, sort, and page
 - Story records with stable IDs and an `awards` array
-- Hugo, Nebula, and All Awards controls; Nebula remains disabled until its data is added
+- Enabled Hugo, Nebula, and All Awards controls
 - Static HTML, CSS, JavaScript, and JSON
 
 ## Product decisions
@@ -66,21 +68,23 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - [x] Give No Award records a signal-yellow warning indicator and distinct card treatment
 - [x] Replace story-like No Award copy with **No story received the award**
 - [x] Keep the award/year badge and a source-only action row
+- [x] Remove the final period from the shared header description
+- [x] Center the single footer navigation link
 
 ### 3. Add Nebula results for 2001-2025
 
-- [ ] Research Nebula Best Short Story results for award years 2001-2025
-- [ ] Verify every result against official Nebula Awards sources
-- [ ] Include every winner in the 25-year window, including legitimate ties
-- [ ] Verify title, author, publication, award year, and source URL
-- [ ] Find and verify reading links where public full text is available
-- [ ] Keep unavailable winners visible without purchase or borrowing substitutes
-- [ ] Merge stories that also won a Hugo into their existing story records
-- [ ] Preserve the separate Hugo and Nebula award years and source links
-- [ ] Enable the Nebula filter after the records are present
-- [ ] Update the homepage description and About-page scope
-- [ ] Validate complete Nebula coverage for the 2001-2025 award-year window
-- [ ] Test Nebula-only, Hugo-only, All Awards, and shared-winner views
+- [x] Research Nebula Best Short Story results for award years 2001-2025
+- [x] Verify every result against official Nebula Awards sources
+- [x] Include every winner in the 25-year window, including legitimate ties
+- [x] Verify title, author, publication, award year, and source URL
+- [x] Find and verify reading links where public full text is available
+- [x] Keep unavailable winners visible without purchase or borrowing substitutes
+- [x] Merge stories that also won a Hugo into their existing story records
+- [x] Preserve the separate Hugo and Nebula award years and source links
+- [x] Enable the Nebula filter after the records are present
+- [x] Update the homepage description and About-page scope
+- [x] Validate complete Nebula coverage for the 2001-2025 award-year window
+- [x] Test Nebula-only, Hugo-only, All Awards, and shared-winner views
 
 ### 4. Finalize historical archive scope
 
@@ -158,6 +162,9 @@ npm run check:links
 ### Manual release checklist
 
 - [ ] Confirm the default view shows at most 12 entries
+- [ ] Confirm All Awards shows 46 entries across four pages
+- [ ] Confirm Hugo shows 25 results and Nebula shows 26 winners
+- [ ] Confirm the Nebula 2010 view shows both tied winners
 - [ ] Confirm top and bottom pagination show Previous, numbered pages, and Next on desktop
 - [ ] Confirm top and bottom pagination show Previous, page status, and Next on mobile
 - [ ] Confirm pagination updates the URL and survives refresh
@@ -176,13 +183,15 @@ npm run check:links
 
 - [x] Established the name, product scope, link policy, and independent-project documentation
 - [x] Added and verified Hugo Best Short Story results for 2001-2025
-- [x] Added 16 verified reading links and honest unavailable states
+- [x] Added and verified Nebula Best Short Story winners for 2001-2025
+- [x] Added 29 verified reading links and honest unavailable states
 - [x] Built search, exact-year filtering, sorting, result counts, Reset, and failure states
 - [x] Implemented the quiet terminal-library design for desktop and mobile
 - [x] Added the About page, corrections configuration, Open Graph metadata, and theme metadata
 - [x] Migrated the catalogue to unique story records with award arrays
 - [x] Added award-aware controls, labels, source links, 12-entry pagination, and URL state
-- [x] Added data validation, live link checking, and 16 automated catalogue tests
+- [x] Added data validation, live link checking, and 20 automated catalogue tests
 - [x] Prepared the shared Hugo and Nebula model with tie support and duplicate review
+- [x] Merged five shared winners and preserved both award years and sources
 - [x] Simplified the About page and aligned linked and unavailable story actions
 - [x] Verified the current build at mobile, tablet, and desktop widths

@@ -1,7 +1,7 @@
 # SciFi Short Story Collection
 
-A dependency-free static catalogue built for Hugo and Nebula Best Short Story winners. The current
-data covers Hugo award years 2001 through 2025.
+A dependency-free static catalogue of Hugo and Nebula Best Short Story winners for award years
+2001 through 2025. The data contains 46 unique entries and preserves the 2010 Nebula tie.
 
 ## Run locally
 

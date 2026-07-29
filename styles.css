@@ -636,6 +636,7 @@ h1 {
 
 .site-footer .wrap {
   display: block;
+  text-align: center;
 }
 
 .site-footer p {

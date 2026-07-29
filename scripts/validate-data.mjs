@@ -1,6 +1,7 @@
 import { readFile } from "node:fs/promises";
 import {
   EXPECTED_HUGO_YEARS,
+  EXPECTED_NEBULA_YEARS,
   validateCatalogueData,
 } from "./catalogue-validation.mjs";
 
@@ -62,7 +63,10 @@ async function validateLinks(stories) {
 const stories = JSON.parse(await readFile(storiesPath, "utf8"));
 const siteConfig = JSON.parse(await readFile(sitePath, "utf8"));
 const { errors, warnings, stats } = validateCatalogueData(stories, siteConfig, {
-  expectedAwardYears: { hugo: EXPECTED_HUGO_YEARS },
+  expectedAwardYears: {
+    hugo: EXPECTED_HUGO_YEARS,
+    nebula: EXPECTED_NEBULA_YEARS,
+  },
 });
 
 if (errors.length) {

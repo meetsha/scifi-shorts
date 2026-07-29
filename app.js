@@ -333,7 +333,7 @@ async function loadCatalogue() {
   for (const view of paginationViews) view.container.hidden = true;
 
   try {
-    const response = await fetch("./data/stories.json?v=3");
+    const response = await fetch("./data/stories.json?v=4");
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
     const data = await response.json();
