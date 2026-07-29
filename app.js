@@ -316,7 +316,6 @@ function resetControls() {
     },
     { historyMode: "push" },
   );
-  searchInput.focus();
 }
 
 function handleAwardChange(button) {

@@ -123,10 +123,11 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - [x] Choose a monitored corrections contact
 - [x] Set `correctionsUrl` in `data/site.json`
 - [x] Choose ChatGPT Sites for the initial public deployment
-- [ ] Deploy the site publicly
+- [x] Deploy the site publicly
 - [ ] Choose and connect a domain
 - [ ] Add canonical URLs and sitemap details
-- [ ] Verify the production site on desktop and mobile
+- [x] Verify the production site on desktop and mobile
+- [x] Prevent Reset from focusing search and opening the mobile keyboard
 - [ ] Schedule periodic award-data and external-link reviews
 
 ### Later possibilities
@@ -190,8 +191,9 @@ npm run check:links
 - [x] Added the About page, corrections configuration, Open Graph metadata, and theme metadata
 - [x] Migrated the catalogue to unique story records with award arrays
 - [x] Added award-aware controls, labels, source links, 12-entry pagination, and URL state
-- [x] Added data validation, live link checking, and 20 automated catalogue tests
+- [x] Added data validation, live link checking, and 21 automated catalogue tests
 - [x] Prepared the shared Hugo and Nebula model with tie support and duplicate review
 - [x] Merged five shared winners and preserved both award years and sources
 - [x] Simplified the About page and aligned linked and unavailable story actions
 - [x] Verified the current build at mobile, tablet, and desktop widths
+- [x] Published the catalogue through ChatGPT Sites
