@@ -1,0 +1,10 @@
+{
+  "name": "scifi-short-story-collection",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "validate": "node scripts/validate-data.mjs",
+    "check:links": "node scripts/validate-data.mjs --links"
+  }
+}

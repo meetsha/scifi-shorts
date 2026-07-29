@@ -1,0 +1,377 @@
+[
+  {
+    "id": "stitched-to-skin-like-family-is-nghi-vo",
+    "resultType": "winner",
+    "title": "Stitched to Skin Like Family Is",
+    "author": "Nghi Vo",
+    "publication": "Uncanny Magazine",
+    "storyUrl": "https://www.uncannymagazine.com/article/stitched-to-skin-like-family-is/",
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 2025,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/2025-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "better-living-through-algorithms-naomi-kritzer",
+    "resultType": "winner",
+    "title": "Better Living Through Algorithms",
+    "author": "Naomi Kritzer",
+    "publication": "Clarkesworld Magazine",
+    "storyUrl": "https://clarkesworldmagazine.com/kritzer_05_23/",
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 2024,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/2024-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "rabbit-test-samantha-mills",
+    "resultType": "winner",
+    "title": "Rabbit Test",
+    "author": "Samantha Mills",
+    "publication": "Uncanny Magazine",
+    "storyUrl": "https://www.uncannymagazine.com/article/rabbit-test/",
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 2023,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/2023-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "where-oaken-hearts-do-gather-sarah-pinsker",
+    "resultType": "winner",
+    "title": "Where Oaken Hearts Do Gather",
+    "author": "Sarah Pinsker",
+    "publication": "Uncanny Magazine",
+    "storyUrl": "https://www.uncannymagazine.com/article/where-oaken-hearts-do-gather/",
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 2022,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/2022-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "metal-like-blood-in-the-dark-t-kingfisher",
+    "resultType": "winner",
+    "title": "Metal Like Blood in the Dark",
+    "author": "T. Kingfisher",
+    "publication": "Uncanny Magazine",
+    "storyUrl": "https://www.uncannymagazine.com/article/metal-like-blood-in-the-dark/",
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 2021,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/2021-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "as-the-last-i-may-know-s-l-huang",
+    "resultType": "winner",
+    "title": "As the Last I May Know",
+    "author": "S. L. Huang",
+    "publication": "Tor.com",
+    "storyUrl": "https://reactormag.com/as-the-last-i-may-know-s-l-huang/",
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 2020,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/2020-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "a-witch-s-guide-to-escape-a-practical-compendium-of-portal-fantasies-alix-e-harrow",
+    "resultType": "winner",
+    "title": "A Witch's Guide to Escape: A Practical Compendium of Portal Fantasies",
+    "author": "Alix E. Harrow",
+    "publication": "Apex Magazine",
+    "storyUrl": "https://apex-magazine.com/a-witchs-guide-to-escape-a-practical-compendium-of-portal-fantasies/",
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 2019,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/2019-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "welcome-to-your-authentic-indian-experiencetm-rebecca-roanhorse",
+    "resultType": "winner",
+    "title": "Welcome to Your Authentic Indian Experience™",
+    "author": "Rebecca Roanhorse",
+    "publication": "Apex Magazine",
+    "storyUrl": "https://www.apexbookcompany.com/blogs/apex-magazine/welcome-to-your-authentic-indian-experience",
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 2018,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/2018-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "seasons-of-glass-and-iron-amal-el-mohtar",
+    "resultType": "winner",
+    "title": "Seasons of Glass and Iron",
+    "author": "Amal El-Mohtar",
+    "publication": "The Starlit Wood: New Fairy Tales",
+    "storyUrl": "https://www.uncannymagazine.com/article/seasons-glass-iron/",
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 2017,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/2017-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "cat-pictures-please-naomi-kritzer",
+    "resultType": "winner",
+    "title": "Cat Pictures Please",
+    "author": "Naomi Kritzer",
+    "publication": "Clarkesworld Magazine",
+    "storyUrl": "https://clarkesworldmagazine.com/kritzer_01_15/",
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 2016,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/2016-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "hugo-2015-no-award",
+    "resultType": "no-award",
+    "title": "No Award",
+    "author": null,
+    "publication": null,
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 2015,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/2015-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "the-water-that-falls-on-you-from-nowhere-john-chu",
+    "resultType": "winner",
+    "title": "The Water That Falls on You from Nowhere",
+    "author": "John Chu",
+    "publication": "Tor.com",
+    "storyUrl": "https://reactormag.com/the-water-that-falls-on-you-from-nowhere/",
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 2014,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/2014-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "mono-no-aware-ken-liu",
+    "resultType": "winner",
+    "title": "Mono no Aware",
+    "author": "Ken Liu",
+    "publication": "The Future is Japanese",
+    "storyUrl": "https://www.lightspeedmagazine.com/fiction/mono-no-aware/",
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 2013,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/2013-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "the-paper-menagerie-ken-liu",
+    "resultType": "winner",
+    "title": "The Paper Menagerie",
+    "author": "Ken Liu",
+    "publication": "The Magazine of Fantasy & Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 2012,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/2012-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "for-want-of-a-nail-mary-robinette-kowal",
+    "resultType": "winner",
+    "title": "For Want of a Nail",
+    "author": "Mary Robinette Kowal",
+    "publication": "Asimov's Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 2011,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/2011-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "bridesicle-will-mcintosh",
+    "resultType": "winner",
+    "title": "Bridesicle",
+    "author": "Will McIntosh",
+    "publication": "Asimov's Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 2010,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/2010-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "exhalation-ted-chiang",
+    "resultType": "winner",
+    "title": "Exhalation",
+    "author": "Ted Chiang",
+    "publication": "Eclipse Two",
+    "storyUrl": "https://www.lightspeedmagazine.com/fiction/exhalation/",
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 2009,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/2009-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "tideline-elizabeth-bear",
+    "resultType": "winner",
+    "title": "Tideline",
+    "author": "Elizabeth Bear",
+    "publication": "Asimov's Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 2008,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/2008-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "impossible-dreams-tim-pratt",
+    "resultType": "winner",
+    "title": "Impossible Dreams",
+    "author": "Tim Pratt",
+    "publication": "Asimov's Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 2007,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/2007-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "tk-tk-tk-david-d-levine",
+    "resultType": "winner",
+    "title": "Tk'tk'tk",
+    "author": "David D. Levine",
+    "publication": "Asimov's Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 2006,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/2006-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "travels-with-my-cats-mike-resnick",
+    "resultType": "winner",
+    "title": "Travels with My Cats",
+    "author": "Mike Resnick",
+    "publication": "Asimov's Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 2005,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/2005-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "a-study-in-emerald-neil-gaiman",
+    "resultType": "winner",
+    "title": "A Study in Emerald",
+    "author": "Neil Gaiman",
+    "publication": "Shadows Over Baker Street",
+    "storyUrl": "https://www.neilgaiman.com/mediafiles/exclusive/shortstories/emerald.pdf",
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 2004,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/2004-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "falling-onto-mars-geoffrey-a-landis",
+    "resultType": "winner",
+    "title": "Falling onto Mars",
+    "author": "Geoffrey A. Landis",
+    "publication": "Analog Science Fiction and Fact",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 2003,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/2003-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "the-dog-said-bow-wow-michael-swanwick",
+    "resultType": "winner",
+    "title": "The Dog Said Bow-Wow",
+    "author": "Michael Swanwick",
+    "publication": "Asimov's Science Fiction",
+    "storyUrl": "https://www.baen.com/Chapters/9781625791122/9781625791122___2.htm",
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 2002,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/2002-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "different-kinds-of-darkness-david-langford",
+    "resultType": "winner",
+    "title": "Different Kinds of Darkness",
+    "author": "David Langford",
+    "publication": "The Magazine of Fantasy & Science Fiction",
+    "storyUrl": "https://www.lightspeedmagazine.com/fiction/different-kinds-of-darkness/",
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 2001,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/2001-hugo-awards/"
+      }
+    ]
+  }
+]
