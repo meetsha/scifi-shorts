@@ -8,14 +8,14 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 
 - Production: <https://scifi-short-story-collection.uiandgame.chatgpt.site/>
 - Hosting: ChatGPT Sites
-- Current deployed release: Sites version 3, commit `a55c9e2`
-- Deployed scope: Hugo and Nebula Best Short Story results for award years 2001-2025
-- Deployed catalogue: 46 unique entries and 51 award records
-- Deployed reading availability: 29 verified reading links and 16 winners without verified online text
+- Current deployed release: Sites version 4, commit `3109c55`
+- Deployed scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
+- Deployed catalogue: 121 unique entries and 133 award records
+- Deployed reading availability: 37 verified reading links and 81 winners without verified online text
 - Local working scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Local working catalogue: 121 unique entries and 133 award records
 - Local reading availability: 37 verified reading links and 81 winners without verified online text
-- Latest local milestone: Complete historical award coverage
+- Latest local milestone: Publish complete historical award coverage
 - Local preview: <http://localhost:8000>
 
 During an active working session, keep the local preview running on port `8000`. Stop it only when explicitly requested.
@@ -104,6 +104,7 @@ During an active working session, keep the local preview running on port `8000`.
 - [x] Choose ChatGPT Sites for the initial public deployment
 - [x] Deploy the site publicly
 - [x] Verify the production site on desktop and mobile
+- [x] Deploy and smoke-test the complete historical archive
 - [ ] Choose and connect a custom domain
 - [ ] Add canonical URLs and sitemap details
 - [ ] Define the process for adding new annual award results
@@ -240,3 +241,4 @@ Do not include the external-link checker in production smoke testing unless it w
 - [x] Completed historical Nebula coverage from its 1965 award year
 - [x] Added 55 historical entries and 61 award records across the final three batches
 - [x] Added a distinct 1957 Hugo category-not-presented record so the historical gap is explicit
+- [x] Published and smoke-tested Sites version 4 with complete historical coverage on July 30, 2026
