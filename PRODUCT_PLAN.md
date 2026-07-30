@@ -15,6 +15,7 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - Local working scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Local working catalogue: 121 unique entries and 133 award records
 - Local reading availability: 37 verified reading links and 81 winners without verified online text
+- Latest local milestone: Complete historical award coverage
 - Local preview: <http://localhost:8000>
 
 During an active working session, keep the local preview running on port `8000`. Stop it only when explicitly requested.
@@ -119,6 +120,7 @@ During an active working session, keep the local preview running on port `8000`.
 
 - Update this plan before implementation when a product or design decision changes
 - Update completed checkboxes after implementation and verification
+- Before every commit, update this plan to reflect current decisions, completed work, remaining work, and local or deployed status; stage the plan update in the same commit
 - Keep the local site running throughout an active session
 - Stop the local server only when explicitly requested
 - For minor visual or copy changes, run focused local checks only
@@ -234,7 +236,7 @@ Do not include the external-link checker in production smoke testing unless it w
 - [x] Replaced duplicate award-source actions with bracketed clickable award labels
 - [x] Published and verified Sites version 3 on July 30, 2026
 - [x] Expanded the local archive through 1991 with 19 additional stories and 20 award records
-- [x] Completed historical Hugo coverage from 1955, excluding 1957 when the category was not presented
+- [x] Completed historical Hugo coverage from 1955 with a category-not-presented marker for 1957
 - [x] Completed historical Nebula coverage from its 1965 award year
 - [x] Added 55 historical entries and 61 award records across the final three batches
 - [x] Added a distinct 1957 Hugo category-not-presented record so the historical gap is explicit
