@@ -46,9 +46,20 @@ function renderMessage(message, className = "empty") {
 }
 
 function createAwardBadge(entry) {
-  const badge = document.createElement("span");
-  badge.className = `award-badge award-badge--${entry.award}`;
-  badge.textContent = `${entry.award} · ${entry.year}`;
+  const awardName = entry.award[0].toUpperCase() + entry.award.slice(1);
+  const badge = createExternalLink(
+    entry.sourceUrl,
+    "",
+    `award-badge award-badge--${entry.award}`,
+  );
+  const label = document.createElement("span");
+  label.className = "award-badge__label";
+  label.textContent = `${entry.award} · ${entry.year}`;
+  badge.appendChild(label);
+  badge.setAttribute(
+    "aria-label",
+    `View official ${awardName} ${entry.year} award results`,
+  );
   return badge;
 }
 
@@ -132,18 +143,10 @@ function renderStories(visibleStories) {
       links.appendChild(unavailable);
     }
 
-    for (const award of [...story.awards].sort((a, b) => b.year - a.year)) {
-      const awardName = award.award[0].toUpperCase() + award.award.slice(1);
-      links.appendChild(
-        createExternalLink(
-          award.sourceUrl,
-          `${awardName} source`,
-          "secondary-link",
-        ),
-      );
+    if (links.childElementCount) {
+      card.appendChild(links);
     }
 
-    card.appendChild(links);
     listEl.appendChild(card);
   }
 }

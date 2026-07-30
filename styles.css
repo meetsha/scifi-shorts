@@ -385,15 +385,47 @@ h1 {
 }
 
 .award-badge {
-  display: inline-block;
-  padding: 0.25rem 0.4rem;
-  border: 1px solid currentColor;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.15rem;
   font-family: var(--body-mono);
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.08em;
   line-height: 1;
+  text-decoration: none;
   text-transform: uppercase;
+}
+
+.award-badge::before {
+  margin-right: 0.35rem;
+  content: "[";
+  opacity: 0.62;
+}
+
+.award-badge::after {
+  margin-left: 0.35rem;
+  content: "]";
+  opacity: 0.62;
+}
+
+.award-badge__label {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22rem;
+}
+
+.award-badge:hover .award-badge__label {
+  text-shadow: var(--glow-active);
+}
+
+.award-badge:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 3px;
+}
+
+.award-badge:focus-visible .award-badge__label {
+  text-shadow: var(--glow-active);
 }
 
 .award-badge--hugo {
@@ -484,10 +516,6 @@ h1 {
   outline: 2px solid var(--phosphor);
   outline-offset: 4px;
   text-shadow: var(--glow-active);
-}
-
-.links .secondary-link {
-  color: var(--muted);
 }
 
 .links .read-action {
@@ -741,6 +769,12 @@ h1 {
     padding: 1.15rem;
   }
 
+  .award-badge {
+    min-height: 40px;
+    box-sizing: border-box;
+    padding: 0.5rem 0.15rem;
+  }
+
   .meta {
     display: block;
   }
@@ -770,10 +804,6 @@ h1 {
     justify-content: center;
     padding-right: 0.85rem;
     padding-left: 0.85rem;
-  }
-
-  .links .secondary-link {
-    width: max-content;
   }
 
   .page-numbers {

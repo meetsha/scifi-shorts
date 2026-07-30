@@ -88,13 +88,13 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 
 ### 4. Polish mobile story-card actions
 
-- [ ] Reduce the vertical gap between Hugo and Nebula source links when they wrap onto separate lines
-- [ ] Decide whether source links should remain left-aligned or be centered on mobile
-- [ ] Keep source-link alignment consistent between stories with one award and stories with both awards
-- [ ] Prefer Hugo and Nebula source links on one line when they fit
-- [ ] Allow compact wrapping without excessive line spacing on narrower screens
-- [ ] Preserve the full-width **Read story** or **NA** action above the source links
-- [ ] Compare single-award and dual-award cards at 375px and 390px widths before finalizing
+- [x] Link each Hugo and Nebula award-year badge to its official award source
+- [x] Replace boxed award badges with bracketed terminal-style source links
+- [x] Keep the square brackets plain and permanently underline the inner label
+- [x] Remove the duplicate Hugo and Nebula source links beneath each story
+- [x] Preserve the full-width **Read story** or **NA** action beneath the metadata
+- [x] Keep single-award and dual-award badges compact when they wrap on mobile
+- [x] Compare single-award and dual-award cards at 375px and 390px widths
 
 ### 5. Finalize historical archive scope
 
