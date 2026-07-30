@@ -81,7 +81,7 @@ if (warnings.length) {
 }
 
 console.log(
-  `Data valid: ${stats.entries} unique entries, ${stats.awards} award records, ${stats.noAwards} no-award result.`,
+  `Data valid: ${stats.entries} unique entries, ${stats.awards} award records, ${stats.noAwards} no-award results, ${stats.notPresented} not-presented result.`,
 );
 
 if (process.argv.includes("--links")) {

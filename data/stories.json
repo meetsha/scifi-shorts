@@ -866,6 +866,11 @@
         "award": "hugo",
         "year": 1991,
         "sourceUrl": "https://www.thehugoawards.org/hugo-history/1991-hugo-awards/"
+      },
+      {
+        "award": "nebula",
+        "year": 1990,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1990/"
       }
     ]
   },
@@ -1001,6 +1006,871 @@
         "award": "nebula",
         "year": 1991,
         "sourceUrl": "https://nebulas.sfwa.org/award-year/1991/"
+      }
+    ]
+  },
+  {
+    "id": "boobs-suzy-mckee-charnas",
+    "resultType": "winner",
+    "title": "Boobs",
+    "author": "Suzy McKee Charnas",
+    "publication": "Asimov's Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1990,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1990-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "kirinyaga-mike-resnick",
+    "resultType": "winner",
+    "title": "Kirinyaga",
+    "author": "Mike Resnick",
+    "publication": "The Magazine of Fantasy & Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1989,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1989-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "why-i-left-harrys-all-night-hamburgers-lawrence-watt-evans",
+    "resultType": "winner",
+    "title": "Why I Left Harry's All-Night Hamburgers",
+    "author": "Lawrence Watt-Evans",
+    "publication": "Asimov's Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1988,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1988-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "tangents-greg-bear",
+    "resultType": "winner",
+    "title": "Tangents",
+    "author": "Greg Bear",
+    "publication": "Omni",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1987,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1987-hugo-awards/"
+      },
+      {
+        "award": "nebula",
+        "year": 1986,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1986/"
+      }
+    ]
+  },
+  {
+    "id": "fermi-and-frost-frederik-pohl",
+    "resultType": "winner",
+    "title": "Fermi and Frost",
+    "author": "Frederik Pohl",
+    "publication": "Asimov's Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1986,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1986-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "the-crystal-spheres-david-brin",
+    "resultType": "winner",
+    "title": "The Crystal Spheres",
+    "author": "David Brin",
+    "publication": "Analog Science Fiction and Fact",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1985,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1995-hugo-awards-2/"
+      }
+    ]
+  },
+  {
+    "id": "speech-sounds-octavia-e-butler",
+    "resultType": "winner",
+    "title": "Speech Sounds",
+    "author": "Octavia E. Butler",
+    "publication": "Asimov's Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1984,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1984-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "melancholy-elephants-spider-robinson",
+    "resultType": "winner",
+    "title": "Melancholy Elephants",
+    "author": "Spider Robinson",
+    "publication": "Analog Science Fiction and Fact",
+    "storyUrl": "https://www.spiderrobinson.com/melancholyelephants.html",
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1983,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1983-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "the-pusher-john-varley",
+    "resultType": "winner",
+    "title": "The Pusher",
+    "author": "John Varley",
+    "publication": "The Magazine of Fantasy & Science Fiction",
+    "storyUrl": "https://varley.net/story/the-pusher/",
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1982,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1982-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "grotto-of-the-dancing-deer-clifford-d-simak",
+    "resultType": "winner",
+    "title": "Grotto of the Dancing Deer",
+    "author": "Clifford D. Simak",
+    "publication": "Analog Science Fiction and Fact",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1981,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1981-hugo-awards/"
+      },
+      {
+        "award": "nebula",
+        "year": 1980,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1980/"
+      }
+    ]
+  },
+  {
+    "id": "the-way-of-cross-and-dragon-george-r-r-martin",
+    "resultType": "winner",
+    "title": "The Way of Cross and Dragon",
+    "author": "George R. R. Martin",
+    "publication": "Omni",
+    "storyUrl": "https://www.lightspeedmagazine.com/fiction/the-way-of-cross-and-dragon/",
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1980,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1980-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "cassandra-c-j-cherryh",
+    "resultType": "winner",
+    "title": "Cassandra",
+    "author": "C. J. Cherryh",
+    "publication": "The Magazine of Fantasy & Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1979,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1979-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "jeffty-is-five-harlan-ellison",
+    "resultType": "winner",
+    "title": "Jeffty Is Five",
+    "author": "Harlan Ellison",
+    "publication": "The Magazine of Fantasy & Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1978,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1978-hugo-awards/"
+      },
+      {
+        "award": "nebula",
+        "year": 1977,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1977/"
+      }
+    ]
+  },
+  {
+    "id": "tricentennial-joe-haldeman",
+    "resultType": "winner",
+    "title": "Tricentennial",
+    "author": "Joe Haldeman",
+    "publication": "Analog Science Fiction and Fact",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1977,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1977-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "catch-that-zeppelin-fritz-leiber",
+    "resultType": "winner",
+    "title": "Catch That Zeppelin!",
+    "author": "Fritz Leiber",
+    "publication": "The Magazine of Fantasy & Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1976,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1976-hugo-awards/"
+      },
+      {
+        "award": "nebula",
+        "year": 1975,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1975/"
+      }
+    ]
+  },
+  {
+    "id": "the-hole-man-larry-niven",
+    "resultType": "winner",
+    "title": "The Hole Man",
+    "author": "Larry Niven",
+    "publication": "Analog Science Fiction and Fact",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1975,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1975-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "the-ones-who-walk-away-from-omelas-ursula-k-le-guin",
+    "resultType": "winner",
+    "title": "The Ones Who Walk Away from Omelas",
+    "author": "Ursula K. Le Guin",
+    "publication": "New Dimensions 3",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1974,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1974-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "euremas-dam-r-a-lafferty",
+    "resultType": "winner",
+    "title": "Eurema's Dam",
+    "author": "R. A. Lafferty",
+    "publication": "New Dimensions 2",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1973,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1973-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "inconstant-moon-larry-niven",
+    "resultType": "winner",
+    "title": "Inconstant Moon",
+    "author": "Larry Niven",
+    "publication": "All the Myriad Ways",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1972,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1972-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "slow-sculpture-theodore-sturgeon",
+    "resultType": "winner",
+    "title": "Slow Sculpture",
+    "author": "Theodore Sturgeon",
+    "publication": "Galaxy Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1971,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1971-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "time-considered-as-a-helix-of-semi-precious-stones-samuel-r-delany",
+    "resultType": "winner",
+    "title": "Time Considered as a Helix of Semi-Precious Stones",
+    "author": "Samuel R. Delany",
+    "publication": "New Worlds",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1970,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1970-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "the-beast-that-shouted-love-at-the-heart-of-the-world-harlan-ellison",
+    "resultType": "winner",
+    "title": "The Beast That Shouted Love at the Heart of the World",
+    "author": "Harlan Ellison",
+    "publication": "Galaxy Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1969,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1969-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "i-have-no-mouth-and-i-must-scream-harlan-ellison",
+    "resultType": "winner",
+    "title": "I Have No Mouth, and I Must Scream",
+    "author": "Harlan Ellison",
+    "publication": "If",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1968,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1968-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "neutron-star-larry-niven",
+    "resultType": "winner",
+    "title": "Neutron Star",
+    "author": "Larry Niven",
+    "publication": "If",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1967,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1967-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "repent-harlequin-said-the-ticktockman-harlan-ellison",
+    "resultType": "winner",
+    "title": "‘Repent, Harlequin!’ Said the Ticktockman",
+    "author": "Harlan Ellison",
+    "publication": "Galaxy Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1966,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1966-hugo-awards/"
+      },
+      {
+        "award": "nebula",
+        "year": 1965,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1965/"
+      }
+    ]
+  },
+  {
+    "id": "soldier-ask-not-gordon-r-dickson",
+    "resultType": "winner",
+    "title": "Soldier, Ask Not",
+    "author": "Gordon R. Dickson",
+    "publication": "Galaxy Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1965,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1965-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "no-truce-with-kings-poul-anderson",
+    "resultType": "winner",
+    "title": "No Truce with Kings",
+    "author": "Poul Anderson",
+    "publication": "The Magazine of Fantasy & Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1964,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1964-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "the-dragon-masters-jack-vance",
+    "resultType": "winner",
+    "title": "The Dragon Masters",
+    "author": "Jack Vance",
+    "publication": "Galaxy Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1963,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1963-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "hothouse-series-brian-w-aldiss",
+    "resultType": "winner",
+    "title": "Hothouse series",
+    "author": "Brian W. Aldiss",
+    "publication": "The Magazine of Fantasy & Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1962,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1962-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "the-longest-voyage-poul-anderson",
+    "resultType": "winner",
+    "title": "The Longest Voyage",
+    "author": "Poul Anderson",
+    "publication": "Analog Science Fiction and Fact",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1961,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1961-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "flowers-for-algernon-daniel-keyes",
+    "resultType": "winner",
+    "title": "Flowers for Algernon",
+    "author": "Daniel Keyes",
+    "publication": "The Magazine of Fantasy & Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1960,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1960-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "that-hell-bound-train-robert-bloch",
+    "resultType": "winner",
+    "title": "That Hell-Bound Train",
+    "author": "Robert Bloch",
+    "publication": "The Magazine of Fantasy & Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1959,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1959-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "or-all-the-seas-with-oysters-avram-davidson",
+    "resultType": "winner",
+    "title": "Or All the Seas with Oysters",
+    "author": "Avram Davidson",
+    "publication": "Galaxy Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1958,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1958-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "hugo-1957-category-not-presented",
+    "resultType": "not-presented",
+    "title": "Category Not Presented",
+    "author": null,
+    "publication": null,
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1957,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1957-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "the-star-arthur-c-clarke",
+    "resultType": "winner",
+    "title": "The Star",
+    "author": "Arthur C. Clarke",
+    "publication": "Infinity Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1956,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1956-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "allamagoosa-eric-frank-russell",
+    "resultType": "winner",
+    "title": "Allamagoosa",
+    "author": "Eric Frank Russell",
+    "publication": "Astounding Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1955,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1955-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "ripples-in-the-dirac-sea-geoffrey-a-landis",
+    "resultType": "winner",
+    "title": "Ripples in the Dirac Sea",
+    "author": "Geoffrey A. Landis",
+    "publication": "Asimov's Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 1989,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1989/"
+      }
+    ]
+  },
+  {
+    "id": "bible-stories-for-adults-no-17-the-deluge-james-morrow",
+    "resultType": "winner",
+    "title": "Bible Stories for Adults, No. 17: The Deluge",
+    "author": "James Morrow",
+    "publication": "Full Spectrum",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 1988,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1988/"
+      }
+    ]
+  },
+  {
+    "id": "forever-yours-anna-kate-wilhelm",
+    "resultType": "winner",
+    "title": "Forever Yours, Anna",
+    "author": "Kate Wilhelm",
+    "publication": "Omni",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 1987,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1987/"
+      }
+    ]
+  },
+  {
+    "id": "out-of-all-them-bright-stars-nancy-kress",
+    "resultType": "winner",
+    "title": "Out of All Them Bright Stars",
+    "author": "Nancy Kress",
+    "publication": "The Magazine of Fantasy & Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 1985,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1985/"
+      }
+    ]
+  },
+  {
+    "id": "morning-child-gardner-dozois",
+    "resultType": "winner",
+    "title": "Morning Child",
+    "author": "Gardner Dozois",
+    "publication": "Omni",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 1984,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1984/"
+      }
+    ]
+  },
+  {
+    "id": "the-peacemaker-gardner-dozois",
+    "resultType": "winner",
+    "title": "The Peacemaker",
+    "author": "Gardner Dozois",
+    "publication": "Asimov's Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 1983,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1983/"
+      }
+    ]
+  },
+  {
+    "id": "a-letter-from-the-clearys-connie-willis",
+    "resultType": "winner",
+    "title": "A Letter from the Clearys",
+    "author": "Connie Willis",
+    "publication": "Asimov's Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 1982,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1982/"
+      }
+    ]
+  },
+  {
+    "id": "the-bone-flute-lisa-tuttle",
+    "resultType": "winner",
+    "title": "The Bone Flute",
+    "author": "Lisa Tuttle",
+    "publication": "The Magazine of Fantasy & Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 1981,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1981/"
+      }
+    ]
+  },
+  {
+    "id": "giants-edward-bryant",
+    "resultType": "winner",
+    "title": "giANTS",
+    "author": "Edward Bryant",
+    "publication": "Analog Science Fiction and Fact",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 1979,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1979/"
+      }
+    ]
+  },
+  {
+    "id": "stone-edward-bryant",
+    "resultType": "winner",
+    "title": "Stone",
+    "author": "Edward Bryant",
+    "publication": "The Magazine of Fantasy & Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 1978,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1978/"
+      }
+    ]
+  },
+  {
+    "id": "a-crowd-of-shadows-charles-l-grant",
+    "resultType": "winner",
+    "title": "A Crowd of Shadows",
+    "author": "Charles L. Grant",
+    "publication": "The Magazine of Fantasy & Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 1976,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1976/"
+      }
+    ]
+  },
+  {
+    "id": "the-day-before-the-revolution-ursula-k-le-guin",
+    "resultType": "winner",
+    "title": "The Day Before the Revolution",
+    "author": "Ursula K. Le Guin",
+    "publication": "Galaxy Science Fiction",
+    "storyUrl": "https://storyoftheweek.loa.org/2017/08/the-day-before-revolution.html",
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 1974,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1974/"
+      }
+    ]
+  },
+  {
+    "id": "love-is-the-plan-the-plan-is-death-james-tiptree-jr",
+    "resultType": "winner",
+    "title": "Love Is the Plan the Plan Is Death",
+    "author": "James Tiptree Jr.",
+    "publication": "The Alien Condition",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 1973,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1973/"
+      }
+    ]
+  },
+  {
+    "id": "when-it-changed-joanna-russ",
+    "resultType": "winner",
+    "title": "When It Changed",
+    "author": "Joanna Russ",
+    "publication": "Again, Dangerous Visions",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 1972,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1972/"
+      }
+    ]
+  },
+  {
+    "id": "good-news-from-the-vatican-robert-silverberg",
+    "resultType": "winner",
+    "title": "Good News from the Vatican",
+    "author": "Robert Silverberg",
+    "publication": "Universe 1",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 1971,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1971/"
+      }
+    ]
+  },
+  {
+    "id": "nebula-1970-no-award",
+    "resultType": "no-award",
+    "title": "No Award",
+    "author": null,
+    "publication": null,
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 1970,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1970/"
+      }
+    ]
+  },
+  {
+    "id": "passengers-robert-silverberg",
+    "resultType": "winner",
+    "title": "Passengers",
+    "author": "Robert Silverberg",
+    "publication": "Orbit 4",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 1969,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1969/"
+      }
+    ]
+  },
+  {
+    "id": "the-planners-kate-wilhelm",
+    "resultType": "winner",
+    "title": "The Planners",
+    "author": "Kate Wilhelm",
+    "publication": "Orbit 3",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 1968,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1968/"
+      }
+    ]
+  },
+  {
+    "id": "aye-and-gomorrah-samuel-r-delany",
+    "resultType": "winner",
+    "title": "Aye, and Gomorrah…",
+    "author": "Samuel R. Delany",
+    "publication": "Dangerous Visions",
+    "storyUrl": "https://strangehorizons.com/wordpress/fiction/aye-and-gomorrah/",
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 1967,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1967/"
+      }
+    ]
+  },
+  {
+    "id": "the-secret-place-richard-mckenna",
+    "resultType": "winner",
+    "title": "The Secret Place",
+    "author": "Richard McKenna",
+    "publication": "Orbit 1",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 1966,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1966/"
       }
     ]
   }

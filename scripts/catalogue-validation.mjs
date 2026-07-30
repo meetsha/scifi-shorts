@@ -1,8 +1,11 @@
 export const EXPECTED_HUGO_YEARS = Array.from(
-  { length: 35 },
+  { length: 71 },
   (_, index) => 2025 - index,
 );
-export const EXPECTED_NEBULA_YEARS = [...EXPECTED_HUGO_YEARS];
+export const EXPECTED_NEBULA_YEARS = Array.from(
+  { length: 61 },
+  (_, index) => 2025 - index,
+);
 
 const VALID_AWARDS = new Set(["hugo", "nebula"]);
 
@@ -64,8 +67,10 @@ function validateStory(story, index, errors) {
     errors.push(`${label}: id must be a lowercase ASCII slug`);
   }
 
-  if (!["winner", "no-award"].includes(story.resultType)) {
-    errors.push(`${label}: resultType must be "winner" or "no-award"`);
+  if (!["winner", "no-award", "not-presented"].includes(story.resultType)) {
+    errors.push(
+      `${label}: resultType must be "winner", "no-award", or "not-presented"`,
+    );
   }
 
   if (story.resultType === "winner") {
@@ -74,10 +79,10 @@ function validateStory(story, index, errors) {
         errors.push(`${label}: ${field} is required for a winner`);
       }
     }
-  } else if (story.resultType === "no-award") {
+  } else if (["no-award", "not-presented"].includes(story.resultType)) {
     for (const field of ["author", "publication", "storyUrl"]) {
       if (story[field] !== null) {
-        errors.push(`${label}: ${field} must be null for a no-award result`);
+        errors.push(`${label}: ${field} must be null for a special result`);
       }
     }
   }
@@ -211,6 +216,9 @@ export function validateCatalogueData(
       ),
       noAwards: validStories.filter(
         (story) => story?.resultType === "no-award",
+      ).length,
+      notPresented: validStories.filter(
+        (story) => story?.resultType === "not-presented",
       ).length,
     },
   };

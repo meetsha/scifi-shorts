@@ -12,9 +12,9 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - Deployed scope: Hugo and Nebula Best Short Story results for award years 2001-2025
 - Deployed catalogue: 46 unique entries and 51 award records
 - Deployed reading availability: 29 verified reading links and 16 winners without verified online text
-- Local working scope: Hugo and Nebula Best Short Story results for award years 1991-2025
-- Local working catalogue: 65 unique entries and 71 award records
-- Local reading availability: 32 verified reading links and 32 winners without verified online text
+- Local working scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
+- Local working catalogue: 121 unique entries and 133 award records
+- Local reading availability: 37 verified reading links and 81 winners without verified online text
 - Local preview: <http://localhost:8000>
 
 During an active working session, keep the local preview running on port `8000`. Stop it only when explicitly requested.
@@ -39,6 +39,8 @@ During an active working session, keep the local preview running on port `8000`.
 - Keep the catalogue factual, neutral, and spoiler-free
 - Use award year, not publication year, for navigation
 - Use each official archive's award-year label; Hugo and Nebula years are not normalized to a shared publication year
+- Include Hugo's official Short Fiction predecessor category for 1960-1966
+- Show 1957 as a distinct Hugo category-not-presented record because no equivalent category existed that year
 - Use one card per unique story
 - Preserve separate award years and sources when a story won both awards
 - Show award names in text as well as colour
@@ -53,6 +55,7 @@ During an active working session, keep the local preview running on port `8000`.
 - Link reading actions only to verified full text on publisher, magazine, or author-controlled sites
 - Keep unavailable winners visible without purchase or borrowing substitutes
 - Keep the 2015 Hugo No Award result visible with distinct warning treatment
+- Keep the 1957 Hugo category-not-presented record visible with the same warning treatment and distinct copy
 - Keep the restrained near-black, monospaced terminal-library design
 
 ## Roadmap
@@ -78,21 +81,21 @@ During an active working session, keep the local preview running on port `8000`.
 - [x] Update validators, tests, catalogue counts, and scope copy
 - [x] Verify the expanded archive locally
 
-#### Remaining batches
+#### Historical batches
 
-- [ ] Batch 2: 1981-1990 for both awards; merge the 1990 Nebula into the existing "Bears Discover Fire" record
-- [ ] Batch 3: 1971-1980 for both awards
-- [ ] Batch 4: 1955-1970 for Hugo and 1965-1970 for Nebula
+- [x] Batch 2: 1981-1990 for both awards; merge the 1990 Nebula into the existing "Bears Discover Fire" record
+- [x] Batch 3: 1971-1980 for both awards
+- [x] Batch 4: 1955-1970 for Hugo and 1965-1970 for Nebula
 
 ### 3. Verify the expanded archive
 
-- [ ] Confirm the expected year coverage for each award
-- [ ] Confirm every award result appears exactly once, except legitimate ties
-- [ ] Confirm shared winners appear as one story with multiple award labels
-- [ ] Test search, award, year, sorting, pagination, and Reset together
-- [ ] Test records with one award, multiple awards, no reading link, and No Award
-- [ ] Run data validation and review all reported problems
-- [ ] Complete the relevant manual checks for the changed features
+- [x] Confirm the expected year coverage for each award
+- [x] Confirm every award result appears exactly once, except legitimate ties
+- [x] Confirm shared winners appear as one story with multiple award labels
+- [x] Test search, award, year, sorting, pagination, and Reset together
+- [x] Test records with one award, multiple awards, no reading link, and No Award
+- [x] Run data validation and review all reported problems
+- [x] Complete the relevant manual checks for the changed features
 
 ### 4. Publish and maintain
 
@@ -220,10 +223,10 @@ Do not include the external-link checker in production smoke testing unless it w
 
 - [x] Established the name, neutral catalogue scope, link policy, and independent-project documentation
 - [x] Added and verified Hugo and Nebula Best Short Story results for 2001-2025
-- [x] Added 29 verified reading links and honest unavailable states
+- [x] Added 37 verified reading links and honest unavailable states
 - [x] Migrated to unique story records with award arrays, tie support, and duplicate validation
 - [x] Built search, award and year filters, sorting, Reset, URL state, and pagination
-- [x] Merged five shared winners while preserving both award years and sources
+- [x] Merged twelve shared winners while preserving both award years and sources
 - [x] Implemented the quiet terminal-library design for desktop and mobile
 - [x] Simplified the About page and configured corrections through `data/site.json`
 - [x] Added 21 automated catalogue tests and dependency-free data validation
@@ -231,3 +234,7 @@ Do not include the external-link checker in production smoke testing unless it w
 - [x] Replaced duplicate award-source actions with bracketed clickable award labels
 - [x] Published and verified Sites version 3 on July 30, 2026
 - [x] Expanded the local archive through 1991 with 19 additional stories and 20 award records
+- [x] Completed historical Hugo coverage from 1955, excluding 1957 when the category was not presented
+- [x] Completed historical Nebula coverage from its 1965 award year
+- [x] Added 55 historical entries and 61 award records across the final three batches
+- [x] Added a distinct 1957 Hugo category-not-presented record so the historical gap is explicit

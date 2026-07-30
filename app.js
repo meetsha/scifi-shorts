@@ -74,7 +74,7 @@ function renderStories(visibleStories) {
   for (const story of visibleStories) {
     const card = document.createElement("li");
     card.className = `story-card${
-      story.resultType === "no-award" ? " story-card--no-award" : ""
+      story.resultType === "winner" ? "" : " story-card--no-award"
     }`;
 
     const badges = document.createElement("div");
@@ -82,7 +82,7 @@ function renderStories(visibleStories) {
     for (const award of [...story.awards].sort((a, b) => b.year - a.year)) {
       badges.appendChild(createAwardBadge(award));
     }
-    if (story.resultType === "no-award") {
+    if (story.resultType !== "winner") {
       const warning = document.createElement("span");
       warning.className = "result-warning";
       warning.setAttribute("aria-hidden", "true");
@@ -91,10 +91,10 @@ function renderStories(visibleStories) {
     }
 
     const title = document.createElement("h3");
-    title.textContent =
-      story.resultType === "no-award"
-        ? "No story received the award"
-        : story.title;
+    title.textContent = {
+      "no-award": "No story received the award",
+      "not-presented": "Short fiction category not presented",
+    }[story.resultType] ?? story.title;
     card.append(badges, title);
 
     if (story.resultType === "winner") {
@@ -335,7 +335,7 @@ async function loadCatalogue() {
   for (const view of paginationViews) view.container.hidden = true;
 
   try {
-    const response = await fetch("./data/stories.json?v=5");
+    const response = await fetch("./data/stories.json?v=7");
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
     const data = await response.json();

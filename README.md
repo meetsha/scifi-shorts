@@ -1,8 +1,11 @@
 # SciFi Short Story Collection
 
-A dependency-free static catalogue of Hugo and Nebula Best Short Story winners for award years
-1991 through 2025. The data contains 65 unique entries, preserves the 2010 Nebula tie, and merges
-stories that won both awards.
+A dependency-free static catalogue of the Hugo short-fiction lineage from 1955 and Nebula Best
+Short Story from 1965, through 2025. The data contains 121 unique entries, preserves the 2010
+Nebula tie, and merges stories that won both awards.
+
+The Hugo category was named Short Fiction from 1960 through 1966. No equivalent category was
+presented in 1957, so that year is represented by a distinct category-not-presented record.
 
 ## Run locally
 
@@ -58,7 +61,9 @@ The site is plain HTML, CSS, JavaScript, and JSON and can be hosted by any stati
 }
 ```
 
-Each award keeps its own year and official source. Different stories may share an award and year when the official result is a tie. `no-award` records remain award-specific and are not merged with stories or other awards.
+Each award keeps its own year and official source. Different stories may share an award and year
+when the official result is a tie. `no-award` and `not-presented` records remain award-specific and
+are not merged with stories or other special results.
 
 Award years follow the labels used by each official archive. Hugo pages use the ceremony year;
 Nebula pages use SFWA's award-year label, even when the presentation took place the following year.

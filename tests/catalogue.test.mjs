@@ -41,44 +41,44 @@ const tiedNebulaWinner = {
 
 const testSiteConfig = { correctionsUrl: null };
 
-test("catalogue covers every Hugo award year from 1991 through 2025", () => {
+test("catalogue covers the Hugo short-fiction lineage from 1955 through 2025", () => {
   assert.deepEqual(
     getCatalogueYears(stories, "hugo"),
-    Array.from({ length: 35 }, (_, index) => 2025 - index),
+    Array.from({ length: 71 }, (_, index) => 2025 - index),
   );
 });
 
-test("catalogue covers every Nebula award year from 1991 through 2025", () => {
+test("catalogue covers every Nebula award year from 1965 through 2025", () => {
   assert.deepEqual(
     getCatalogueYears(stories, "nebula"),
-    Array.from({ length: 35 }, (_, index) => 2025 - index),
+    Array.from({ length: 61 }, (_, index) => 2025 - index),
   );
 });
 
 test("catalogue has the expected merged story and award counts", () => {
   const awardRecords = stories.flatMap((story) => story.awards);
 
-  assert.equal(stories.length, 65);
-  assert.equal(awardRecords.length, 71);
+  assert.equal(stories.length, 121);
+  assert.equal(awardRecords.length, 133);
   assert.equal(
     awardRecords.filter((entry) => entry.award === "hugo").length,
-    35,
+    71,
   );
   assert.equal(
     awardRecords.filter((entry) => entry.award === "nebula").length,
-    36,
+    62,
   );
 });
 
 test("defaults to newest-first order", () => {
   const results = filterAndSortStories(stories);
   assert.equal(results[0].awards[0].year, 2025);
-  assert.equal(results.at(-1).awards[0].year, 1991);
+  assert.equal(results.at(-1).awards[0].year, 1955);
 });
 
 test("sorts oldest first", () => {
   const results = filterAndSortStories(stories, { sort: "oldest" });
-  assert.equal(results[0].awards[0].year, 1991);
+  assert.equal(results[0].awards[0].year, 1955);
   assert.equal(results.at(-1).awards[0].year, 2025);
 });
 
@@ -89,8 +89,8 @@ test("searches title, author, publication, award, and year", () => {
     filterAndSortStories(stories, { query: "Uncanny Magazine" }).length > 1,
   );
   assert.equal(filterAndSortStories(stories, { query: "2004" }).length, 2);
-  assert.equal(filterAndSortStories(stories, { query: "hugo" }).length, 35);
-  assert.equal(filterAndSortStories(stories, { query: "nebula" }).length, 36);
+  assert.equal(filterAndSortStories(stories, { query: "hugo" }).length, 71);
+  assert.equal(filterAndSortStories(stories, { query: "nebula" }).length, 62);
 });
 
 test("combines award and exact-year filtering", () => {
@@ -158,6 +158,15 @@ test("merges shared Hugo and Nebula winners into single story records", () => {
     ["Seasons of Glass and Iron", ["hugo:2017", "nebula:2016"]],
     ["The Paper Menagerie", ["hugo:2012", "nebula:2011"]],
     ["Even the Queen", ["hugo:1993", "nebula:1992"]],
+    ["Bears Discover Fire", ["hugo:1991", "nebula:1990"]],
+    ["Tangents", ["hugo:1987", "nebula:1986"]],
+    ["Grotto of the Dancing Deer", ["hugo:1981", "nebula:1980"]],
+    ["Jeffty Is Five", ["hugo:1978", "nebula:1977"]],
+    ["Catch That Zeppelin!", ["hugo:1976", "nebula:1975"]],
+    [
+      "‘Repent, Harlequin!’ Said the Ticktockman",
+      ["hugo:1966", "nebula:1965"],
+    ],
   ]);
 
   for (const [title, expectedAwards] of expectedSharedStories) {
@@ -257,20 +266,20 @@ test("sorts shared winners by the selected award year", () => {
 
 test("paginates filtered stories in groups of 12", () => {
   const firstPage = paginateStories(stories, 1);
-  const finalPage = paginateStories(stories, 6);
+  const finalPage = paginateStories(stories, 11);
 
   assert.equal(firstPage.items.length, 12);
   assert.deepEqual(
     [firstPage.rangeStart, firstPage.rangeEnd, firstPage.totalPages],
-    [1, 12, 6],
+    [1, 12, 11],
   );
-  assert.equal(finalPage.items.length, 5);
-  assert.deepEqual([finalPage.rangeStart, finalPage.rangeEnd], [61, 65]);
+  assert.equal(finalPage.items.length, 1);
+  assert.deepEqual([finalPage.rangeStart, finalPage.rangeEnd], [121, 121]);
 });
 
 test("clamps invalid page requests", () => {
   assert.equal(paginateStories(stories, 0).page, 1);
-  assert.equal(paginateStories(stories, 99).page, 6);
+  assert.equal(paginateStories(stories, 99).page, 11);
 });
 
 test("round-trips non-default catalogue URL state", () => {
@@ -299,7 +308,7 @@ test("omits default catalogue state from the URL", () => {
   );
 });
 
-test("includes unavailable stories and the no-award result", () => {
+test("includes unavailable stories and distinct special results", () => {
   assert.ok(
     stories.some(
       (story) => story.resultType === "winner" && story.storyUrl === null,
@@ -308,7 +317,17 @@ test("includes unavailable stories and the no-award result", () => {
   assert.deepEqual(
     stories
       .filter((story) => story.resultType === "no-award")
-      .flatMap((story) => story.awards.map((entry) => entry.year)),
-    [2015],
+      .flatMap((story) =>
+        story.awards.map((entry) => `${entry.award}:${entry.year}`),
+      ),
+    ["hugo:2015", "nebula:1970"],
+  );
+  assert.deepEqual(
+    stories
+      .filter((story) => story.resultType === "not-presented")
+      .flatMap((story) =>
+        story.awards.map((entry) => `${entry.award}:${entry.year}`),
+      ),
+    ["hugo:1957"],
   );
 });
