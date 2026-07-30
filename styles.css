@@ -862,6 +862,29 @@ h1 {
   h1 {
     white-space: nowrap;
   }
+
+  .story-card:has(> .links) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 176px;
+    column-gap: 1.5rem;
+  }
+
+  .story-card:has(> .links) > .award-badges,
+  .story-card:has(> .links) > h3,
+  .story-card:has(> .links) > .meta {
+    grid-column: 1;
+  }
+
+  .story-card:has(> .links) > .links {
+    grid-row: 1 / 4;
+    grid-column: 2;
+    align-self: stretch;
+    justify-content: center;
+  }
+
+  .story-card:has(> .links) .read-action {
+    width: 152px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

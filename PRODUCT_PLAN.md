@@ -15,7 +15,7 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - Local working scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Local working catalogue: 121 unique entries and 133 award records
 - Local reading availability: 37 verified reading links and 81 winners without verified online text
-- Latest local milestone: Publish complete historical award coverage
+- Latest local milestone: Rebalance desktop story-card actions
 - Local preview: <http://localhost:8000>
 
 During an active working session, keep the local preview running on port `8000`. Stop it only when explicitly requested.
@@ -43,6 +43,8 @@ During an active working session, keep the local preview running on port `8000`.
 - Include Hugo's official Short Fiction predecessor category for 1960-1966
 - Show 1957 as a distinct Hugo category-not-presented record because no equivalent category existed that year
 - Use one card per unique story
+- Keep the catalogue as a streamlined one-column list on desktop and mobile
+- Place **Read story** and **NA** in a compact right-side action area on desktop while retaining full-width mobile actions
 - Preserve separate award years and sources when a story won both awards
 - Show award names in text as well as colour
 - Render award sources as `[ HUGO · YEAR ]` and `[ NEBULA · YEAR ]`
@@ -242,3 +244,4 @@ Do not include the external-link checker in production smoke testing unless it w
 - [x] Added 55 historical entries and 61 award records across the final three batches
 - [x] Added a distinct 1957 Hugo category-not-presented record so the historical gap is explicit
 - [x] Published and smoke-tested Sites version 4 with complete historical coverage on July 30, 2026
+- [x] Rebalanced desktop story cards with wider right-aligned actions while preserving the mobile layout
