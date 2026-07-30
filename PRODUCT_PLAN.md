@@ -9,9 +9,12 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - Production: <https://scifi-short-story-collection.uiandgame.chatgpt.site/>
 - Hosting: ChatGPT Sites
 - Current deployed release: Sites version 3, commit `a55c9e2`
-- Scope: Hugo and Nebula Best Short Story results for award years 2001-2025
-- Catalogue: 46 unique entries and 51 award records
-- Reading availability: 29 verified reading links and 16 winners without verified online text
+- Deployed scope: Hugo and Nebula Best Short Story results for award years 2001-2025
+- Deployed catalogue: 46 unique entries and 51 award records
+- Deployed reading availability: 29 verified reading links and 16 winners without verified online text
+- Local working scope: Hugo and Nebula Best Short Story results for award years 1991-2025
+- Local working catalogue: 65 unique entries and 71 award records
+- Local reading availability: 32 verified reading links and 32 winners without verified online text
 - Local preview: <http://localhost:8000>
 
 During an active working session, keep the local preview running on port `8000`. Stop it only when explicitly requested.
@@ -35,6 +38,7 @@ During an active working session, keep the local preview running on port `8000`.
 
 - Keep the catalogue factual, neutral, and spoiler-free
 - Use award year, not publication year, for navigation
+- Use each official archive's award-year label; Hugo and Nebula years are not normalized to a shared publication year
 - Use one card per unique story
 - Preserve separate award years and sources when a story won both awards
 - Show award names in text as well as colour
@@ -55,21 +59,30 @@ During an active working session, keep the local preview running on port `8000`.
 
 ### 1. Finalize historical archive scope
 
-- [ ] Decide whether 2001-2025 remains the permanent curated window or expands
-- [ ] If expanding, decide whether Hugo coverage begins in 1955
-- [ ] If expanding, decide whether Nebula coverage begins with the 1965 award year
-- [ ] Document the difference between Hugo and Nebula award-year conventions
+- [x] Expand to complete historical coverage
+- [x] Begin Hugo coverage in 1955
+- [x] Begin Nebula coverage with the 1965 award year
+- [x] Expand both awards together in reverse chronological batches
+- [x] Use ten-year batches until the final partial historical batch
+- [x] Document the difference between Hugo and Nebula award-year conventions
 
 ### 2. Expand beyond the 2001-2025 window
 
-- [ ] Research the approved Hugo year range against official award sources
-- [ ] Research the approved Nebula year range against official award sources
-- [ ] Verify title, author, publication, award year, and source URL for every result
-- [ ] Find and verify reading links where public full text is available
-- [ ] Keep unavailable winners visible without purchase or borrowing substitutes
-- [ ] Merge stories that won both awards into one record
-- [ ] Preserve separate award years and official source links on shared winners
-- [ ] Update page descriptions and About-page scope after loading the final dataset
+#### Batch 1: 1991-2000
+
+- [x] Research Hugo and Nebula results against official award sources
+- [x] Verify title, author, publication, award year, and source URL
+- [x] Find reading links where verified public full text is available
+- [x] Keep unavailable winners visible without purchase or borrowing substitutes
+- [x] Merge stories that won both awards into one record
+- [x] Update validators, tests, catalogue counts, and scope copy
+- [x] Verify the expanded archive locally
+
+#### Remaining batches
+
+- [ ] Batch 2: 1981-1990 for both awards; merge the 1990 Nebula into the existing "Bears Discover Fire" record
+- [ ] Batch 3: 1971-1980 for both awards
+- [ ] Batch 4: 1955-1970 for Hugo and 1965-1970 for Nebula
 
 ### 3. Verify the expanded archive
 
@@ -217,3 +230,4 @@ Do not include the external-link checker in production smoke testing unless it w
 - [x] Fixed mobile Reset focus behavior
 - [x] Replaced duplicate award-source actions with bracketed clickable award labels
 - [x] Published and verified Sites version 3 on July 30, 2026
+- [x] Expanded the local archive through 1991 with 19 additional stories and 20 award records

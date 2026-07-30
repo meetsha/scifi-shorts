@@ -1,5 +1,5 @@
 export const EXPECTED_HUGO_YEARS = Array.from(
-  { length: 25 },
+  { length: 35 },
   (_, index) => 2025 - index,
 );
 export const EXPECTED_NEBULA_YEARS = [...EXPECTED_HUGO_YEARS];

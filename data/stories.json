@@ -713,5 +713,295 @@
         "sourceUrl": "https://nebulas.sfwa.org/award-year/2001/"
       }
     ]
+  },
+  {
+    "id": "scherzo-with-tyrannosaur-michael-swanwick",
+    "resultType": "winner",
+    "title": "Scherzo with Tyrannosaur",
+    "author": "Michael Swanwick",
+    "publication": "Asimov's Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 2000,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/2000-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "the-very-pulse-of-the-machine-michael-swanwick",
+    "resultType": "winner",
+    "title": "The Very Pulse of the Machine",
+    "author": "Michael Swanwick",
+    "publication": "Asimov's Science Fiction",
+    "storyUrl": "https://clarkesworldmagazine.com/swanwick_10_16_reprint/",
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1999,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1999-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "the-43-antarean-dynasties-mike-resnick",
+    "resultType": "winner",
+    "title": "The 43 Antarean Dynasties",
+    "author": "Mike Resnick",
+    "publication": "Asimov's Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1998,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1998-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "the-soul-selects-her-own-society-connie-willis",
+    "resultType": "winner",
+    "title": "The Soul Selects Her Own Society",
+    "author": "Connie Willis",
+    "publication": "Asimov's Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1997,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1997-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "the-lincoln-train-maureen-f-mchugh",
+    "resultType": "winner",
+    "title": "The Lincoln Train",
+    "author": "Maureen F. McHugh",
+    "publication": "The Magazine of Fantasy & Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1996,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1996-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "none-so-blind-joe-haldeman",
+    "resultType": "winner",
+    "title": "None So Blind",
+    "author": "Joe Haldeman",
+    "publication": "Asimov's Science Fiction",
+    "storyUrl": "https://sites.google.com/site/joehaldemansf/books/short-stories",
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1995,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1995-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "death-on-the-nile-connie-willis",
+    "resultType": "winner",
+    "title": "Death on the Nile",
+    "author": "Connie Willis",
+    "publication": "Asimov's Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1994,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1994-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "even-the-queen-connie-willis",
+    "resultType": "winner",
+    "title": "Even the Queen",
+    "author": "Connie Willis",
+    "publication": "Asimov's Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1993,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1993-hugo-awards/"
+      },
+      {
+        "award": "nebula",
+        "year": 1992,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1992/"
+      }
+    ]
+  },
+  {
+    "id": "a-walk-in-the-sun-geoffrey-a-landis",
+    "resultType": "winner",
+    "title": "A Walk in the Sun",
+    "author": "Geoffrey A. Landis",
+    "publication": "Asimov's Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1992,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1992-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "bears-discover-fire-terry-bisson",
+    "resultType": "winner",
+    "title": "Bears Discover Fire",
+    "author": "Terry Bisson",
+    "publication": "Asimov's Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "hugo",
+        "year": 1991,
+        "sourceUrl": "https://www.thehugoawards.org/hugo-history/1991-hugo-awards/"
+      }
+    ]
+  },
+  {
+    "id": "macs-terry-bisson",
+    "resultType": "winner",
+    "title": "macs",
+    "author": "Terry Bisson",
+    "publication": "The Magazine of Fantasy & Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 2000,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/2000/"
+      }
+    ]
+  },
+  {
+    "id": "the-cost-of-doing-business-leslie-what",
+    "resultType": "winner",
+    "title": "The Cost of Doing Business",
+    "author": "Leslie What",
+    "publication": "Amazing Stories",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 1999,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1999/"
+      }
+    ]
+  },
+  {
+    "id": "thirteen-ways-to-water-bruce-holland-rogers",
+    "resultType": "winner",
+    "title": "Thirteen Ways to Water",
+    "author": "Bruce Holland Rogers",
+    "publication": "Black Cats and Broken Mirrors",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 1998,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1998/"
+      }
+    ]
+  },
+  {
+    "id": "sister-emilys-lightship-jane-yolen",
+    "resultType": "winner",
+    "title": "Sister Emily's Lightship",
+    "author": "Jane Yolen",
+    "publication": "Starlight 1",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 1997,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1997/"
+      }
+    ]
+  },
+  {
+    "id": "a-birthday-esther-m-friesner",
+    "resultType": "winner",
+    "title": "A Birthday",
+    "author": "Esther M. Friesner",
+    "publication": "The Magazine of Fantasy & Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 1996,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1996/"
+      }
+    ]
+  },
+  {
+    "id": "death-and-the-librarian-esther-m-friesner",
+    "resultType": "winner",
+    "title": "Death and the Librarian",
+    "author": "Esther M. Friesner",
+    "publication": "Asimov's Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 1995,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1995/"
+      }
+    ]
+  },
+  {
+    "id": "a-defense-of-the-social-contracts-martha-soukup",
+    "resultType": "winner",
+    "title": "A Defense of the Social Contracts",
+    "author": "Martha Soukup",
+    "publication": "Science Fiction Age",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 1994,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1994/"
+      }
+    ]
+  },
+  {
+    "id": "graves-joe-haldeman",
+    "resultType": "winner",
+    "title": "Graves",
+    "author": "Joe Haldeman",
+    "publication": "The Magazine of Fantasy & Science Fiction",
+    "storyUrl": "https://www.nightmare-magazine.com/fiction/graves/",
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 1993,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1993/"
+      }
+    ]
+  },
+  {
+    "id": "ma-qui-alan-brennert",
+    "resultType": "winner",
+    "title": "Ma Qui",
+    "author": "Alan Brennert",
+    "publication": "The Magazine of Fantasy & Science Fiction",
+    "storyUrl": null,
+    "awards": [
+      {
+        "award": "nebula",
+        "year": 1991,
+        "sourceUrl": "https://nebulas.sfwa.org/award-year/1991/"
+      }
+    ]
   }
 ]

@@ -1,27 +1,29 @@
 # SciFi Short Story Collection
 
 A dependency-free static catalogue of Hugo and Nebula Best Short Story winners for award years
-2001 through 2025. The data contains 46 unique entries and preserves the 2010 Nebula tie.
+1991 through 2025. The data contains 65 unique entries, preserves the 2010 Nebula tie, and merges
+stories that won both awards.
 
 ## Run locally
 
 The catalogue uses `fetch`, so serve the directory instead of opening `index.html` directly:
 
 ```bash
-python3 -m http.server 4173
+python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-Open <http://localhost:4173>.
+Open <http://localhost:8000>.
 
 ## Checks
 
 ```bash
 npm test
 npm run validate
-npm run check:links
 ```
 
-`check:links` makes live requests to external story and award pages. A remote site may occasionally block automated requests even when a link works in a browser.
+Run `npm run check:links` only when a full external-link review is explicitly requested. It makes
+live requests to every story and award page, and remote sites may block automated requests even
+when a link works in a browser.
 
 ## Before deployment
 
@@ -57,3 +59,6 @@ The site is plain HTML, CSS, JavaScript, and JSON and can be hosted by any stati
 ```
 
 Each award keeps its own year and official source. Different stories may share an award and year when the official result is a tie. `no-award` records remain award-specific and are not merged with stories or other awards.
+
+Award years follow the labels used by each official archive. Hugo pages use the ceremony year;
+Nebula pages use SFWA's award-year label, even when the presentation took place the following year.

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "SciFi Short Story Collection",
   description:
-    "An independent index of Hugo and Nebula Best Short Story winners for award years 2001 through 2025.",
+    "An independent index of Hugo and Nebula Best Short Story winners for award years 1991 through 2025.",
   icons: {
     icon: "/favicon.svg",
   },
