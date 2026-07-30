@@ -8,14 +8,14 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 
 - Production: <https://scifi-short-story-collection.uiandgame.chatgpt.site/>
 - Hosting: ChatGPT Sites
-- Current deployed release: Sites version 4, commit `3109c55`
+- Current deployed release: Sites version 5, commit `436c5a7`
 - Deployed scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Deployed catalogue: 121 unique entries and 133 award records
 - Deployed reading availability: 37 verified reading links and 81 winners without verified online text
 - Local working scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Local working catalogue: 121 unique entries and 133 award records
 - Local reading availability: 37 verified reading links and 81 winners without verified online text
-- Latest local milestone: Rebalance desktop story-card actions
+- Latest local milestone: Deploy rebalanced desktop story-card actions
 - Local preview: <http://localhost:8000>
 
 During an active working session, keep the local preview running on port `8000`. Stop it only when explicitly requested.
@@ -244,4 +244,4 @@ Do not include the external-link checker in production smoke testing unless it w
 - [x] Added 55 historical entries and 61 award records across the final three batches
 - [x] Added a distinct 1957 Hugo category-not-presented record so the historical gap is explicit
 - [x] Published and smoke-tested Sites version 4 with complete historical coverage on July 30, 2026
-- [x] Rebalanced desktop story cards with wider right-aligned actions while preserving the mobile layout
+- [x] Rebalanced and deployed desktop story cards with wider right-aligned actions while preserving the mobile layout
