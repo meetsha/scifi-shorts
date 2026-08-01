@@ -1,10 +1,18 @@
-export const EXPECTED_HUGO_YEARS = Array.from(
-  { length: 71 },
-  (_, index) => 2025 - index,
-);
-export const EXPECTED_NEBULA_YEARS = Array.from(
-  { length: 61 },
-  (_, index) => 2025 - index,
+export const AWARD_COVERAGE = Object.freeze({
+  hugo: Object.freeze({ firstYear: 1955, lastYear: 2025 }),
+  nebula: Object.freeze({ firstYear: 1965, lastYear: 2025 }),
+});
+
+export const EXPECTED_AWARD_YEARS = Object.freeze(
+  Object.fromEntries(
+    Object.entries(AWARD_COVERAGE).map(([award, { firstYear, lastYear }]) => [
+      award,
+      Array.from(
+        { length: lastYear - firstYear + 1 },
+        (_, index) => lastYear - index,
+      ),
+    ]),
+  ),
 );
 
 const VALID_AWARDS = new Set(["hugo", "nebula"]);
@@ -119,12 +127,7 @@ function validateStory(story, index, errors) {
 export function validateCatalogueData(
   stories,
   siteConfig,
-  {
-    expectedAwardYears = {
-      hugo: EXPECTED_HUGO_YEARS,
-      nebula: EXPECTED_NEBULA_YEARS,
-    },
-  } = {},
+  { expectedAwardYears = EXPECTED_AWARD_YEARS } = {},
 ) {
   const errors = [];
   const warnings = [];

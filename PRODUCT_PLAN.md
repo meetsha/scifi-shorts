@@ -16,7 +16,7 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - Local working scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Local working catalogue: 121 unique entries and 133 award records
 - Local reading availability: 37 verified reading links and 81 winners without verified online text
-- Latest local milestone: Complete the dependency-free repository tidy-up and allowlisted static build
+- Latest local milestone: Complete the code-readability refactor and stylesheet cleanup
 - Local preview: <http://localhost:8000>
 
 During an active working session, keep the local preview running on port `8000`. Stop it only when explicitly requested.
@@ -140,7 +140,35 @@ Goal: make the repository easy to understand and maintain without changing the c
 - [x] Confirm the production output contains only intended public assets
 - [x] Confirm Git tracks no generated output, dependency folders, local platform state, credentials, or operating-system files
 
-### 5. Publish and maintain
+### 5. Improve code readability
+
+Goal: make the existing static implementation easier to understand and extend without changing the catalogue, interface, data, or URL behaviour.
+
+#### JavaScript and data contracts
+
+- [x] Keep `app.js` focused on catalogue loading, control state, URL history, and event wiring
+- [x] Extract story, message, and pagination DOM rendering into one `catalogue-view.js` module
+- [x] Keep display labels with the view instead of creating a catch-all constants module
+- [x] Define Hugo and Nebula archive coverage once and reuse it in validation and tests
+- [x] Rename the shared No Award and Category Not Presented presentation class to `story-card--special-result`
+
+#### Stylesheet cleanup
+
+- [x] Keep one stylesheet and add clear sections for foundations, header, controls, catalogue cards, pagination, About, and responsive rules
+- [x] Remove the unused `.back-link` component
+- [x] Remove the redundant generic `h1` declarations and target `.site-title` where that behavior is intended
+- [x] Remove repeated `box-sizing` declarations already supplied by the universal selector
+- [x] Remove the unused `pagination--bottom` class token from the HTML
+- [x] Confirm every remaining component selector is used by static markup or runtime-generated markup
+
+#### Verification
+
+- [x] Run JavaScript syntax checks, catalogue tests, and data validation
+- [x] Verify search, filters, sorting, Reset, URL state, pagination, special results, and the About page locally
+- [x] Confirm the refactor introduces no intended visual or product changes
+- [x] Update repository documentation and this plan to reflect the final code boundaries
+
+### 6. Publish and maintain
 
 - [x] Configure a monitored corrections contact
 - [x] Choose ChatGPT Sites for the initial public deployment
@@ -293,3 +321,5 @@ Do not include the external-link checker in production smoke testing unless it w
 - [x] Tidied the repository into root HTML entry pages, grouped browser assets, runtime data, maintenance scripts, and tests
 - [x] Removed the ChatGPT Sites, Next, Vinext, Vite, Worker, React, and TypeScript adapter stack
 - [x] Reduced the lockfile from 321 package entries to one dependency-free project entry and added an allowlisted `dist/` build
+- [x] Split catalogue coordination, pure data logic, and DOM rendering into explicit JavaScript boundaries
+- [x] Audited the stylesheet, removed dead and redundant rules, and documented its component sections

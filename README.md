@@ -57,6 +57,10 @@ The site is plain HTML, CSS, JavaScript, and JSON and can be hosted by any stati
 - `tests/`: catalogue behavior tests
 - `dist/`: generated static release; never edit or commit it
 
+The catalogue JavaScript has three deliberate boundaries: `app.js` coordinates loading, controls,
+URL history, and events; `catalogue.js` contains pure filtering, sorting, pagination, and URL-state
+logic; and `catalogue-view.js` creates the catalogue DOM.
+
 ## Catalogue data model
 
 `data/stories.json` stores one record per unique story. Each record has an `awards` array so a story that wins both awards is not duplicated:

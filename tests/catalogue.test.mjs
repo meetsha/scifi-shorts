@@ -8,7 +8,10 @@ import {
   paginateStories,
   parseCatalogueState,
 } from "../assets/js/catalogue.js";
-import { validateCatalogueData } from "../scripts/catalogue-validation.mjs";
+import {
+  EXPECTED_AWARD_YEARS,
+  validateCatalogueData,
+} from "../scripts/catalogue-validation.mjs";
 
 const stories = JSON.parse(
   await readFile(new URL("../data/stories.json", import.meta.url), "utf8"),
@@ -44,14 +47,14 @@ const testSiteConfig = { correctionsUrl: null };
 test("catalogue covers the Hugo short-fiction lineage from 1955 through 2025", () => {
   assert.deepEqual(
     getCatalogueYears(stories, "hugo"),
-    Array.from({ length: 71 }, (_, index) => 2025 - index),
+    EXPECTED_AWARD_YEARS.hugo,
   );
 });
 
 test("catalogue covers every Nebula award year from 1965 through 2025", () => {
   assert.deepEqual(
     getCatalogueYears(stories, "nebula"),
-    Array.from({ length: 61 }, (_, index) => 2025 - index),
+    EXPECTED_AWARD_YEARS.nebula,
   );
 });
 
