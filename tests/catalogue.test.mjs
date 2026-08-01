@@ -7,7 +7,7 @@ import {
   getCatalogueYears,
   paginateStories,
   parseCatalogueState,
-} from "../catalogue.js";
+} from "../assets/js/catalogue.js";
 import { validateCatalogueData } from "../scripts/catalogue-validation.mjs";
 
 const stories = JSON.parse(

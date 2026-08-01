@@ -17,6 +17,9 @@ python3 -m http.server 8000 --bind 127.0.0.1
 
 Open <http://localhost:8000>.
 
+The two HTML entry pages stay at the repository root. Browser JavaScript, CSS, and the favicon
+live under `assets/`; runtime catalogue files live under `data/`.
+
 ## Checks
 
 ```bash
@@ -28,11 +31,31 @@ Run `npm run check:links` only when a full external-link review is explicitly re
 live requests to every story and award page, and remote sites may block automated requests even
 when a link works in a browser.
 
-## Before deployment
+## Build
+
+Create a clean static release in the ignored `dist/` directory:
+
+```bash
+npm run build
+```
+
+The dependency-free build script copies only the two HTML pages, browser assets, and runtime data.
+Repository documentation, tests, and maintenance scripts are not included in `dist/`.
+
+## Site configuration
 
 Set `correctionsUrl` in `data/site.json` to a monitored contact page. Data validation accepts `null` for local and deployment-ready builds, but a public release should not ship without a corrections channel.
 
 The site is plain HTML, CSS, JavaScript, and JSON and can be hosted by any static file host.
+
+## Repository structure
+
+- `index.html` and `about.html`: browser entry pages
+- `assets/`: browser JavaScript, CSS, and the favicon
+- `data/`: runtime catalogue and site configuration
+- `scripts/`: dependency-free build and validation tools
+- `tests/`: catalogue behavior tests
+- `dist/`: generated static release; never edit or commit it
 
 ## Catalogue data model
 

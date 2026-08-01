@@ -1,9 +1,5 @@
 .DS_Store
 /node_modules/
 /.openai/
-/public/
 /dist/
-/.next/
-/.vinext/
 /.wrangler/
-next-env.d.ts

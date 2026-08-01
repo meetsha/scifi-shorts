@@ -7,7 +7,8 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 ## Live status
 
 - Production: <https://scifi-short-story-collection.uiandgame.chatgpt.site/>
-- Hosting: ChatGPT Sites
+- Current hosting: ChatGPT Sites
+- Next hosting target: Cloudflare Pages through GitHub integration; not yet configured
 - Current deployed release: Sites version 5, commit `436c5a7`
 - Deployed scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Deployed catalogue: 121 unique entries and 133 award records
@@ -15,7 +16,7 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - Local working scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Local working catalogue: 121 unique entries and 133 award records
 - Local reading availability: 37 verified reading links and 81 winners without verified online text
-- Latest local milestone: Begin repository tidy-up planning and exclude local OpenAI hosting metadata from Git
+- Latest local milestone: Complete the dependency-free repository tidy-up and allowlisted static build
 - Local preview: <http://localhost:8000>
 
 During an active working session, keep the local preview running on port `8000`. Stop it only when explicitly requested.
@@ -60,6 +61,11 @@ During an active working session, keep the local preview running on port `8000`.
 - Keep the 2015 Hugo No Award result visible with distinct warning treatment
 - Keep the 1957 Hugo category-not-presented record visible with the same warning treatment and distinct copy
 - Keep the restrained near-black, monospaced terminal-library design
+- Keep both HTML entry pages at the repository root
+- Group browser JavaScript, CSS, and the favicon under `assets/`; keep runtime JSON under `data/`
+- Keep the browser site dependency-free and directly served without a frontend framework or bundler
+- Generate releases in ignored `dist/` using a dependency-free allowlist build script
+- Keep repository-wide agent guidance in root `AGENTS.md`; use nested files only for genuinely narrower scope
 
 ## Roadmap
 
@@ -109,28 +115,30 @@ Goal: make the repository easy to understand and maintain without changing the c
 - [x] Inventory website source, catalogue data, tests, validation scripts, documentation, generated output, and platform-specific adapters
 - [x] Confirm that Vite is currently present as part of the ChatGPT Sites and Vinext build stack rather than as a standalone project decision
 - [x] Review current Vite, npm, Node test-runner, and Git ignore conventions against the repository
-- [ ] Decide whether the project should remain a directly served static site or use Vite as its single development and build tool
-- [ ] Decide whether browser source should stay at the repository root or be separated from exact-path public assets
-- [ ] Decide which ChatGPT Sites, Next, Vinext, Vite, Worker, and TypeScript files are still required
-- [ ] Decide which repository metadata and documentation should remain at the root
+- [x] Keep the project as a directly served static site without Vite or another frontend build tool
+- [x] Keep `index.html` and `about.html` at the repository root, group browser JavaScript and CSS under `assets/`, and retain runtime JSON under `data/`
+- [x] Generate an ignored `dist/` directory with a dependency-free allowlist build script so production output contains only public website assets
+- [x] Remove the ChatGPT Sites, Next, Vinext, Vite, Worker, React, and TypeScript adapter stack from the tracked project
+- [x] Keep `AGENTS.md` at the repository root for repository-wide guidance; add nested `AGENTS.md` files only when a subtree needs genuinely different instructions
+- [x] Keep `README.md`, `PRODUCT_PLAN.md`, `AGENTS.md`, package metadata, and repository configuration at the root
 
 #### Cleanup
 
-- [ ] Classify every retained file by a clear runtime, data, test, documentation, build, or repository-management responsibility
-- [ ] Remove obsolete adapters, configuration, dependencies, and scripts only after their references and replacement workflow are verified
-- [ ] Simplify `package.json` and regenerate `package-lock.json` to represent only deliberate tooling
+- [x] Classify every retained file by a clear runtime, data, test, documentation, build, or repository-management responsibility
+- [x] Remove obsolete adapters, configuration, dependencies, and scripts only after their references and replacement workflow are verified
+- [x] Simplify `package.json` and regenerate `package-lock.json` to represent only deliberate tooling
 - [x] Keep generated output, dependency folders, local platform state, editor files, and credentials out of Git
-- [ ] Use consistent names and locations for browser code, static data, tests, and maintenance scripts
-- [ ] Update imports, fetched asset paths, tests, and local commands after any file moves
-- [ ] Update `README.md`, this plan, and repository instructions to match the final structure
+- [x] Use consistent names and locations for browser code, static data, tests, and maintenance scripts
+- [x] Update imports, fetched asset paths, tests, and local commands after any file moves
+- [x] Update `README.md`, this plan, and repository instructions to match the final structure
 
 #### Verification
 
-- [ ] Confirm a clean checkout can be installed, previewed, tested, validated, and built using only documented commands
-- [ ] Run the automated catalogue tests and data validation
-- [ ] Verify both pages and core catalogue controls locally with no product or visual regressions
-- [ ] Confirm the production output contains only intended public assets
-- [ ] Confirm Git tracks no generated output, dependency folders, local platform state, credentials, or operating-system files
+- [x] Confirm a clean dependency setup can be previewed, tested, validated, and built using only documented commands
+- [x] Run the automated catalogue tests and data validation
+- [x] Verify both pages and every moved browser asset load locally; retain existing automated coverage for catalogue controls
+- [x] Confirm the production output contains only intended public assets
+- [x] Confirm Git tracks no generated output, dependency folders, local platform state, credentials, or operating-system files
 
 ### 5. Publish and maintain
 
@@ -139,6 +147,11 @@ Goal: make the repository easy to understand and maintain without changing the c
 - [x] Deploy the site publicly
 - [x] Verify the production site on desktop and mobile
 - [x] Deploy and smoke-test the complete historical archive
+- [x] Choose Cloudflare Pages with GitHub integration as the next hosting target
+- [ ] Push the cleaned repository to GitHub
+- [ ] Connect the GitHub repository to Cloudflare Pages
+- [ ] Configure Cloudflare Pages to run `npm run build` and publish `dist/`
+- [ ] Verify the Cloudflare Pages deployment before changing the public domain
 - [ ] Choose and connect a custom domain
 - [ ] Add canonical URLs and sitemap details
 - [ ] Define the process for adding new annual award results
@@ -182,10 +195,10 @@ Run only focused checks:
 
 ```bash
 git diff --check
-node --check app.js
+node --check assets/js/app.js
 ```
 
-Use `node --check app.js` only when JavaScript changed. Inspect the affected interface locally at the relevant desktop and mobile widths. Do not run the full application suite merely because CSS or copy changed.
+Run the JavaScript check only when JavaScript changed. Inspect the affected interface locally at the relevant desktop and mobile widths. Do not run the full application suite merely because CSS or copy changed.
 
 ### Logic or catalogue changes
 
@@ -225,8 +238,8 @@ Fix build failures before publishing.
 3. Increment the query-string cache version for any changed versioned static asset.
 4. Run the production build.
 5. Commit the exact validated source state.
-6. Push that commit to the existing ChatGPT Sites source repository.
-7. Package the build, save a new Sites version, and deploy it to the existing public project.
+6. Push that commit to the GitHub repository connected to the selected static host.
+7. Let the host run `npm run build` and publish only `dist/`.
 8. Wait for deployment to report success.
 9. Test the deployed URL using the focused production checklist below.
 10. Leave the local preview running unless explicitly asked to stop it.
@@ -277,3 +290,6 @@ Do not include the external-link checker in production smoke testing unless it w
 - [x] Added a distinct 1957 Hugo category-not-presented record so the historical gap is explicit
 - [x] Published and smoke-tested Sites version 4 with complete historical coverage on July 30, 2026
 - [x] Rebalanced and deployed desktop story cards with wider right-aligned actions while preserving the mobile layout
+- [x] Tidied the repository into root HTML entry pages, grouped browser assets, runtime data, maintenance scripts, and tests
+- [x] Removed the ChatGPT Sites, Next, Vinext, Vite, Worker, React, and TypeScript adapter stack
+- [x] Reduced the lockfile from 321 package entries to one dependency-free project entry and added an allowlisted `dist/` build
