@@ -15,7 +15,7 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - Local working scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Local working catalogue: 121 unique entries and 133 award records
 - Local reading availability: 37 verified reading links and 81 winners without verified online text
-- Latest local milestone: Deploy rebalanced desktop story-card actions
+- Latest local milestone: Begin repository tidy-up planning and exclude local OpenAI hosting metadata from Git
 - Local preview: <http://localhost:8000>
 
 During an active working session, keep the local preview running on port `8000`. Stop it only when explicitly requested.
@@ -100,7 +100,39 @@ During an active working session, keep the local preview running on port `8000`.
 - [x] Run data validation and review all reported problems
 - [x] Complete the relevant manual checks for the changed features
 
-### 4. Publish and maintain
+### 4. Tidy the repository
+
+Goal: make the repository easy to understand and maintain without changing the catalogue, interface, or deployed behaviour.
+
+#### Research and decisions
+
+- [x] Inventory website source, catalogue data, tests, validation scripts, documentation, generated output, and platform-specific adapters
+- [x] Confirm that Vite is currently present as part of the ChatGPT Sites and Vinext build stack rather than as a standalone project decision
+- [x] Review current Vite, npm, Node test-runner, and Git ignore conventions against the repository
+- [ ] Decide whether the project should remain a directly served static site or use Vite as its single development and build tool
+- [ ] Decide whether browser source should stay at the repository root or be separated from exact-path public assets
+- [ ] Decide which ChatGPT Sites, Next, Vinext, Vite, Worker, and TypeScript files are still required
+- [ ] Decide which repository metadata and documentation should remain at the root
+
+#### Cleanup
+
+- [ ] Classify every retained file by a clear runtime, data, test, documentation, build, or repository-management responsibility
+- [ ] Remove obsolete adapters, configuration, dependencies, and scripts only after their references and replacement workflow are verified
+- [ ] Simplify `package.json` and regenerate `package-lock.json` to represent only deliberate tooling
+- [x] Keep generated output, dependency folders, local platform state, editor files, and credentials out of Git
+- [ ] Use consistent names and locations for browser code, static data, tests, and maintenance scripts
+- [ ] Update imports, fetched asset paths, tests, and local commands after any file moves
+- [ ] Update `README.md`, this plan, and repository instructions to match the final structure
+
+#### Verification
+
+- [ ] Confirm a clean checkout can be installed, previewed, tested, validated, and built using only documented commands
+- [ ] Run the automated catalogue tests and data validation
+- [ ] Verify both pages and core catalogue controls locally with no product or visual regressions
+- [ ] Confirm the production output contains only intended public assets
+- [ ] Confirm Git tracks no generated output, dependency folders, local platform state, credentials, or operating-system files
+
+### 5. Publish and maintain
 
 - [x] Configure a monitored corrections contact
 - [x] Choose ChatGPT Sites for the initial public deployment
