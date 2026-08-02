@@ -31,27 +31,50 @@ function createAwardBadge(entry) {
   return badge;
 }
 
-function createReadAction(story) {
-  if (story.storyUrl) {
-    return createExternalLink(
-      story.storyUrl,
-      "Read story",
-      "read-action read-link",
-    );
+export function getReadActionLabels(story) {
+  if (story.reading) {
+    const isPdf = story.reading.format === "pdf";
+    return {
+      visible: isPdf ? "Read PDF" : "Read story",
+      accessible: isPdf ? `Read ${story.title} as a PDF` : `Read ${story.title}`,
+    };
   }
 
-  if (story.resultType !== "winner") return null;
+  if (story.resultType === "winner") {
+    return {
+      visible: "NA",
+      accessible: "Read story unavailable",
+    };
+  }
+
+  return null;
+}
+
+function createReadAction(story) {
+  const labels = getReadActionLabels(story);
+
+  if (story.reading) {
+    const link = createExternalLink(
+      story.reading.url,
+      labels.visible,
+      "read-action read-link",
+    );
+    link.setAttribute("aria-label", labels.accessible);
+    return link;
+  }
+
+  if (!labels) return null;
 
   const unavailable = document.createElement("span");
   unavailable.className = "read-action read-action--unavailable";
 
   const visibleLabel = document.createElement("span");
   visibleLabel.setAttribute("aria-hidden", "true");
-  visibleLabel.textContent = "NA";
+  visibleLabel.textContent = labels.visible;
 
   const accessibleLabel = document.createElement("span");
   accessibleLabel.className = "sr-only";
-  accessibleLabel.textContent = "Read story unavailable";
+  accessibleLabel.textContent = labels.accessible;
 
   unavailable.append(visibleLabel, accessibleLabel);
   return unavailable;

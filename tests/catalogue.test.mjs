@@ -12,6 +12,7 @@ import {
   EXPECTED_AWARD_YEARS,
   validateCatalogueData,
 } from "../scripts/catalogue-validation.mjs";
+import { getReadActionLabels } from "../assets/js/catalogue-view.js";
 
 const stories = JSON.parse(
   await readFile(new URL("../data/stories.json", import.meta.url), "utf8"),
@@ -23,7 +24,7 @@ const dualWinner = {
   title: "Shared Winner",
   author: "Example Author",
   publication: "Example Magazine",
-  storyUrl: null,
+  reading: null,
   awards: [
     { award: "hugo", year: 2024, sourceUrl: "https://example.com/hugo" },
     { award: "nebula", year: 2023, sourceUrl: "https://example.com/nebula" },
@@ -36,7 +37,7 @@ const tiedNebulaWinner = {
   title: "Tied Winner",
   author: "Another Author",
   publication: "Another Magazine",
-  storyUrl: null,
+  reading: null,
   awards: [
     { award: "nebula", year: 2023, sourceUrl: "https://example.com/nebula" },
   ],
@@ -233,6 +234,79 @@ test("accepts an HTTP(S) corrections contact", () => {
   assert.deepEqual(validation.errors, []);
 });
 
+test("accepts complete reading metadata", () => {
+  const validation = validateCatalogueData(
+    [
+      {
+        ...dualWinner,
+        reading: {
+          url: "https://example.com/story.pdf",
+          format: "pdf",
+          sourceType: "publication",
+        },
+      },
+    ],
+    testSiteConfig,
+    { expectedAwardYears: {} },
+  );
+
+  assert.deepEqual(validation.errors, []);
+});
+
+test("rejects incomplete or unknown reading metadata", () => {
+  const validation = validateCatalogueData(
+    [
+      {
+        ...dualWinner,
+        reading: {
+          url: "not-a-url",
+          format: "ebook",
+          sourceType: "unknown",
+        },
+      },
+    ],
+    testSiteConfig,
+    { expectedAwardYears: {} },
+  );
+
+  assert.ok(validation.errors.some((error) => error.includes("reading.url")));
+  assert.ok(
+    validation.errors.some((error) => error.includes("reading.format")),
+  );
+  assert.ok(
+    validation.errors.some((error) => error.includes("reading.sourceType")),
+  );
+});
+
+test("labels web, PDF, and unavailable reading actions", () => {
+  assert.deepEqual(
+    getReadActionLabels({
+      ...dualWinner,
+      reading: {
+        url: "https://example.com/story",
+        format: "web",
+        sourceType: "publication",
+      },
+    }),
+    { visible: "Read story", accessible: "Read Shared Winner" },
+  );
+  assert.deepEqual(
+    getReadActionLabels({
+      ...dualWinner,
+      reading: {
+        url: "https://example.com/story.pdf",
+        format: "pdf",
+        sourceType: "publication",
+      },
+    }),
+    { visible: "Read PDF", accessible: "Read Shared Winner as a PDF" },
+  );
+  assert.deepEqual(getReadActionLabels(dualWinner), {
+    visible: "NA",
+    accessible: "Read story unavailable",
+  });
+});
+
 test("searches all award metadata visible on a shared story card", () => {
   assert.deepEqual(
     filterAndSortStories([dualWinner], {
@@ -314,7 +388,7 @@ test("omits default catalogue state from the URL", () => {
 test("includes unavailable stories and distinct special results", () => {
   assert.ok(
     stories.some(
-      (story) => story.resultType === "winner" && story.storyUrl === null,
+      (story) => story.resultType === "winner" && story.reading === null,
     ),
   );
   assert.deepEqual(

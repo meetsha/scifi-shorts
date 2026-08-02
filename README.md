@@ -2,7 +2,8 @@
 
 A dependency-free static catalogue of the Hugo short-fiction lineage from 1955 and Nebula Best
 Short Story from 1965, through 2025. The data contains 121 unique entries, preserves the 2010
-Nebula tie, and merges stories that won both awards.
+Nebula tie, and merges stories that won both awards. Of 118 winning stories, 115 have selected
+reading links: 104 web pages and 11 PDFs.
 
 The Hugo category was named Short Fiction from 1960 through 1966. No equivalent category was
 presented in 1957, so that year is represented by a distinct category-not-presented record.
@@ -72,7 +73,11 @@ logic; and `catalogue-view.js` creates the catalogue DOM.
   "title": "Example Story",
   "author": "Example Author",
   "publication": "Example Magazine",
-  "storyUrl": null,
+  "reading": {
+    "url": "https://example.com/story.pdf",
+    "format": "pdf",
+    "sourceType": "publication"
+  },
   "awards": [
     {
       "award": "hugo",
@@ -91,6 +96,10 @@ logic; and `catalogue-view.js` creates the catalogue DOM.
 Each award keeps its own year and official source. Different stories may share an award and year
 when the official result is a tie. `no-award` and `not-presented` records remain award-specific and
 are not merged with stories or other special results.
+
+`reading` is either `null` or an object with an HTTP(S) `url`, a `web` or `pdf` format, and a
+`publication`, `archive`, or `third-party` source type. The format controls whether the card shows
+**Read story** or **Read PDF**. Source type is maintenance metadata and is not displayed on cards.
 
 Award years follow the labels used by each official archive. Hugo pages use the ceremony year;
 Nebula pages use SFWA's award-year label, even when the presentation took place the following year.

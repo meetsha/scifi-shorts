@@ -8,7 +8,7 @@ async function validateLinks(stories) {
   const urls = [
     ...new Set(
       stories.flatMap((story) => [
-        story.storyUrl,
+        story.reading?.url,
         ...story.awards.map((entry) => entry.sourceUrl),
       ]).filter(Boolean),
     ),

@@ -5,7 +5,11 @@
     "title": "Stitched to Skin Like Family Is",
     "author": "Nghi Vo",
     "publication": "Uncanny Magazine",
-    "storyUrl": "https://www.uncannymagazine.com/article/stitched-to-skin-like-family-is/",
+    "reading": {
+      "url": "https://www.uncannymagazine.com/article/stitched-to-skin-like-family-is/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -20,7 +24,11 @@
     "title": "Better Living Through Algorithms",
     "author": "Naomi Kritzer",
     "publication": "Clarkesworld Magazine",
-    "storyUrl": "https://clarkesworldmagazine.com/kritzer_05_23/",
+    "reading": {
+      "url": "https://clarkesworldmagazine.com/kritzer_05_23/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -35,7 +43,11 @@
     "title": "Rabbit Test",
     "author": "Samantha Mills",
     "publication": "Uncanny Magazine",
-    "storyUrl": "https://www.uncannymagazine.com/article/rabbit-test/",
+    "reading": {
+      "url": "https://www.uncannymagazine.com/article/rabbit-test/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -55,7 +67,11 @@
     "title": "Where Oaken Hearts Do Gather",
     "author": "Sarah Pinsker",
     "publication": "Uncanny Magazine",
-    "storyUrl": "https://www.uncannymagazine.com/article/where-oaken-hearts-do-gather/",
+    "reading": {
+      "url": "https://www.uncannymagazine.com/article/where-oaken-hearts-do-gather/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -75,7 +91,11 @@
     "title": "Metal Like Blood in the Dark",
     "author": "T. Kingfisher",
     "publication": "Uncanny Magazine",
-    "storyUrl": "https://www.uncannymagazine.com/article/metal-like-blood-in-the-dark/",
+    "reading": {
+      "url": "https://www.uncannymagazine.com/article/metal-like-blood-in-the-dark/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -90,7 +110,11 @@
     "title": "As the Last I May Know",
     "author": "S. L. Huang",
     "publication": "Tor.com",
-    "storyUrl": "https://reactormag.com/as-the-last-i-may-know-s-l-huang/",
+    "reading": {
+      "url": "https://reactormag.com/as-the-last-i-may-know-s-l-huang/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -105,7 +129,11 @@
     "title": "A Witch's Guide to Escape: A Practical Compendium of Portal Fantasies",
     "author": "Alix E. Harrow",
     "publication": "Apex Magazine",
-    "storyUrl": "https://apex-magazine.com/a-witchs-guide-to-escape-a-practical-compendium-of-portal-fantasies/",
+    "reading": {
+      "url": "https://www.apexbookcompany.com/blogs/apex-magazine/a-witchs-guide-to-escape-a-practical-compendium-of-portal-fantasies",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -120,7 +148,11 @@
     "title": "Welcome to Your Authentic Indian Experience™",
     "author": "Rebecca Roanhorse",
     "publication": "Apex Magazine",
-    "storyUrl": "https://www.apexbookcompany.com/blogs/apex-magazine/welcome-to-your-authentic-indian-experience",
+    "reading": {
+      "url": "https://apex-magazine.com/short-fiction/welcome-to-your-authentic-indian-experience/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -140,7 +172,11 @@
     "title": "Seasons of Glass and Iron",
     "author": "Amal El-Mohtar",
     "publication": "The Starlit Wood: New Fairy Tales",
-    "storyUrl": "https://www.uncannymagazine.com/article/seasons-glass-iron/",
+    "reading": {
+      "url": "https://www.uncannymagazine.com/article/seasons-glass-iron/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -160,7 +196,11 @@
     "title": "Cat Pictures Please",
     "author": "Naomi Kritzer",
     "publication": "Clarkesworld Magazine",
-    "storyUrl": "https://clarkesworldmagazine.com/kritzer_01_15/",
+    "reading": {
+      "url": "https://clarkesworldmagazine.com/kritzer_01_15/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -175,7 +215,7 @@
     "title": "No Award",
     "author": null,
     "publication": null,
-    "storyUrl": null,
+    "reading": null,
     "awards": [
       {
         "award": "hugo",
@@ -190,7 +230,11 @@
     "title": "The Water That Falls on You from Nowhere",
     "author": "John Chu",
     "publication": "Tor.com",
-    "storyUrl": "https://reactormag.com/the-water-that-falls-on-you-from-nowhere/",
+    "reading": {
+      "url": "https://reactormag.com/the-water-that-falls-on-you-from-nowhere/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -205,7 +249,11 @@
     "title": "Mono no Aware",
     "author": "Ken Liu",
     "publication": "The Future is Japanese",
-    "storyUrl": "https://www.lightspeedmagazine.com/fiction/mono-no-aware/",
+    "reading": {
+      "url": "https://www.lightspeedmagazine.com/fiction/mono-no-aware/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -220,7 +268,11 @@
     "title": "The Paper Menagerie",
     "author": "Ken Liu",
     "publication": "The Magazine of Fantasy & Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://gizmodo.com/read-ken-lius-amazing-story-that-swept-the-hugo-nebula-5958919",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -240,7 +292,11 @@
     "title": "For Want of a Nail",
     "author": "Mary Robinette Kowal",
     "publication": "Asimov's Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://maryrobinettekowal.com/journal/for-want-of-a-nail-is-a-hugo-nominee/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -255,7 +311,11 @@
     "title": "Bridesicle",
     "author": "Will McIntosh",
     "publication": "Asimov's Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://escapepod.org/2010/07/01/ep247-bridesicle/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -270,7 +330,11 @@
     "title": "Exhalation",
     "author": "Ted Chiang",
     "publication": "Eclipse Two",
-    "storyUrl": "https://www.lightspeedmagazine.com/fiction/exhalation/",
+    "reading": {
+      "url": "https://www.lightspeedmagazine.com/fiction/exhalation/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -285,7 +349,11 @@
     "title": "Tideline",
     "author": "Elizabeth Bear",
     "publication": "Asimov's Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://bobson.ludost.net/hugoawardnominees/2008/tideline.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -300,7 +368,11 @@
     "title": "Impossible Dreams",
     "author": "Tim Pratt",
     "publication": "Asimov's Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://web.archive.org/web/20070422075939/http://www.asimovs.com/_issue_0704/Impossibledreams.shtml",
+      "format": "web",
+      "sourceType": "archive"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -315,7 +387,11 @@
     "title": "Tk'tk'tk",
     "author": "David D. Levine",
     "publication": "Asimov's Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://web.archive.org/web/20050223110155/http://www.asimovs.com/_issue_0503/tk.shtml",
+      "format": "web",
+      "sourceType": "archive"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -330,7 +406,11 @@
     "title": "Travels with My Cats",
     "author": "Mike Resnick",
     "publication": "Asimov's Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://web.archive.org/web/20050507173257/http://www.asimovs.com/_issue_0506/travelswithmycats.shtml",
+      "format": "web",
+      "sourceType": "archive"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -345,7 +425,11 @@
     "title": "A Study in Emerald",
     "author": "Neil Gaiman",
     "publication": "Shadows Over Baker Street",
-    "storyUrl": "https://www.neilgaiman.com/mediafiles/exclusive/shortstories/emerald.pdf",
+    "reading": {
+      "url": "https://www.neilgaiman.com/mediafiles/exclusive/shortstories/emerald.pdf",
+      "format": "pdf",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -360,7 +444,11 @@
     "title": "Falling onto Mars",
     "author": "Geoffrey A. Landis",
     "publication": "Analog Science Fiction and Fact",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://web.archive.org/web/20090205085716/http://www.analogsf.com/Hugos/Falling.shtml",
+      "format": "web",
+      "sourceType": "archive"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -375,7 +463,11 @@
     "title": "The Dog Said Bow-Wow",
     "author": "Michael Swanwick",
     "publication": "Asimov's Science Fiction",
-    "storyUrl": "https://www.baen.com/Chapters/9781625791122/9781625791122___2.htm",
+    "reading": {
+      "url": "https://www.baen.com/Chapters/9781625791122/9781625791122___2.htm",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -390,7 +482,11 @@
     "title": "Different Kinds of Darkness",
     "author": "David Langford",
     "publication": "The Magazine of Fantasy & Science Fiction",
-    "storyUrl": "https://www.lightspeedmagazine.com/fiction/different-kinds-of-darkness/",
+    "reading": {
+      "url": "https://www.lightspeedmagazine.com/fiction/different-kinds-of-darkness/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -405,7 +501,11 @@
     "title": "Laser Eyes Ain't Everything",
     "author": "Effie Seiberg",
     "publication": "Diabolical Plots",
-    "storyUrl": "https://www.diabolicalplots.com/dp-fiction-123b-laser-eyes-aint-everything-by-effie-seiberg/",
+    "reading": {
+      "url": "https://www.diabolicalplots.com/dp-fiction-123b-laser-eyes-aint-everything-by-effie-seiberg/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -420,7 +520,11 @@
     "title": "Why Don't We Just Kill the Kid in the Omelas Hole",
     "author": "Isabel J. Kim",
     "publication": "Clarkesworld Magazine",
-    "storyUrl": "https://clarkesworldmagazine.com/kim_02_24/",
+    "reading": {
+      "url": "https://clarkesworldmagazine.com/kim_02_24/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -435,7 +539,11 @@
     "title": "Tantie Merle and the Farmhand 4200",
     "author": "R. S. A. Garcia",
     "publication": "Uncanny Magazine",
-    "storyUrl": "https://www.uncannymagazine.com/article/tantie-merle-and-the-farmhand-4200/",
+    "reading": {
+      "url": "https://www.uncannymagazine.com/article/tantie-merle-and-the-farmhand-4200/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -450,7 +558,11 @@
     "title": "Open House on Haunted Hill",
     "author": "John Wiswell",
     "publication": "Diabolical Plots",
-    "storyUrl": "https://www.diabolicalplots.com/dp-fiction-64a-open-house-on-haunted-hill-by-john-wiswell/",
+    "reading": {
+      "url": "https://www.diabolicalplots.com/dp-fiction-64a-open-house-on-haunted-hill-by-john-wiswell/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -465,7 +577,11 @@
     "title": "Give the Family My Love",
     "author": "A. T. Greenblatt",
     "publication": "Clarkesworld Magazine",
-    "storyUrl": "https://clarkesworldmagazine.com/greenblatt_02_19/",
+    "reading": {
+      "url": "https://clarkesworldmagazine.com/greenblatt_02_19/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -480,7 +596,11 @@
     "title": "The Secret Lives of the Nine Negro Teeth of George Washington",
     "author": "P. Djèlí Clark",
     "publication": "Fireside Magazine",
-    "storyUrl": "https://firesidefiction.com/the-secret-lives-of-the-nine-negro-teeth-of-george-washington",
+    "reading": {
+      "url": "https://firesidefiction.com/the-secret-lives-of-the-nine-negro-teeth-of-george-washington",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -495,7 +615,11 @@
     "title": "Hungry Daughters of Starving Mothers",
     "author": "Alyssa Wong",
     "publication": "Nightmare Magazine",
-    "storyUrl": "https://www.nightmare-magazine.com/fiction/hungry-daughters-of-starving-mothers/",
+    "reading": {
+      "url": "https://www.nightmare-magazine.com/fiction/hungry-daughters-of-starving-mothers/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -510,7 +634,11 @@
     "title": "Jackalope Wives",
     "author": "Ursula Vernon",
     "publication": "Apex Magazine",
-    "storyUrl": "https://apex-magazine.com/jackalope-wives/",
+    "reading": {
+      "url": "https://www.themarysue.com/jackalope-wives/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -525,7 +653,11 @@
     "title": "If You Were a Dinosaur, My Love",
     "author": "Rachel Swirsky",
     "publication": "Apex Magazine",
-    "storyUrl": "https://www.apexbookcompany.com/blogs/apex-magazine/if-you-were-a-dinosaur-my-love",
+    "reading": {
+      "url": "https://apex-magazine.com/short-fiction/if-you-were-a-dinosaur-my-love/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -540,7 +672,11 @@
     "title": "Immersion",
     "author": "Aliette de Bodard",
     "publication": "Clarkesworld Magazine",
-    "storyUrl": "https://clarkesworldmagazine.com/debodard_06_12/",
+    "reading": {
+      "url": "https://clarkesworldmagazine.com/debodard_06_12/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -555,7 +691,7 @@
     "title": "How Interesting: A Tiny Man",
     "author": "Harlan Ellison",
     "publication": "Realms of Fantasy",
-    "storyUrl": null,
+    "reading": null,
     "awards": [
       {
         "award": "nebula",
@@ -570,7 +706,11 @@
     "title": "Ponies",
     "author": "Kij Johnson",
     "publication": "Tor.com",
-    "storyUrl": "https://reactormag.com/ponies/",
+    "reading": {
+      "url": "https://reactormag.com/ponies/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -585,7 +725,11 @@
     "title": "Spar",
     "author": "Kij Johnson",
     "publication": "Clarkesworld Magazine",
-    "storyUrl": "https://clarkesworldmagazine.com/johnson_10_09/",
+    "reading": {
+      "url": "https://clarkesworldmagazine.com/johnson_10_09/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -600,7 +744,7 @@
     "title": "Trophy Wives",
     "author": "Nina Kiriki Hoffman",
     "publication": "DAW",
-    "storyUrl": null,
+    "reading": null,
     "awards": [
       {
         "award": "nebula",
@@ -615,7 +759,11 @@
     "title": "Always",
     "author": "Karen Joy Fowler",
     "publication": "Asimov's Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://z-library.ec/book/w9Jo7GEayD/always.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -630,7 +778,11 @@
     "title": "Echo",
     "author": "Elizabeth Hand",
     "publication": "The Magazine of Fantasy & Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://z-library.ec/book/BXbVRwDJX7/echo.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -645,7 +797,11 @@
     "title": "I Live With You",
     "author": "Carol Emshwiller",
     "publication": "The Magazine of Fantasy & Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://dl.booksee.org/mygenesis/23/11ecf31507c7f9647c7a3de4c6996a7b/_as/[Emshwiller_Carol]_Carol_Emshwiller_-_I_Live_with_(BookSee.org).pdf",
+      "format": "pdf",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -660,7 +816,11 @@
     "title": "Coming to Terms",
     "author": "Eileen Gunn",
     "publication": "Stable Strategies and Others",
-    "storyUrl": "https://eileengunn.com/stable-strategies/coming-to-terms/",
+    "reading": {
+      "url": "https://eileengunn.com/stable-strategies/coming-to-terms/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -675,7 +835,11 @@
     "title": "What I Didn't See",
     "author": "Karen Joy Fowler",
     "publication": "Sci Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://www.lexal.net/scifi/scifiction/originals/originals_archive/fowler/fowler1.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -690,7 +854,11 @@
     "title": "Creature",
     "author": "Carol Emshwiller",
     "publication": "The Magazine of Fantasy & Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://wenku.baidu.com/view/a5b5db48cf84b9d528ea7ab5",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -705,7 +873,11 @@
     "title": "The Cure for Everything",
     "author": "Severna Park",
     "publication": "Sci Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://web.archive.org/web/20070630130720/http://www.scifi.com/scifiction/originals/originals_archive/s_park/s_park1.html",
+      "format": "web",
+      "sourceType": "archive"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -720,7 +892,11 @@
     "title": "Scherzo with Tyrannosaur",
     "author": "Michael Swanwick",
     "publication": "Asimov's Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://z-library.ec/book/dygGbz6Wyp/scherzo-with-tyrannosaur.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -735,7 +911,11 @@
     "title": "The Very Pulse of the Machine",
     "author": "Michael Swanwick",
     "publication": "Asimov's Science Fiction",
-    "storyUrl": "https://clarkesworldmagazine.com/swanwick_10_16_reprint/",
+    "reading": {
+      "url": "https://clarkesworldmagazine.com/swanwick_10_16_reprint/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -750,7 +930,11 @@
     "title": "The 43 Antarean Dynasties",
     "author": "Mike Resnick",
     "publication": "Asimov's Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://martyhalpern.blogspot.com/2011/06/alien-contact-anthology-story-8-43.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -765,7 +949,7 @@
     "title": "The Soul Selects Her Own Society",
     "author": "Connie Willis",
     "publication": "Asimov's Science Fiction",
-    "storyUrl": null,
+    "reading": null,
     "awards": [
       {
         "award": "hugo",
@@ -780,7 +964,11 @@
     "title": "The Lincoln Train",
     "author": "Maureen F. McHugh",
     "publication": "The Magazine of Fantasy & Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://shortstoryproject.com/stories/the-lincoln-train/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -795,7 +983,11 @@
     "title": "None So Blind",
     "author": "Joe Haldeman",
     "publication": "Asimov's Science Fiction",
-    "storyUrl": "https://sites.google.com/site/joehaldemansf/books/short-stories",
+    "reading": {
+      "url": "https://shortstoryproject.com/stories/none-so-blind/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -810,7 +1002,11 @@
     "title": "Death on the Nile",
     "author": "Connie Willis",
     "publication": "Asimov's Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://z-library.ec/book/lnLGadZ5yw/death-on-the-nile.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -825,7 +1021,11 @@
     "title": "Even the Queen",
     "author": "Connie Willis",
     "publication": "Asimov's Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://z-library.ec/book/Er98qn1MyD/even-the-queen.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -845,7 +1045,11 @@
     "title": "A Walk in the Sun",
     "author": "Geoffrey A. Landis",
     "publication": "Asimov's Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://www.baen.com/Chapters/0671878522/0671878522___1.htm",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -860,7 +1064,11 @@
     "title": "Bears Discover Fire",
     "author": "Terry Bisson",
     "publication": "Asimov's Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://www.lightspeedmagazine.com/fiction/bears-discover-fire/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -880,7 +1088,11 @@
     "title": "macs",
     "author": "Terry Bisson",
     "publication": "The Magazine of Fantasy & Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://z-library.ec/book/zXOoR7WvXb/macs.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -895,7 +1107,11 @@
     "title": "The Cost of Doing Business",
     "author": "Leslie What",
     "publication": "Amazing Stories",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://z-library.ec/book/7lXeRlNrLg/the-cost-of-doing-business.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -910,7 +1126,11 @@
     "title": "Thirteen Ways to Water",
     "author": "Bruce Holland Rogers",
     "publication": "Black Cats and Broken Mirrors",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://z-library.ec/book/Py65MM5p96/thirteen-ways-to-water.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -925,7 +1145,11 @@
     "title": "Sister Emily's Lightship",
     "author": "Jane Yolen",
     "publication": "Starlight 1",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://z-library.ec/book/D9PGG37NLm/sister-emilys-lightship-and-other-stories-short-story-collection.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -940,7 +1164,11 @@
     "title": "A Birthday",
     "author": "Esther M. Friesner",
     "publication": "The Magazine of Fantasy & Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://z-library.ec/book/D92mOYnxLZ/birthday.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -955,7 +1183,11 @@
     "title": "Death and the Librarian",
     "author": "Esther M. Friesner",
     "publication": "Asimov's Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://z-library.ec/book/nLAW5856yz/death-and-the-librarian.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -970,7 +1202,11 @@
     "title": "A Defense of the Social Contracts",
     "author": "Martha Soukup",
     "publication": "Science Fiction Age",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://z-library.ec/book/lXe2NMGoLg/the-arbitrary-placement-of-walls.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -985,7 +1221,11 @@
     "title": "Graves",
     "author": "Joe Haldeman",
     "publication": "The Magazine of Fantasy & Science Fiction",
-    "storyUrl": "https://www.nightmare-magazine.com/fiction/graves/",
+    "reading": {
+      "url": "https://www.nightmare-magazine.com/fiction/graves/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -1000,7 +1240,11 @@
     "title": "Ma Qui",
     "author": "Alan Brennert",
     "publication": "The Magazine of Fantasy & Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://z-library.ec/book/aPXo4pgQLV/ma-qui.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -1015,7 +1259,11 @@
     "title": "Boobs",
     "author": "Suzy McKee Charnas",
     "publication": "Asimov's Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://talesofmytery.blogspot.com/2013/10/suzy-mckee-charnas-boobs.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1030,7 +1278,11 @@
     "title": "Kirinyaga",
     "author": "Mike Resnick",
     "publication": "The Magazine of Fantasy & Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://z-library.ec/book/PLKqRAn4yB/kirinyaga.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1045,7 +1297,11 @@
     "title": "Why I Left Harry's All-Night Hamburgers",
     "author": "Lawrence Watt-Evans",
     "publication": "Asimov's Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://escapepod.org/2013/09/14/ep413-why-i-left-harrys-all-night-hamburgers/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1060,7 +1316,11 @@
     "title": "Tangents",
     "author": "Greg Bear",
     "publication": "Omni",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://z-library.ec/book/w4LYB45x92/tangents.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1080,7 +1340,11 @@
     "title": "Fermi and Frost",
     "author": "Frederik Pohl",
     "publication": "Asimov's Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://www.baen.com/Chapters/9781625791078/9781625791078___3.htm",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1095,7 +1359,11 @@
     "title": "The Crystal Spheres",
     "author": "David Brin",
     "publication": "Analog Science Fiction and Fact",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://www.lightspeedmagazine.com/fiction/the-crystal-spheres/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1110,7 +1378,11 @@
     "title": "Speech Sounds",
     "author": "Octavia E. Butler",
     "publication": "Asimov's Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://scienceandsociety.duke.edu/wp-content/uploads/Wald_reading1.pdf",
+      "format": "pdf",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1125,7 +1397,11 @@
     "title": "Melancholy Elephants",
     "author": "Spider Robinson",
     "publication": "Analog Science Fiction and Fact",
-    "storyUrl": "https://www.spiderrobinson.com/melancholyelephants.html",
+    "reading": {
+      "url": "https://www.spiderrobinson.com/melancholyelephants.html",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1140,7 +1416,11 @@
     "title": "The Pusher",
     "author": "John Varley",
     "publication": "The Magazine of Fantasy & Science Fiction",
-    "storyUrl": "https://varley.net/story/the-pusher/",
+    "reading": {
+      "url": "https://readerslibrary.org/wp-content/uploads/The-Pusher.pdf",
+      "format": "pdf",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1155,7 +1435,11 @@
     "title": "Grotto of the Dancing Deer",
     "author": "Clifford D. Simak",
     "publication": "Analog Science Fiction and Fact",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://z-library.ec/book/8Z9kKYoj9O/grotto-of-the-dancing-deer.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1175,7 +1459,11 @@
     "title": "The Way of Cross and Dragon",
     "author": "George R. R. Martin",
     "publication": "Omni",
-    "storyUrl": "https://www.lightspeedmagazine.com/fiction/the-way-of-cross-and-dragon/",
+    "reading": {
+      "url": "https://www.lightspeedmagazine.com/fiction/the-way-of-cross-and-dragon/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1190,7 +1478,11 @@
     "title": "Cassandra",
     "author": "C. J. Cherryh",
     "publication": "The Magazine of Fantasy & Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://z-library.ec/book/DOLwDYMm9e/cassandra.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1205,7 +1497,11 @@
     "title": "Jeffty Is Five",
     "author": "Harlan Ellison",
     "publication": "The Magazine of Fantasy & Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://lecturia.org/en/short-stories/harlan-ellison-jeffty-is-five/8158/",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1225,7 +1521,11 @@
     "title": "Tricentennial",
     "author": "Joe Haldeman",
     "publication": "Analog Science Fiction and Fact",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://z-library.ec/book/ELRdpxoeyV/tricentennial.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1240,7 +1540,11 @@
     "title": "Catch That Zeppelin!",
     "author": "Fritz Leiber",
     "publication": "The Magazine of Fantasy & Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://z-library.ec/book/dygGreGvyp/catch-that-zeppelin.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1260,7 +1564,11 @@
     "title": "The Hole Man",
     "author": "Larry Niven",
     "publication": "Analog Science Fiction and Fact",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://z-library.ec/book/ldygBev09p/the-hole-man.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1275,7 +1583,11 @@
     "title": "The Ones Who Walk Away from Omelas",
     "author": "Ursula K. Le Guin",
     "publication": "New Dimensions 3",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://pressbooks.nvcc.edu/eng236/chapter/the-ones-who-walk-away-from-omelas/",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1290,7 +1602,11 @@
     "title": "Eurema's Dam",
     "author": "R. A. Lafferty",
     "publication": "New Dimensions 2",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://www.tumblr.com/ralafferty/62040086300/70-euremas-dam",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1305,7 +1621,11 @@
     "title": "Inconstant Moon",
     "author": "Larry Niven",
     "publication": "All the Myriad Ways",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://web.archive.org/web/19970622095116/http://www.tale.com/niven/inc-free.htm",
+      "format": "web",
+      "sourceType": "archive"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1320,7 +1640,11 @@
     "title": "Slow Sculpture",
     "author": "Theodore Sturgeon",
     "publication": "Galaxy Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://www.sustainable.soltechdesigns.com/SlowSculpture.pdf",
+      "format": "pdf",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1335,7 +1659,11 @@
     "title": "Time Considered as a Helix of Semi-Precious Stones",
     "author": "Samuel R. Delany",
     "publication": "New Worlds",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://cdn.penguin.co.uk/dam-assets/books/9781784879617/9781784879617-sample.pdf",
+      "format": "pdf",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1350,7 +1678,11 @@
     "title": "The Beast That Shouted Love at the Heart of the World",
     "author": "Harlan Ellison",
     "publication": "Galaxy Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://www.sfsfss.com/stories/Hugo_1969_Winner_Short_Story_-_Harlan_Ellison_-_The_Beast_That_Shouted_Love_at_the_Heart_of_the_World.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1365,7 +1697,11 @@
     "title": "I Have No Mouth, and I Must Scream",
     "author": "Harlan Ellison",
     "publication": "If",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://galacticjourney.org/stories/I_Have_No_Mouth_and_I_Must_Scream_-_Harlan_Ellison.pdf",
+      "format": "pdf",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1380,7 +1716,11 @@
     "title": "Neutron Star",
     "author": "Larry Niven",
     "publication": "If",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://z-library.ec/book/EaXjlVnA9Y/neutron-star.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1395,7 +1735,11 @@
     "title": "‘Repent, Harlequin!’ Said the Ticktockman",
     "author": "Harlan Ellison",
     "publication": "Galaxy Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://www.thetedkarchive.com/library/harlan-ellison-repent-harlequin-said-the-ticktockman",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1415,7 +1759,11 @@
     "title": "Soldier, Ask Not",
     "author": "Gordon R. Dickson",
     "publication": "Galaxy Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://lib-ru.translate.goog/INOFANT/DIKSON/soldier.txt?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1430,7 +1778,11 @@
     "title": "No Truce with Kings",
     "author": "Poul Anderson",
     "publication": "The Magazine of Fantasy & Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://z-library.ec/book/pyMvngalXw/no-truce-with-kings.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1445,7 +1797,11 @@
     "title": "The Dragon Masters",
     "author": "Jack Vance",
     "publication": "Galaxy Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://royallib.com/read/Vance_Jack/the_dragon_masters.html#0",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1460,7 +1816,11 @@
     "title": "Hothouse series",
     "author": "Brian W. Aldiss",
     "publication": "The Magazine of Fantasy & Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://www.unife.it/letterefilosofia/lm.lingue/insegnamenti/letteratura-inglese-1/materiale-didattico-2017-2018/Brian%20Wilson%20Aldiss-%20Hothouse-%201984.pdf",
+      "format": "pdf",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1475,7 +1835,11 @@
     "title": "The Longest Voyage",
     "author": "Poul Anderson",
     "publication": "Analog Science Fiction and Fact",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://z-library.ec/book/nLAW5mAAyz/the-longest-voyage.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1490,7 +1854,11 @@
     "title": "Flowers for Algernon",
     "author": "Daniel Keyes",
     "publication": "The Magazine of Fantasy & Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://www.sdfo.org/gj/stories/flowersforalgernon.pdf",
+      "format": "pdf",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1505,7 +1873,11 @@
     "title": "That Hell-Bound Train",
     "author": "Robert Bloch",
     "publication": "The Magazine of Fantasy & Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://www.tip.dhappy.org/old/text/Robert%20Bloch%20-%20That%20Hell-Bound%20Train.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1520,7 +1892,11 @@
     "title": "Or All the Seas with Oysters",
     "author": "Avram Davidson",
     "publication": "Galaxy Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://avramdavidson.com/or-all-the-seas-with-oysters/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1535,7 +1911,7 @@
     "title": "Category Not Presented",
     "author": null,
     "publication": null,
-    "storyUrl": null,
+    "reading": null,
     "awards": [
       {
         "award": "hugo",
@@ -1550,7 +1926,11 @@
     "title": "The Star",
     "author": "Arthur C. Clarke",
     "publication": "Infinity Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://xpressenglish.com/our-stories/the-star-clarke/",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1565,7 +1945,11 @@
     "title": "Allamagoosa",
     "author": "Eric Frank Russell",
     "publication": "Astounding Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://www.baen.com/Chapters/1439133476/1439133476___3.htm",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "hugo",
@@ -1580,7 +1964,11 @@
     "title": "Ripples in the Dirac Sea",
     "author": "Geoffrey A. Landis",
     "publication": "Asimov's Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://www.douban.com/group/topic/117979613/?_i=5683992_msq_f7",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -1595,7 +1983,11 @@
     "title": "Bible Stories for Adults, No. 17: The Deluge",
     "author": "James Morrow",
     "publication": "Full Spectrum",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://z-library.ec/book/nLAW5zYZyz/the-deluge.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -1610,7 +2002,11 @@
     "title": "Forever Yours, Anna",
     "author": "Kate Wilhelm",
     "publication": "Omni",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://royallib.com/read/annabookfiorg_forever/FOREVER_YOURS_ANNA.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -1625,7 +2021,11 @@
     "title": "Out of All Them Bright Stars",
     "author": "Nancy Kress",
     "publication": "The Magazine of Fantasy & Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://janisian.com/swannanoa/swannanoa2022/stories_and_things_to_mull_over/Kress_Nancy-Out_of_All_Them_Bright_Stars.pdf",
+      "format": "pdf",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -1640,7 +2040,11 @@
     "title": "Morning Child",
     "author": "Gardner Dozois",
     "publication": "Omni",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://www.lightspeedmagazine.com/fiction/morning-child/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -1655,7 +2059,11 @@
     "title": "The Peacemaker",
     "author": "Gardner Dozois",
     "publication": "Asimov's Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://z-library.ec/book/JLZnAkKZL8/the-peacemaker.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -1670,7 +2078,11 @@
     "title": "A Letter from the Clearys",
     "author": "Connie Willis",
     "publication": "Asimov's Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://www.penguinrandomhouse.ca/books/222172/the-best-of-connie-willis-by-connie-willis/9780345540669/excerpt",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -1685,7 +2097,11 @@
     "title": "The Bone Flute",
     "author": "Lisa Tuttle",
     "publication": "The Magazine of Fantasy & Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://z-library.ec/book/JLZnR27nL8/the-bone-flute.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -1700,7 +2116,11 @@
     "title": "giANTS",
     "author": "Edward Bryant",
     "publication": "Analog Science Fiction and Fact",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://dl.booksee.org/foreignfiction/527000/11d70e0668872cc990034959a2151ddc.pdf/_as/%5BBryant_Edward%5D_giANTS%28BookSee.org%29.pdf",
+      "format": "pdf",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -1715,7 +2135,11 @@
     "title": "Stone",
     "author": "Edward Bryant",
     "publication": "The Magazine of Fantasy & Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://z-library.ec/book/KD92KpEeyZ/stone.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -1730,7 +2154,11 @@
     "title": "A Crowd of Shadows",
     "author": "Charles L. Grant",
     "publication": "The Magazine of Fantasy & Science Fiction",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://z-library.ec/book/jL5q4QnOLg/a-crowd-of-shadows.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -1745,7 +2173,11 @@
     "title": "The Day Before the Revolution",
     "author": "Ursula K. Le Guin",
     "publication": "Galaxy Science Fiction",
-    "storyUrl": "https://storyoftheweek.loa.org/2017/08/the-day-before-revolution.html",
+    "reading": {
+      "url": "https://storyoftheweek.loa.org/2017/08/the-day-before-revolution.html",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -1760,7 +2192,11 @@
     "title": "Love Is the Plan the Plan Is Death",
     "author": "James Tiptree Jr.",
     "publication": "The Alien Condition",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://www.lightspeedmagazine.com/fiction/love-is-the-plan-the-plan-is-death/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -1775,7 +2211,11 @@
     "title": "When It Changed",
     "author": "Joanna Russ",
     "publication": "Again, Dangerous Visions",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://storyoftheweek.loa.org/2022/11/when-it-changed.html",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -1790,7 +2230,11 @@
     "title": "Good News from the Vatican",
     "author": "Robert Silverberg",
     "publication": "Universe 1",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://fb2.top/good-news-from-the-vatican-404746/read",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -1805,7 +2249,7 @@
     "title": "No Award",
     "author": null,
     "publication": null,
-    "storyUrl": null,
+    "reading": null,
     "awards": [
       {
         "award": "nebula",
@@ -1820,7 +2264,11 @@
     "title": "Passengers",
     "author": "Robert Silverberg",
     "publication": "Orbit 4",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://lecturia.org/en/short-stories/robert-silverberg-passengers/25031/",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -1835,7 +2283,11 @@
     "title": "The Planners",
     "author": "Kate Wilhelm",
     "publication": "Orbit 3",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://z-library.ec/book/Zp9mK3OYXz/the-planners.html",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -1850,7 +2302,11 @@
     "title": "Aye, and Gomorrah…",
     "author": "Samuel R. Delany",
     "publication": "Dangerous Visions",
-    "storyUrl": "https://strangehorizons.com/wordpress/fiction/aye-and-gomorrah/",
+    "reading": {
+      "url": "https://strangehorizons.com/wordpress/fiction/aye-and-gomorrah/",
+      "format": "web",
+      "sourceType": "publication"
+    },
     "awards": [
       {
         "award": "nebula",
@@ -1865,7 +2321,11 @@
     "title": "The Secret Place",
     "author": "Richard McKenna",
     "publication": "Orbit 1",
-    "storyUrl": null,
+    "reading": {
+      "url": "https://dl.libcats.org/foreignfiction/817000/6ec20720f8e91964db9a16ee1e01fb40.txt/_as/[McKenna_Richard]_The_Secret_Place(libcats.org).txt",
+      "format": "web",
+      "sourceType": "third-party"
+    },
     "awards": [
       {
         "award": "nebula",

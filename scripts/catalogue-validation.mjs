@@ -16,6 +16,8 @@ export const EXPECTED_AWARD_YEARS = Object.freeze(
 );
 
 const VALID_AWARDS = new Set(["hugo", "nebula"]);
+const VALID_READING_FORMATS = new Set(["web", "pdf"]);
+const VALID_SOURCE_TYPES = new Set(["publication", "archive", "third-party"]);
 
 function isHttpUrl(value) {
   try {
@@ -50,6 +52,36 @@ function validateAward(entry, storyLabel, awardIndex, errors) {
   }
   if (!isHttpUrl(entry.sourceUrl)) {
     errors.push(`${label}: sourceUrl must be an HTTP(S) URL`);
+  }
+}
+
+function validateReading(reading, storyLabel, errors) {
+  if (reading === null) return;
+
+  if (!reading || typeof reading !== "object" || Array.isArray(reading)) {
+    errors.push(`${storyLabel}: reading must be null or an object`);
+    return;
+  }
+
+  if (!isHttpUrl(reading.url)) {
+    errors.push(`${storyLabel}: reading.url must be an HTTP(S) URL`);
+  }
+  if (!VALID_READING_FORMATS.has(reading.format)) {
+    errors.push(`${storyLabel}: reading.format must be "web" or "pdf"`);
+  }
+  if (!VALID_SOURCE_TYPES.has(reading.sourceType)) {
+    errors.push(
+      `${storyLabel}: reading.sourceType must be "publication", "archive", or "third-party"`,
+    );
+  }
+
+  const unexpectedFields = Object.keys(reading).filter(
+    (field) => !["url", "format", "sourceType"].includes(field),
+  );
+  if (unexpectedFields.length) {
+    errors.push(
+      `${storyLabel}: reading has unexpected fields: ${unexpectedFields.join(", ")}`,
+    );
   }
 }
 
@@ -88,15 +120,21 @@ function validateStory(story, index, errors) {
       }
     }
   } else if (["no-award", "not-presented"].includes(story.resultType)) {
-    for (const field of ["author", "publication", "storyUrl"]) {
+    for (const field of ["author", "publication", "reading"]) {
       if (story[field] !== null) {
         errors.push(`${label}: ${field} must be null for a special result`);
       }
     }
   }
 
-  if (story.storyUrl !== null && !isHttpUrl(story.storyUrl)) {
-    errors.push(`${label}: storyUrl must be null or an HTTP(S) URL`);
+  if (!Object.hasOwn(story, "reading")) {
+    errors.push(`${label}: reading is required`);
+  } else {
+    validateReading(story.reading, label, errors);
+  }
+
+  if (Object.hasOwn(story, "storyUrl")) {
+    errors.push(`${label}: storyUrl is obsolete; use reading instead`);
   }
 
   if (!Array.isArray(story.awards) || !story.awards.length) {

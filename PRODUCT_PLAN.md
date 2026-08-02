@@ -2,7 +2,7 @@
 
 ## Product
 
-An independent, spoiler-free index of award-winning science fiction and fantasy short stories. Readers can browse award results and follow available stories to the publisher, magazine, or author's website.
+An independent, spoiler-free index of award-winning science fiction and fantasy short stories. Readers can browse award results and follow available stories to external reading sources.
 
 ## Live status
 
@@ -15,8 +15,8 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - Deployed reading availability: 37 verified reading links and 81 winners without verified online text
 - Local working scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Local working catalogue: 121 unique entries and 133 award records
-- Local reading availability: 37 verified reading links and 81 winners without verified online text
-- Latest local milestone: Complete the code-readability refactor and stylesheet cleanup
+- Local reading availability: 115 selected reading links, including 104 web pages and 11 PDFs; 3 winners remain unavailable
+- Latest local milestone: Migrate reviewed reading links into the canonical catalogue
 - Local preview: <http://localhost:8000>
 
 During an active working session, keep the local preview running on port `8000`. Stop it only when explicitly requested.
@@ -30,8 +30,8 @@ During an active working session, keep the local preview running on port `8000`.
 - Browse 12 entries per page with synchronized top and bottom pagination
 - Preserve catalogue state in the URL
 - Show one card per unique story, including shared Hugo and Nebula winners
-- Show **Read story** when verified full text is available
-- Show a fixed, disabled-style **NA** action when no verified text is available
+- Show **Read story** for selected web pages and **Read PDF** for selected PDF sources
+- Show a fixed, disabled-style **NA** action when no reading link is available
 - Link bracketed award-year labels directly to official award sources
 - Provide a concise About page and corrections contact
 - Support desktop and mobile with a quiet terminal-library visual direction
@@ -56,7 +56,12 @@ During an active working session, keep the local preview running on port `8000`.
 - Store catalogue state in URL parameters
 - Keep publication as quiet secondary metadata
 - Use a separate **Read story** action rather than linking the title
-- Link reading actions only to verified full text on publisher, magazine, or author-controlled sites
+- Prefer author, publisher, and established publication sources while retaining selected archives and third-party full-text sources when they improve reader access
+- Keep `data/stories.json` as the only live source of truth for reading links and their metadata
+- Replace `storyUrl` with a nullable `reading` object containing `url`, `format`, and `sourceType`
+- Use `web` and `pdf` as reading formats; show **Read story** for web pages and **Read PDF** for PDFs
+- Use `publication`, `archive`, and `third-party` as factual source types; keep source type internal rather than adding confidence labels to story cards
+- Treat `LINK_REVIEW.md` as a temporary migration artifact, not a synchronized catalogue; it was removed after migration
 - Keep unavailable winners visible without purchase or borrowing substitutes
 - Keep the 2015 Hugo No Award result visible with distinct warning treatment
 - Keep the 1957 Hugo category-not-presented record visible with the same warning treatment and distinct copy
@@ -168,7 +173,44 @@ Goal: make the existing static implementation easier to understand and extend wi
 - [x] Confirm the refactor introduces no intended visual or product changes
 - [x] Update repository documentation and this plan to reflect the final code boundaries
 
-### 6. Publish and maintain
+### 6. Migrate reviewed reading links
+
+Goal: migrate the completed manual review into the canonical catalogue while keeping the public reading experience simple.
+
+#### Decisions and review
+
+- [x] Review all 118 winning-story records
+- [x] Select 115 reading links and retain 3 intentional unavailable states
+- [x] Keep `data/stories.json` as the only live source of truth after migration
+- [x] Use a nullable `reading` object with `url`, `format`, and `sourceType`
+- [x] Show format through the action copy: **Read story**, **Read PDF**, or **NA**
+- [x] Store factual source type instead of a subjective confidence score
+- [x] Keep source type out of the card interface for now
+- [x] Keep `LINK_REVIEW.md` in place during migration and remove it afterward
+
+#### Data and implementation
+
+- [x] Add validation for complete `reading` objects and `null` unavailable states
+- [x] Support `web` and `pdf` formats
+- [x] Support `publication`, `archive`, and `third-party` source types
+- [x] Import every reviewed `Site link` into the matching winner record
+- [x] Confirm each review entry matches exactly one catalogue record by title and author, with award metadata as a safeguard
+- [x] Leave No Award and Category Not Presented records unchanged
+- [x] Update story-card actions to render **Read story**, **Read PDF**, or **NA**
+- [x] Add concise About-page copy explaining that reading links open external sources and may change
+- [x] Update catalogue counts, README data-contract documentation, and completed-work notes
+
+#### Verification
+
+- [x] Confirm 118 winner records contain either a complete `reading` object or `null`
+- [x] Confirm 115 selected reading links and 3 intentional unavailable states after migration
+- [x] Confirm every PDF and web-page action uses the correct label and accessible name
+- [x] Confirm linked, PDF, unavailable, shared-winner, and special-result cards render correctly
+- [x] Run catalogue tests and data validation
+- [x] Perform focused desktop and mobile checks without rerunning the full external-link sweep
+- [x] Remove `LINK_REVIEW.md` after confirming it is no longer needed
+
+### 7. Publish and maintain
 
 - [x] Configure a monitored corrections contact
 - [x] Choose ChatGPT Sites for the initial public deployment
@@ -307,7 +349,7 @@ Do not include the external-link checker in production smoke testing unless it w
 - [x] Merged twelve shared winners while preserving both award years and sources
 - [x] Implemented the quiet terminal-library design for desktop and mobile
 - [x] Simplified the About page and configured corrections through `data/site.json`
-- [x] Added 21 automated catalogue tests and dependency-free data validation
+- [x] Added 24 automated catalogue tests and dependency-free data validation
 - [x] Fixed mobile Reset focus behavior
 - [x] Replaced duplicate award-source actions with bracketed clickable award labels
 - [x] Published and verified Sites version 3 on July 30, 2026
@@ -323,3 +365,5 @@ Do not include the external-link checker in production smoke testing unless it w
 - [x] Reduced the lockfile from 321 package entries to one dependency-free project entry and added an allowlisted `dist/` build
 - [x] Split catalogue coordination, pure data logic, and DOM rendering into explicit JavaScript boundaries
 - [x] Audited the stylesheet, removed dead and redundant rules, and documented its component sections
+- [x] Completed a manual reading-source review for all 118 winners, selecting 115 links and retaining 3 unavailable states
+- [x] Migrated reading links into canonical `reading` objects with format and source-type metadata

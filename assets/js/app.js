@@ -9,7 +9,7 @@ import {
   renderCatalogueMessage,
   renderPagination,
   renderStories,
-} from "./catalogue-view.js?v=1";
+} from "./catalogue-view.js?v=2";
 
 const searchInput = document.querySelector("#search");
 const awardButtons = [...document.querySelectorAll("[data-award]")];
@@ -167,7 +167,7 @@ async function loadCatalogue() {
   for (const view of paginationViews) view.container.hidden = true;
 
   try {
-    const response = await fetch("./data/stories.json?v=7");
+    const response = await fetch("./data/stories.json?v=8");
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
     const data = await response.json();
