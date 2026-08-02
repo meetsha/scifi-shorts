@@ -6,17 +6,18 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 
 ## Live status
 
-- Production: <https://scifi-short-story-collection.uiandgame.chatgpt.site/>
-- Current hosting: ChatGPT Sites
-- Next hosting target: Cloudflare Pages through GitHub integration; not yet configured
-- Current deployed release: Sites version 5, commit `436c5a7`
+- Production: <https://scifi-shorts.pages.dev/>
+- Current hosting: Cloudflare Pages through GitHub integration
+- Source repository: <https://github.com/meetsha/scifi-shorts>
+- Previous deployment: <https://scifi-short-story-collection.uiandgame.chatgpt.site/>
+- Current deployed site content: introduced in commit `b3eec80` and verified on Cloudflare Pages
 - Deployed scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Deployed catalogue: 121 unique entries and 133 award records
-- Deployed reading availability: 37 verified reading links and 81 winners without verified online text
+- Deployed reading availability: 115 selected reading links, including 104 web pages and 11 PDFs; 3 winners remain unavailable
 - Local working scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Local working catalogue: 121 unique entries and 133 award records
 - Local reading availability: 115 selected reading links, including 104 web pages and 11 PDFs; 3 winners remain unavailable
-- Latest local milestone: Migrate reviewed reading links into the canonical catalogue
+- Latest local milestone: Deploy and smoke-test the canonical catalogue on Cloudflare Pages
 - Local preview: <http://localhost:8000>
 
 During an active working session, keep the local preview running on port `8000`. Stop it only when explicitly requested.
@@ -218,10 +219,10 @@ Goal: migrate the completed manual review into the canonical catalogue while kee
 - [x] Verify the production site on desktop and mobile
 - [x] Deploy and smoke-test the complete historical archive
 - [x] Choose Cloudflare Pages with GitHub integration as the next hosting target
-- [ ] Push the cleaned repository to GitHub
-- [ ] Connect the GitHub repository to Cloudflare Pages
-- [ ] Configure Cloudflare Pages to run `npm run build` and publish `dist/`
-- [ ] Verify the Cloudflare Pages deployment before changing the public domain
+- [x] Push the cleaned repository to GitHub
+- [x] Connect the GitHub repository to Cloudflare Pages
+- [x] Configure Cloudflare Pages to run `npm run build` and publish `dist/`
+- [x] Verify the Cloudflare Pages deployment before changing the public domain
 - [ ] Choose and connect a custom domain
 - [ ] Add canonical URLs and sitemap details
 - [ ] Define the process for adding new annual award results
@@ -367,3 +368,5 @@ Do not include the external-link checker in production smoke testing unless it w
 - [x] Audited the stylesheet, removed dead and redundant rules, and documented its component sections
 - [x] Completed a manual reading-source review for all 118 winners, selecting 115 links and retaining 3 unavailable states
 - [x] Migrated reading links into canonical `reading` objects with format and source-type metadata
+- [x] Published the cleaned repository at `meetsha/scifi-shorts` on GitHub
+- [x] Deployed commit `b3eec80` to Cloudflare Pages and completed focused desktop and mobile smoke testing on August 3, 2026
