@@ -80,7 +80,7 @@ function createReadAction(story) {
   return unavailable;
 }
 
-function createStoryCard(story) {
+function createStoryCard(story, getAuthorHref) {
   const card = document.createElement("li");
   card.className = `story-card${
     story.resultType === "winner" ? "" : " story-card--special-result"
@@ -107,9 +107,12 @@ function createStoryCard(story) {
     const meta = document.createElement("p");
     meta.className = "meta";
 
-    const author = document.createElement("span");
+    const author = document.createElement("a");
     author.className = "meta-author";
     author.textContent = story.author;
+    author.href = getAuthorHref(story.author);
+    author.dataset.authorFilter = story.author;
+    author.setAttribute("aria-label", `Show all stories by ${story.author}`);
 
     const separator = document.createElement("span");
     separator.className = "meta-separator";
@@ -146,13 +149,15 @@ export function renderCatalogueMessage(
   listElement.replaceChildren(item);
 }
 
-export function renderStories(listElement, visibleStories) {
+export function renderStories(listElement, visibleStories, getAuthorHref) {
   if (!visibleStories.length) {
     renderCatalogueMessage(listElement, "No stories match these filters.");
     return;
   }
 
-  listElement.replaceChildren(...visibleStories.map(createStoryCard));
+  listElement.replaceChildren(
+    ...visibleStories.map((story) => createStoryCard(story, getAuthorHref)),
+  );
 }
 
 function getPageItems(current, total) {

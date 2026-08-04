@@ -17,7 +17,7 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - Local working scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Local working catalogue: 121 unique entries and 133 award records
 - Local reading availability: 115 selected reading links, including 104 web pages and 11 PDFs; 3 winners remain unavailable
-- Latest local milestone: Deploy and smoke-test the canonical catalogue on Cloudflare Pages
+- Latest local milestone: Add internal author discovery links and a design-consistent mobile Reader mode tip
 - Local preview: <http://localhost:8000>
 
 During an active working session, keep the local preview running on port `8000`. Stop it only when explicitly requested.
@@ -34,6 +34,8 @@ During an active working session, keep the local preview running on port `8000`.
 - Show **Read story** for selected web pages and **Read PDF** for selected PDF sources
 - Show a fixed, disabled-style **NA** action when no reading link is available
 - Link bracketed award-year labels directly to official award sources
+- Link each author name to an all-awards catalogue view for that author
+- Show a quiet bracketed Reader mode tip in the homepage footer
 - Provide a concise About page and corrections contact
 - Support desktop and mobile with a quiet terminal-library visual direction
 
@@ -56,6 +58,8 @@ During an active working session, keep the local preview running on port `8000`.
 - Keep one exact-year filter and do not add decade navigation yet
 - Store catalogue state in URL parameters
 - Keep publication as quiet secondary metadata
+- Make author names understated internal links that show all catalogue entries by that author
+- When an author is selected, clear award and year filters, retain the current sort order, update URL history, and do not focus the search field
 - Use a separate **Read story** action rather than linking the title
 - Prefer author, publisher, and established publication sources while retaining selected archives and third-party full-text sources when they improve reader access
 - Keep `data/stories.json` as the only live source of truth for reading links and their metadata
@@ -72,6 +76,7 @@ During an active working session, keep the local preview running on port `8000`.
 - Keep the browser site dependency-free and directly served without a frontend framework or bundler
 - Generate releases in ignored `dist/` using a dependency-free allowlist build script
 - Keep repository-wide agent guidance in root `AGENTS.md`; use nested files only for genuinely narrower scope
+- Add one quiet bracketed Reader mode tip to the homepage footer without introducing a banner or boxed component
 
 ## Roadmap
 
@@ -211,7 +216,21 @@ Goal: migrate the completed manual review into the canonical catalogue while kee
 - [x] Perform focused desktop and mobile checks without rerunning the full external-link sweep
 - [x] Remove `LINK_REVIEW.md` after confirming it is no longer needed
 
-### 7. Publish and maintain
+### 7. Improve author discovery and reading guidance
+
+Goal: add two small, design-consistent conveniences without making story cards or the footer feel busier.
+
+- [x] Render each winner's author as a keyboard-accessible internal catalogue link
+- [x] Show all stories by the selected author across both awards and all years
+- [x] Preserve the current sort order while returning to page one
+- [x] Update URL history so browser Back restores the previous catalogue state
+- [x] Avoid focusing the search field or opening the mobile keyboard
+- [x] Style author links with the existing thin underline, phosphor hover/focus colour, and restrained glow
+- [x] Add `[ READING TIP ] On mobile, try Reader mode on supported story pages.` to the homepage footer
+- [x] Reuse the existing bracket, muted-text, typography, and responsive footer treatments without adding a box
+- [x] Run focused interaction, keyboard, desktop, and mobile checks
+
+### 8. Publish and maintain
 
 - [x] Configure a monitored corrections contact
 - [x] Choose ChatGPT Sites for the initial public deployment
@@ -350,7 +369,7 @@ Do not include the external-link checker in production smoke testing unless it w
 - [x] Merged twelve shared winners while preserving both award years and sources
 - [x] Implemented the quiet terminal-library design for desktop and mobile
 - [x] Simplified the About page and configured corrections through `data/site.json`
-- [x] Added 24 automated catalogue tests and dependency-free data validation
+- [x] Added 25 automated catalogue tests and dependency-free data validation
 - [x] Fixed mobile Reset focus behavior
 - [x] Replaced duplicate award-source actions with bracketed clickable award labels
 - [x] Published and verified Sites version 3 on July 30, 2026
@@ -370,3 +389,4 @@ Do not include the external-link checker in production smoke testing unless it w
 - [x] Migrated reading links into canonical `reading` objects with format and source-type metadata
 - [x] Published the cleaned repository at `meetsha/scifi-shorts` on GitHub
 - [x] Deployed commit `b3eec80` to Cloudflare Pages and completed focused desktop and mobile smoke testing on August 3, 2026
+- [x] Added internal author catalogue links with URL history support and a restrained mobile Reader mode footer tip

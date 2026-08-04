@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { readFile } from "node:fs/promises";
 import {
+  buildAuthorCatalogueState,
   buildCatalogueSearch,
   filterAndSortStories,
   getCatalogueYears,
@@ -383,6 +384,16 @@ test("omits default catalogue state from the URL", () => {
     }),
     "",
   );
+});
+
+test("builds an all-awards author view while preserving sort order", () => {
+  assert.deepEqual(buildAuthorCatalogueState("Harlan Ellison", "oldest"), {
+    query: "Harlan Ellison",
+    award: "all",
+    year: null,
+    sort: "oldest",
+    page: 1,
+  });
 });
 
 test("includes unavailable stories and distinct special results", () => {

@@ -1,15 +1,16 @@
 import {
+  buildAuthorCatalogueState,
   buildCatalogueSearch,
   filterAndSortStories,
   getCatalogueYears,
   paginateStories,
   parseCatalogueState,
-} from "./catalogue.js?v=4";
+} from "./catalogue.js?v=5";
 import {
   renderCatalogueMessage,
   renderPagination,
   renderStories,
-} from "./catalogue-view.js?v=2";
+} from "./catalogue-view.js?v=3";
 
 const searchInput = document.querySelector("#search");
 const awardButtons = [...document.querySelectorAll("[data-award]")];
@@ -115,7 +116,12 @@ function applyControls({ historyMode = null } = {}) {
   const pageData = paginateStories(filteredStories, currentPage);
   currentPage = pageData.page;
 
-  renderStories(listEl, pageData.items);
+  renderStories(listEl, pageData.items, (author) => {
+    const queryString = buildCatalogueSearch(
+      buildAuthorCatalogueState(author, sortSelect.value),
+    );
+    return `${window.location.pathname}?${queryString}`;
+  });
   renderPagination(paginationViews, pageData, changePage);
   resultCountEl.textContent = pageData.totalItems
     ? `${pageData.rangeStart}–${pageData.rangeEnd} of ${pageData.totalItems} entries`
@@ -159,6 +165,26 @@ function handleAwardChange(button) {
   populateYearFilter(button.dataset.award);
   currentPage = 1;
   applyControls({ historyMode: "push" });
+}
+
+function handleAuthorFilter(event) {
+  const authorLink = event.target.closest("[data-author-filter]");
+  if (
+    !authorLink ||
+    event.button !== 0 ||
+    event.metaKey ||
+    event.ctrlKey ||
+    event.shiftKey
+  ) {
+    return;
+  }
+
+  event.preventDefault();
+  applyState(
+    buildAuthorCatalogueState(authorLink.dataset.authorFilter, sortSelect.value),
+    { historyMode: "push" },
+  );
+  catalogueEl.scrollIntoView();
 }
 
 async function loadCatalogue() {
@@ -210,6 +236,7 @@ sortSelect.addEventListener("change", () => {
 });
 
 resetButton.addEventListener("click", resetControls);
+listEl.addEventListener("click", handleAuthorFilter);
 for (const view of paginationViews) {
   view.previousButton.addEventListener("click", () =>
     changePage(currentPage - 1),

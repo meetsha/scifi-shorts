@@ -110,3 +110,13 @@ export function buildCatalogueSearch(state = {}) {
 
   return params.toString();
 }
+
+export function buildAuthorCatalogueState(author, sort = "newest") {
+  return {
+    query: author,
+    award: "all",
+    year: null,
+    sort: sort === "oldest" ? "oldest" : "newest",
+    page: 1,
+  };
+}
