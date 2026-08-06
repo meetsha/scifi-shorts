@@ -17,7 +17,7 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - Local working scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Local working catalogue: 121 unique entries and 133 award records
 - Local reading availability: 115 selected reading links, including 104 web pages and 11 PDFs; 3 winners remain unavailable
-- Latest local milestone: Add internal author discovery links and a design-consistent mobile Reader mode tip
+- Latest local milestone: Strengthen mobile author-link visibility and tap accessibility
 - Local preview: <http://localhost:8000>
 
 During an active working session, keep the local preview running on port `8000`. Stop it only when explicitly requested.
@@ -60,6 +60,7 @@ During an active working session, keep the local preview running on port `8000`.
 - Keep publication as quiet secondary metadata
 - Make author names understated internal links that show all catalogue entries by that author
 - When an author is selected, clear award and year filters, retain the current sort order, update URL history, and do not focus the search field
+- On mobile, keep author text cream but use a permanent phosphor underline and a 40px tap target so the link is discoverable without adding an icon or button
 - Use a separate **Read story** action rather than linking the title
 - Prefer author, publisher, and established publication sources while retaining selected archives and third-party full-text sources when they improve reader access
 - Keep `data/stories.json` as the only live source of truth for reading links and their metadata
@@ -229,6 +230,8 @@ Goal: add two small, design-consistent conveniences without making story cards o
 - [x] Add `[ READING TIP ] On mobile, try Reader mode on supported story pages.` to the homepage footer
 - [x] Reuse the existing bracket, muted-text, typography, and responsive footer treatments without adding a box
 - [x] Run focused interaction, keyboard, desktop, and mobile checks
+- [x] Strengthen mobile author-link discoverability with a permanent phosphor underline and 40px tap target
+- [x] Preserve the existing card hierarchy and compensate for the larger tap target in metadata spacing
 
 ### 8. Publish and maintain
 
@@ -390,3 +393,4 @@ Do not include the external-link checker in production smoke testing unless it w
 - [x] Published the cleaned repository at `meetsha/scifi-shorts` on GitHub
 - [x] Deployed commit `b3eec80` to Cloudflare Pages and completed focused desktop and mobile smoke testing on August 3, 2026
 - [x] Added internal author catalogue links with URL history support and a restrained mobile Reader mode footer tip
+- [x] Improved mobile author-link discoverability with a permanent phosphor underline and 40px tap target

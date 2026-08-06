@@ -821,10 +821,19 @@ p {
 
   .meta {
     display: block;
+    margin-bottom: 0;
   }
 
   .meta span {
     display: block;
+  }
+
+  .meta-author {
+    display: inline-block;
+    min-height: 40px;
+    padding: 0.55rem 0;
+    text-decoration-color: var(--phosphor);
+    text-decoration-thickness: 1.5px;
   }
 
   .meta .meta-separator {
