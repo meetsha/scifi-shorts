@@ -394,3 +394,4 @@ Do not include the external-link checker in production smoke testing unless it w
 - [x] Deployed commit `b3eec80` to Cloudflare Pages and completed focused desktop and mobile smoke testing on August 3, 2026
 - [x] Added internal author catalogue links with URL history support and a restrained mobile Reader mode footer tip
 - [x] Improved mobile author-link discoverability with a permanent phosphor underline and 40px tap target
+- [x] Excluded the local `stories/` research folder from version control
