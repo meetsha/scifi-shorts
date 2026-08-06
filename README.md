@@ -101,6 +101,9 @@ are not merged with stories or other special results.
 `reading` is either `null` or an object with an HTTP(S) `url`, a `web` or `pdf` format, and a
 `publication`, `archive`, or `third-party` source type. The format controls whether the card shows
 **Read story** or **Read PDF**. Source type is maintenance metadata and is not displayed on cards.
+A reading may also carry an optional short factual `note`, used when a link points to a collection
+containing the story rather than to the story alone; notes are maintenance metadata and are not
+displayed on cards.
 
 Every winner has an original, factual, spoiler-light `intro`: one sentence containing 12-20 words
 and an unresolved complication, contrast, or question. Special-result records use `intro: null`.

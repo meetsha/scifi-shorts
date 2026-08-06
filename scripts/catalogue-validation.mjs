@@ -78,9 +78,15 @@ function validateReading(reading, storyLabel, errors) {
       `${storyLabel}: reading.sourceType must be "publication", "archive", or "third-party"`,
     );
   }
+  if (
+    Object.hasOwn(reading, "note") &&
+    (typeof reading.note !== "string" || !reading.note.trim())
+  ) {
+    errors.push(`${storyLabel}: reading.note must be a non-empty string`);
+  }
 
   const unexpectedFields = Object.keys(reading).filter(
-    (field) => !["url", "format", "sourceType"].includes(field),
+    (field) => !["url", "format", "sourceType", "note"].includes(field),
   );
   if (unexpectedFields.length) {
     errors.push(

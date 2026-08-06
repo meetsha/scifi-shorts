@@ -431,3 +431,4 @@ Do not include the external-link checker in production smoke testing unless it w
 - [x] Improved mobile author-link discoverability with a permanent phosphor underline and 40px tap target
 - [x] Excluded the local `stories/` research folder from version control
 - [x] Added 118 spoiler-light, 12-20-word story hooks, validated their editorial limits, and reduced pagination to 10 entries
+- [x] Updated 29 reading links to z-lib.gl and added an optional reading `note` field for the one collection link

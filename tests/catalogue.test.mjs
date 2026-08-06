@@ -275,6 +275,46 @@ test("accepts complete reading metadata", () => {
   assert.deepEqual(validation.errors, []);
 });
 
+test("accepts an optional reading note", () => {
+  const validation = validateCatalogueData(
+    [
+      {
+        ...dualWinner,
+        reading: {
+          url: "https://example.com/story.pdf",
+          format: "pdf",
+          sourceType: "publication",
+          note: "This link is a collection that contains the short story.",
+        },
+      },
+    ],
+    testSiteConfig,
+    { expectedAwardYears: {} },
+  );
+
+  assert.deepEqual(validation.errors, []);
+});
+
+test("rejects a non-string reading note", () => {
+  const validation = validateCatalogueData(
+    [
+      {
+        ...dualWinner,
+        reading: {
+          url: "https://example.com/story.pdf",
+          format: "pdf",
+          sourceType: "publication",
+          note: "",
+        },
+      },
+    ],
+    testSiteConfig,
+    { expectedAwardYears: {} },
+  );
+
+  assert.ok(validation.errors.some((error) => error.includes("reading.note")));
+});
+
 test("rejects incomplete or unknown reading metadata", () => {
   const validation = validateCatalogueData(
     [
