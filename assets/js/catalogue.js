@@ -1,4 +1,4 @@
-export const PAGE_SIZE = 12;
+export const PAGE_SIZE = 10;
 
 const VALID_AWARDS = new Set(["all", "hugo", "nebula"]);
 

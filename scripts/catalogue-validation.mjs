@@ -37,6 +37,10 @@ function normaliseIdentity(value) {
     .trim();
 }
 
+function countWords(value) {
+  return value.trim().split(/\s+/).length;
+}
+
 function validateAward(entry, storyLabel, awardIndex, errors) {
   const label = `${storyLabel}, award ${awardIndex + 1}`;
 
@@ -119,8 +123,24 @@ function validateStory(story, index, errors) {
         errors.push(`${label}: ${field} is required for a winner`);
       }
     }
+
+    if (typeof story.intro !== "string" || !story.intro.trim()) {
+      errors.push(`${label}: intro is required for a winner`);
+    } else {
+      const wordCount = countWords(story.intro);
+      if (wordCount < 12 || wordCount > 20) {
+        errors.push(`${label}: intro must contain 12-20 words`);
+      }
+
+      const sentenceEndings = story.intro.match(
+        /[.!?](?:["'’”])?(?=\s|$)/g,
+      );
+      if (sentenceEndings?.length !== 1) {
+        errors.push(`${label}: intro must be exactly one sentence`);
+      }
+    }
   } else if (["no-award", "not-presented"].includes(story.resultType)) {
-    for (const field of ["author", "publication", "reading"]) {
+    for (const field of ["author", "publication", "intro", "reading"]) {
       if (story[field] !== null) {
         errors.push(`${label}: ${field} must be null for a special result`);
       }

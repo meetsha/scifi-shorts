@@ -17,7 +17,7 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - Local working scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Local working catalogue: 121 unique entries and 133 award records
 - Local reading availability: 115 selected reading links, including 104 web pages and 11 PDFs; 3 winners remain unavailable
-- Latest local milestone: Strengthen mobile author-link visibility and tap accessibility
+- Latest local milestone: Shorten every story introduction into a 12-20-word hook and reduce pagination to 10 entries
 - Local preview: <http://localhost:8000>
 
 During an active working session, keep the local preview running on port `8000`. Stop it only when explicitly requested.
@@ -28,9 +28,10 @@ During an active working session, keep the local preview running on port `8000`.
 - Filter by Hugo, Nebula, or All Awards
 - Filter by exact award year
 - Sort newest or oldest first
-- Browse 12 entries per page with synchronized top and bottom pagination
+- Browse 10 entries per page with synchronized top and bottom pagination
 - Preserve catalogue state in the URL
 - Show one card per unique story, including shared Hugo and Nebula winners
+- Show one factual, spoiler-light introduction on every winner card
 - Show **Read story** for selected web pages and **Read PDF** for selected PDF sources
 - Show a fixed, disabled-style **NA** action when no reading link is available
 - Link bracketed award-year labels directly to official award sources
@@ -54,10 +55,14 @@ During an active working session, keep the local preview running on port `8000`.
 - Render award sources as `[ HUGO · YEAR ]` and `[ NEBULA · YEAR ]`
 - Keep square brackets plain and permanently underline the clickable inner label
 - Do not repeat official award-source links beneath the card
-- Use 12-entry numbered pagination rather than infinite scrolling
+- Use 10-entry numbered pagination rather than infinite scrolling so the longer story cards do not make each page feel excessive
 - Keep one exact-year filter and do not add decade navigation yet
 - Store catalogue state in URL parameters
 - Keep publication as quiet secondary metadata
+- Add one original, factual, spoiler-light hook of 12-20 words to every winning story
+- Keep introductions permanently visible between story metadata and the reading action without adding a label or disclosure control
+- Keep introductions out of search for now rather than presenting incomplete theme search
+- Give each introduction an unresolved complication, contrast, or question rather than reducing it to flat plot metadata
 - Make author names understated internal links that show all catalogue entries by that author
 - When an author is selected, clear award and year filters, retain the current sort order, update URL history, and do not focus the search field
 - On mobile, keep author text cream but use a permanent phosphor underline and a 40px tap target so the link is discoverable without adding an icon or button
@@ -233,7 +238,38 @@ Goal: add two small, design-consistent conveniences without making story cards o
 - [x] Strengthen mobile author-link discoverability with a permanent phosphor underline and 40px tap target
 - [x] Preserve the existing card hierarchy and compensate for the larger tap target in metadata spacing
 
-### 8. Publish and maintain
+### 8. Add story introductions
+
+Goal: help readers understand each story's opening premise without turning the catalogue into a review site or making cards difficult to scan.
+
+#### Data and editorial rules
+
+- [x] Merge `STORY_INTRO_DRAFTS.json` into winner records in `data/stories.json` by exact `id`
+- [x] Store the final text in an `intro` field and keep `data/stories.json` as the only live source of truth
+- [x] Rewrite every winner introduction as one original, factual, spoiler-light sentence of 12-20 words
+- [x] Set `intro` to `null` for No Award and Category Not Presented records
+- [x] Keep introductions free of recommendations, source attribution, endings, late-story revelations, and unsupported clickbait
+- [x] End each introduction with a genuine unresolved complication, contrast, or question when the premise supports one
+- [x] Remove the temporary drafts and one-off research brief after successful migration
+
+#### Card and pagination changes
+
+- [x] Display the introduction between author/publication metadata and the reading action
+- [x] Keep it permanently visible without an **Intro**, **Premise**, or **Summary** label
+- [x] Style it as comfortable soft-cream body copy within the existing monospaced terminal-library design
+- [x] Preserve the compact right-side reading action on desktop and the full-width action on mobile
+- [x] Reduce pagination from 12 to 10 entries per page to offset the taller cards
+- [x] Keep introduction text out of search for now; retain current title, author, publication, award, and year search behavior
+
+#### Verification
+
+- [x] Validate exact winner coverage, unique IDs, catalogue order, record shape, one-sentence structure, and the 12-20-word limit
+- [x] Test winner and special-result records, both pagination boundaries, filtering, sorting, Reset, and URL state
+- [x] Check card hierarchy, readable line lengths, action alignment, and page density on desktop and mobile
+- [x] Run catalogue tests, data validation, and the production build without running the external-link checker
+- [x] Update README data-contract documentation and completed-work notes
+
+### 9. Publish and maintain
 
 - [x] Configure a monitored corrections contact
 - [x] Choose ChatGPT Sites for the initial public deployment
@@ -252,7 +288,6 @@ Goal: add two small, design-consistent conveniences without making story cards o
 ### Later possibilities
 
 - [ ] Decide whether to include nominees
-- [ ] Consider original summaries
 - [ ] Consider themes and reading-time estimates
 - [ ] Consider curated collections
 - [ ] Consider saved lists
@@ -372,7 +407,7 @@ Do not include the external-link checker in production smoke testing unless it w
 - [x] Merged twelve shared winners while preserving both award years and sources
 - [x] Implemented the quiet terminal-library design for desktop and mobile
 - [x] Simplified the About page and configured corrections through `data/site.json`
-- [x] Added 25 automated catalogue tests and dependency-free data validation
+- [x] Added 28 automated catalogue tests and dependency-free data validation
 - [x] Fixed mobile Reset focus behavior
 - [x] Replaced duplicate award-source actions with bracketed clickable award labels
 - [x] Published and verified Sites version 3 on July 30, 2026
@@ -395,3 +430,4 @@ Do not include the external-link checker in production smoke testing unless it w
 - [x] Added internal author catalogue links with URL history support and a restrained mobile Reader mode footer tip
 - [x] Improved mobile author-link discoverability with a permanent phosphor underline and 40px tap target
 - [x] Excluded the local `stories/` research folder from version control
+- [x] Added 118 spoiler-light, 12-20-word story hooks, validated their editorial limits, and reduced pagination to 10 entries

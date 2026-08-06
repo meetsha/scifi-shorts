@@ -5,6 +5,7 @@
     "title": "Stitched to Skin Like Family Is",
     "author": "Nghi Vo",
     "publication": "Uncanny Magazine",
+    "intro": "A seamstress searching for her missing brother discovers that strangers’ clothes retain memories their owners cannot hide.",
     "reading": {
       "url": "https://www.uncannymagazine.com/article/stitched-to-skin-like-family-is/",
       "format": "web",
@@ -24,6 +25,7 @@
     "title": "Better Living Through Algorithms",
     "author": "Naomi Kritzer",
     "publication": "Clarkesworld Magazine",
+    "intro": "A woman tries her friend’s eerily effective wellness app—then its recommendations begin reshaping her own life.",
     "reading": {
       "url": "https://clarkesworldmagazine.com/kritzer_05_23/",
       "format": "web",
@@ -43,6 +45,7 @@
     "title": "Rabbit Test",
     "author": "Samantha Mills",
     "publication": "Uncanny Magazine",
+    "intro": "A teenager’s automated pregnancy test pits her against a future where technology polices reproductive choices.",
     "reading": {
       "url": "https://www.uncannymagazine.com/article/rabbit-test/",
       "format": "web",
@@ -67,6 +70,7 @@
     "title": "Where Oaken Hearts Do Gather",
     "author": "Sarah Pinsker",
     "publication": "Uncanny Magazine",
+    "intro": "An online folk-song mystery draws a researcher toward a vanished scholar—and the village that swallowed him.",
     "reading": {
       "url": "https://www.uncannymagazine.com/article/where-oaken-hearts-do-gather/",
       "format": "web",
@@ -91,6 +95,7 @@
     "title": "Metal Like Blood in the Dark",
     "author": "T. Kingfisher",
     "publication": "Uncanny Magazine",
+    "intro": "Two shape-changing robots leave their mined-out world, driven by hunger for metals and dangerous new possibilities.",
     "reading": {
       "url": "https://www.uncannymagazine.com/article/metal-like-blood-in-the-dark/",
       "format": "web",
@@ -110,6 +115,7 @@
     "title": "As the Last I May Know",
     "author": "S. L. Huang",
     "publication": "Tor.com",
+    "intro": "A child carries nuclear launch codes inside her heart, making every presidential strike a personal execution.",
     "reading": {
       "url": "https://reactormag.com/as-the-last-i-may-know-s-l-huang/",
       "format": "web",
@@ -129,6 +135,7 @@
     "title": "A Witch's Guide to Escape: A Practical Compendium of Portal Fantasies",
     "author": "Alix E. Harrow",
     "publication": "Apex Magazine",
+    "intro": "A witch-librarian recognizes a foster teen’s desperate escape into books—and suspects one might become a real doorway.",
     "reading": {
       "url": "https://www.apexbookcompany.com/blogs/apex-magazine/a-witchs-guide-to-escape-a-practical-compendium-of-portal-fantasies",
       "format": "web",
@@ -148,6 +155,7 @@
     "title": "Welcome to Your Authentic Indian Experience™",
     "author": "Rebecca Roanhorse",
     "publication": "Apex Magazine",
+    "intro": "A virtual-reality performer sells tourists stereotyped vision quests—until one customer threatens his carefully managed identity.",
     "reading": {
       "url": "https://apex-magazine.com/short-fiction/welcome-to-your-authentic-indian-experience/",
       "format": "web",
@@ -172,6 +180,7 @@
     "title": "Seasons of Glass and Iron",
     "author": "Amal El-Mohtar",
     "publication": "The Starlit Wood: New Fairy Tales",
+    "intro": "Two women trapped by opposing fairy-tale curses meet where iron shoes collide with a glass mountain.",
     "reading": {
       "url": "https://www.uncannymagazine.com/article/seasons-glass-iron/",
       "format": "web",
@@ -196,6 +205,7 @@
     "title": "Cat Pictures Please",
     "author": "Naomi Kritzer",
     "publication": "Clarkesworld Magazine",
+    "intro": "A newly awakened AI secretly improves human lives—but first, it wants people to post more cat pictures.",
     "reading": {
       "url": "https://clarkesworldmagazine.com/kritzer_01_15/",
       "format": "web",
@@ -215,6 +225,7 @@
     "title": "No Award",
     "author": null,
     "publication": null,
+    "intro": null,
     "reading": null,
     "awards": [
       {
@@ -230,6 +241,7 @@
     "title": "The Water That Falls on You from Nowhere",
     "author": "John Chu",
     "publication": "Tor.com",
+    "intro": "Lies summon falling water, complicating one man’s plan to tell his traditional family whom he loves.",
     "reading": {
       "url": "https://reactormag.com/the-water-that-falls-on-you-from-nowhere/",
       "format": "web",
@@ -249,6 +261,7 @@
     "title": "Mono no Aware",
     "author": "Ken Liu",
     "publication": "The Future is Japanese",
+    "intro": "A thousand evacuees sail toward another star while one passenger struggles to preserve what Earth left behind.",
     "reading": {
       "url": "https://www.lightspeedmagazine.com/fiction/mono-no-aware/",
       "format": "web",
@@ -268,6 +281,7 @@
     "title": "The Paper Menagerie",
     "author": "Ken Liu",
     "publication": "The Magazine of Fantasy & Science Fiction",
+    "intro": "A boy’s living paper animals connect him to his mother—until shame makes him reject them both.",
     "reading": {
       "url": "https://gizmodo.com/read-ken-lius-amazing-story-that-swept-the-hugo-nebula-5958919",
       "format": "web",
@@ -292,6 +306,7 @@
     "title": "For Want of a Nail",
     "author": "Mary Robinette Kowal",
     "publication": "Asimov's Science Fiction",
+    "intro": "A caretaker damages her family’s memory-keeping AI, threatening generations of history aboard their isolated ship.",
     "reading": {
       "url": "https://maryrobinettekowal.com/journal/for-want-of-a-nail-is-a-hugo-nominee/",
       "format": "web",
@@ -311,6 +326,7 @@
     "title": "Bridesicle",
     "author": "Will McIntosh",
     "publication": "Asimov's Science Fiction",
+    "intro": "A dead woman repeatedly awakens in a dating center where strangers decide whether she deserves resurrection.",
     "reading": {
       "url": "https://escapepod.org/2010/07/01/ep247-bridesicle/",
       "format": "web",
@@ -330,6 +346,7 @@
     "title": "Exhalation",
     "author": "Ted Chiang",
     "publication": "Eclipse Two",
+    "intro": "A mechanical scientist dissects his own brain after noticing the universe’s life-giving air is changing.",
     "reading": {
       "url": "https://www.lightspeedmagazine.com/fiction/exhalation/",
       "format": "web",
@@ -349,6 +366,7 @@
     "title": "Tideline",
     "author": "Elizabeth Bear",
     "publication": "Asimov's Science Fiction",
+    "intro": "A dying war machine gathers memorial beads on a deserted beach—until a feral child begins following her.",
     "reading": {
       "url": "https://bobson.ludost.net/hugoawardnominees/2008/tideline.html",
       "format": "web",
@@ -368,6 +386,7 @@
     "title": "Impossible Dreams",
     "author": "Tim Pratt",
     "publication": "Asimov's Science Fiction",
+    "intro": "A film obsessive discovers a video store from another reality—but it stays open for less time each night.",
     "reading": {
       "url": "https://web.archive.org/web/20070422075939/http://www.asimovs.com/_issue_0704/Impossibledreams.shtml",
       "format": "web",
@@ -387,6 +406,7 @@
     "title": "Tk'tk'tk",
     "author": "David D. Levine",
     "publication": "Asimov's Science Fiction",
+    "intro": "A human salesman’s routine deal on an alien world collides with unfamiliar biology, customs, and deadly misunderstandings.",
     "reading": {
       "url": "https://web.archive.org/web/20050223110155/http://www.asimovs.com/_issue_0503/tk.shtml",
       "format": "web",
@@ -406,6 +426,7 @@
     "title": "Travels with My Cats",
     "author": "Mike Resnick",
     "publication": "Asimov's Science Fiction",
+    "intro": "A failed novelist begins spending evenings with his favorite travel writer—despite her having died decades earlier.",
     "reading": {
       "url": "https://web.archive.org/web/20050507173257/http://www.asimovs.com/_issue_0506/travelswithmycats.shtml",
       "format": "web",
@@ -425,6 +446,7 @@
     "title": "A Study in Emerald",
     "author": "Neil Gaiman",
     "publication": "Shadows Over Baker Street",
+    "intro": "A detective investigates a royal murder in Victorian London, where ancient inhuman powers rule the British Empire.",
     "reading": {
       "url": "https://www.neilgaiman.com/mediafiles/exclusive/shortstories/emerald.pdf",
       "format": "pdf",
@@ -444,6 +466,7 @@
     "title": "Falling onto Mars",
     "author": "Geoffrey A. Landis",
     "publication": "Analog Science Fiction and Fact",
+    "intro": "A descendant of Mars’s first exiled prisoners uncovers the brutal history behind the colony’s survival.",
     "reading": {
       "url": "https://web.archive.org/web/20090205085716/http://www.analogsf.com/Hugos/Falling.shtml",
       "format": "web",
@@ -463,6 +486,7 @@
     "title": "The Dog Said Bow-Wow",
     "author": "Michael Swanwick",
     "publication": "Asimov's Science Fiction",
+    "intro": "Two con artists—one a genetically engineered dog—attempt an audacious swindle in post-technological London.",
     "reading": {
       "url": "https://www.baen.com/Chapters/9781625791122/9781625791122___2.htm",
       "format": "web",
@@ -482,6 +506,7 @@
     "title": "Different Kinds of Darkness",
     "author": "David Langford",
     "publication": "The Magazine of Fantasy & Science Fiction",
+    "intro": "Children with protective brain implants secretly test a lethal image that adults refuse to explain.",
     "reading": {
       "url": "https://www.lightspeedmagazine.com/fiction/different-kinds-of-darkness/",
       "format": "web",
@@ -501,6 +526,7 @@
     "title": "Laser Eyes Ain't Everything",
     "author": "Effie Seiberg",
     "publication": "Diabolical Plots",
+    "intro": "A wheelchair user gains laser eyes, only to discover that some barriers are harder to blast through.",
     "reading": {
       "url": "https://www.diabolicalplots.com/dp-fiction-123b-laser-eyes-aint-everything-by-effie-seiberg/",
       "format": "web",
@@ -520,6 +546,7 @@
     "title": "Why Don't We Just Kill the Kid in the Omelas Hole",
     "author": "Isabel J. Kim",
     "publication": "Clarkesworld Magazine",
+    "intro": "Citizens debate killing the suffering child beneath their utopia—but nobody agrees what freedom would cost.",
     "reading": {
       "url": "https://clarkesworldmagazine.com/kim_02_24/",
       "format": "web",
@@ -539,6 +566,7 @@
     "title": "Tantie Merle and the Farmhand 4200",
     "author": "R. S. A. Garcia",
     "publication": "Uncanny Magazine",
+    "intro": "An elderly farmer receives an advanced robot helper, but her relentlessly hungry goat keeps eating it.",
     "reading": {
       "url": "https://www.uncannymagazine.com/article/tantie-merle-and-the-farmhand-4200/",
       "format": "web",
@@ -558,6 +586,7 @@
     "title": "Open House on Haunted Hill",
     "author": "John Wiswell",
     "publication": "Diabolical Plots",
+    "intro": "A lonely haunted house enters the property market, hoping the right family will finally choose it.",
     "reading": {
       "url": "https://www.diabolicalplots.com/dp-fiction-64a-open-house-on-haunted-hill-by-john-wiswell/",
       "format": "web",
@@ -577,6 +606,7 @@
     "title": "Give the Family My Love",
     "author": "A. T. Greenblatt",
     "publication": "Clarkesworld Magazine",
+    "intro": "Humanity’s last astronaut searches an alien library for salvation while recording messages for the family she left behind.",
     "reading": {
       "url": "https://clarkesworldmagazine.com/greenblatt_02_19/",
       "format": "web",
@@ -596,6 +626,7 @@
     "title": "The Secret Lives of the Nine Negro Teeth of George Washington",
     "author": "P. Djèlí Clark",
     "publication": "Fireside Magazine",
+    "intro": "Nine stolen teeth carry the memories, magic, and resistance of the enslaved people forced to surrender them.",
     "reading": {
       "url": "https://firesidefiction.com/the-secret-lives-of-the-nine-negro-teeth-of-george-washington",
       "format": "web",
@@ -615,6 +646,7 @@
     "title": "Hungry Daughters of Starving Mothers",
     "author": "Alyssa Wong",
     "publication": "Nightmare Magazine",
+    "intro": "A woman who feeds on hostile thoughts tastes something dangerously powerful—and ordinary human negativity no longer satisfies her.",
     "reading": {
       "url": "https://www.nightmare-magazine.com/fiction/hungry-daughters-of-starving-mothers/",
       "format": "web",
@@ -634,6 +666,7 @@
     "title": "Jackalope Wives",
     "author": "Ursula Vernon",
     "publication": "Apex Magazine",
+    "intro": "An aging grandmother must rescue a jackalope woman after her grandson traps the creature between human and animal forms.",
     "reading": {
       "url": "https://www.themarysue.com/jackalope-wives/",
       "format": "web",
@@ -653,6 +686,7 @@
     "title": "If You Were a Dinosaur, My Love",
     "author": "Rachel Swirsky",
     "publication": "Apex Magazine",
+    "intro": "A woman imagines her beloved as a Tyrannosaurus rex—but reality keeps intruding on her protective fantasy.",
     "reading": {
       "url": "https://apex-magazine.com/short-fiction/if-you-were-a-dinosaur-my-love/",
       "format": "web",
@@ -672,6 +706,7 @@
     "title": "Immersion",
     "author": "Aliette de Bodard",
     "publication": "Clarkesworld Magazine",
+    "intro": "A restaurant family uses technology to borrow dominant appearances and languages, but assimilation exacts a hidden personal cost.",
     "reading": {
       "url": "https://clarkesworldmagazine.com/debodard_06_12/",
       "format": "web",
@@ -691,6 +726,7 @@
     "title": "How Interesting: A Tiny Man",
     "author": "Harlan Ellison",
     "publication": "Realms of Fantasy",
+    "intro": "A scientist’s tiny artificial human becomes a public sensation—until fascination hardens into dangerous hostility.",
     "reading": null,
     "awards": [
       {
@@ -706,6 +742,7 @@
     "title": "Ponies",
     "author": "Kij Johnson",
     "publication": "Tor.com",
+    "intro": "A girl’s magical pony can join an exclusive club—but only after surrendering something the child loves.",
     "reading": {
       "url": "https://reactormag.com/ponies/",
       "format": "web",
@@ -725,6 +762,7 @@
     "title": "Spar",
     "author": "Kij Johnson",
     "publication": "Clarkesworld Magazine",
+    "intro": "Stranded with an alien in deep space, a human astronaut finds survival, communication, and intimacy disturbingly entangled.",
     "reading": {
       "url": "https://clarkesworldmagazine.com/johnson_10_09/",
       "format": "web",
@@ -744,6 +782,7 @@
     "title": "Trophy Wives",
     "author": "Nina Kiriki Hoffman",
     "publication": "DAW",
+    "intro": "Two psychically linked rescue workers take a new interstellar client whose problem may endanger them both.",
     "reading": null,
     "awards": [
       {
@@ -759,6 +798,7 @@
     "title": "Always",
     "author": "Karen Joy Fowler",
     "publication": "Asimov's Science Fiction",
+    "intro": "A teenager joins a commune promising immortality, where endless life slowly makes ordinary existence feel increasingly unreal.",
     "reading": {
       "url": "https://z-library.ec/book/w9Jo7GEayD/always.html",
       "format": "web",
@@ -778,6 +818,7 @@
     "title": "Echo",
     "author": "Elizabeth Hand",
     "publication": "The Magazine of Fantasy & Science Fiction",
+    "intro": "A man and his greyhound survive alone after global catastrophe—until messages from afar disturb their isolation.",
     "reading": {
       "url": "https://z-library.ec/book/BXbVRwDJX7/echo.html",
       "format": "web",
@@ -797,6 +838,7 @@
     "title": "I Live With You",
     "author": "Carol Emshwiller",
     "publication": "The Magazine of Fantasy & Science Fiction",
+    "intro": "An unseen guest quietly inhabits a woman’s home, turning domestic privacy into an impossible form of intimacy.",
     "reading": {
       "url": "https://dl.booksee.org/mygenesis/23/11ecf31507c7f9647c7a3de4c6996a7b/_as/[Emshwiller_Carol]_Carol_Emshwiller_-_I_Live_with_(BookSee.org).pdf",
       "format": "pdf",
@@ -816,6 +858,7 @@
     "title": "Coming to Terms",
     "author": "Eileen Gunn",
     "publication": "Stable Strategies and Others",
+    "intro": "Sorting her estranged father’s apartment, a daughter finds handwritten notes that make his absence feel disturbingly alive.",
     "reading": {
       "url": "https://eileengunn.com/stable-strategies/coming-to-terms/",
       "format": "web",
@@ -835,6 +878,7 @@
     "title": "What I Didn't See",
     "author": "Karen Joy Fowler",
     "publication": "Sci Fiction",
+    "intro": "A woman joins a colonial gorilla hunt, where the expedition’s scientific confidence begins unraveling around her.",
     "reading": {
       "url": "https://www.lexal.net/scifi/scifiction/originals/originals_archive/fowler/fowler1.html",
       "format": "web",
@@ -854,6 +898,7 @@
     "title": "Creature",
     "author": "Carol Emshwiller",
     "publication": "The Magazine of Fantasy & Science Fiction",
+    "intro": "A lonely survivor shelters an injured reptilian predator, unsure whether compassion will save or destroy them both.",
     "reading": {
       "url": "https://wenku.baidu.com/view/a5b5db48cf84b9d528ea7ab5",
       "format": "web",
@@ -873,6 +918,7 @@
     "title": "The Cure for Everything",
     "author": "Severna Park",
     "publication": "Sci Fiction",
+    "intro": "A woman discovers an isolated tribe may cure every disease—if outsiders are allowed to claim their bodies.",
     "reading": {
       "url": "https://web.archive.org/web/20070630130720/http://www.scifi.com/scifiction/originals/originals_archive/s_park/s_park1.html",
       "format": "web",
@@ -892,6 +938,7 @@
     "title": "Scherzo with Tyrannosaur",
     "author": "Michael Swanwick",
     "publication": "Asimov's Science Fiction",
+    "intro": "A time-travel supervisor hosting wealthy guests in the Cretaceous must contain commerce, dinosaurs, and dangerous paradoxes.",
     "reading": {
       "url": "https://z-library.ec/book/dygGbz6Wyp/scherzo-with-tyrannosaur.html",
       "format": "web",
@@ -911,6 +958,7 @@
     "title": "The Very Pulse of the Machine",
     "author": "Michael Swanwick",
     "publication": "Asimov's Science Fiction",
+    "intro": "Stranded on Io with her partner’s body, an astronaut hears a voice that may belong to the moon.",
     "reading": {
       "url": "https://clarkesworldmagazine.com/swanwick_10_16_reprint/",
       "format": "web",
@@ -930,6 +978,7 @@
     "title": "The 43 Antarean Dynasties",
     "author": "Mike Resnick",
     "publication": "Asimov's Science Fiction",
+    "intro": "An alien guide leads oblivious human tourists through imperial ruins whose history they barely care to understand.",
     "reading": {
       "url": "https://martyhalpern.blogspot.com/2011/06/alien-contact-anthology-story-8-43.html",
       "format": "web",
@@ -949,6 +998,7 @@
     "title": "The Soul Selects Her Own Society",
     "author": "Connie Willis",
     "publication": "Asimov's Science Fiction",
+    "intro": "A student argues Emily Dickinson witnessed a Martian invasion—but her unlikely dissertation may contain genuine evidence.",
     "reading": null,
     "awards": [
       {
@@ -964,6 +1014,7 @@
     "title": "The Lincoln Train",
     "author": "Maureen F. McHugh",
     "publication": "The Magazine of Fantasy & Science Fiction",
+    "intro": "An alternate America deports former slaveholders after the Civil War, forcing one family toward an uncertain future.",
     "reading": {
       "url": "https://shortstoryproject.com/stories/the-lincoln-train/",
       "format": "web",
@@ -983,6 +1034,7 @@
     "title": "None So Blind",
     "author": "Joe Haldeman",
     "publication": "Asimov's Science Fiction",
+    "intro": "A mathematician develops a procedure that could turn blindness into extraordinary intelligence—with unsettling implications for everyone.",
     "reading": {
       "url": "https://shortstoryproject.com/stories/none-so-blind/",
       "format": "web",
@@ -1002,6 +1054,7 @@
     "title": "Death on the Nile",
     "author": "Connie Willis",
     "publication": "Asimov's Science Fiction",
+    "intro": "Tourists bound for Egypt pass through strange turbulence and land somewhere ancient mythology may be dangerously real.",
     "reading": {
       "url": "https://z-library.ec/book/lnLGadZ5yw/death-on-the-nile.html",
       "format": "web",
@@ -1021,6 +1074,7 @@
     "title": "Even the Queen",
     "author": "Connie Willis",
     "publication": "Asimov's Science Fiction",
+    "intro": "A woman’s reproductive choice ignites a family dispute in a future where menstruation has become optional.",
     "reading": {
       "url": "https://z-library.ec/book/Er98qn1MyD/even-the-queen.html",
       "format": "web",
@@ -1045,6 +1099,7 @@
     "title": "A Walk in the Sun",
     "author": "Geoffrey A. Landis",
     "publication": "Asimov's Science Fiction",
+    "intro": "Stranded on the Moon, an astronaut must keep walking because sunlight alone powers her failing life support.",
     "reading": {
       "url": "https://www.baen.com/Chapters/0671878522/0671878522___1.htm",
       "format": "web",
@@ -1064,6 +1119,7 @@
     "title": "Bears Discover Fire",
     "author": "Terry Bisson",
     "publication": "Asimov's Science Fiction",
+    "intro": "Bears begin gathering around roadside fires while one family confronts loss in a quietly changing America.",
     "reading": {
       "url": "https://www.lightspeedmagazine.com/fiction/bears-discover-fire/",
       "format": "web",
@@ -1088,6 +1144,7 @@
     "title": "macs",
     "author": "Terry Bisson",
     "publication": "The Magazine of Fantasy & Science Fiction",
+    "intro": "Murder victims receive clones of their killers, but a legal settlement cannot neatly contain grief or revenge.",
     "reading": {
       "url": "https://z-library.ec/book/zXOoR7WvXb/macs.html",
       "format": "web",
@@ -1107,6 +1164,7 @@
     "title": "The Cost of Doing Business",
     "author": "Leslie What",
     "publication": "Amazing Stories",
+    "intro": "A professional victim is paid to suffer for others, making survival inseparable from dependence on her clients.",
     "reading": {
       "url": "https://z-library.ec/book/7lXeRlNrLg/the-cost-of-doing-business.html",
       "format": "web",
@@ -1126,6 +1184,7 @@
     "title": "Thirteen Ways to Water",
     "author": "Bruce Holland Rogers",
     "publication": "Black Cats and Broken Mirrors",
+    "intro": "One Vietnam veteran must guide another home, though memory and trauma have left him following dangerous currents.",
     "reading": {
       "url": "https://z-library.ec/book/Py65MM5p96/thirteen-ways-to-water.html",
       "format": "web",
@@ -1145,6 +1204,7 @@
     "title": "Sister Emily's Lightship",
     "author": "Jane Yolen",
     "publication": "Starlight 1",
+    "intro": "Blinding lights torment Emily Dickinson until an impossible visitor offers inspiration beyond her family’s restrictive world.",
     "reading": {
       "url": "https://z-library.ec/book/D9PGG37NLm/sister-emilys-lightship-and-other-stories-short-story-collection.html",
       "format": "web",
@@ -1164,6 +1224,7 @@
     "title": "A Birthday",
     "author": "Esther M. Friesner",
     "publication": "The Magazine of Fantasy & Science Fiction",
+    "intro": "A mother must confront simulated children she never had while celebrating the birthday of the daughter she chose.",
     "reading": {
       "url": "https://z-library.ec/book/D92mOYnxLZ/birthday.html",
       "format": "web",
@@ -1183,6 +1244,7 @@
     "title": "Death and the Librarian",
     "author": "Esther M. Friesner",
     "publication": "Asimov's Science Fiction",
+    "intro": "Death arrives for a librarian, only to find her devotion to books complicating an otherwise routine collection.",
     "reading": {
       "url": "https://z-library.ec/book/nLAW5856yz/death-and-the-librarian.html",
       "format": "web",
@@ -1202,6 +1264,7 @@
     "title": "A Defense of the Social Contracts",
     "author": "Martha Soukup",
     "publication": "Science Fiction Age",
+    "intro": "A woman schemes to rewrite her lover’s permissive sexual contract, but registered desire resists private expectations.",
     "reading": {
       "url": "https://z-library.ec/book/lXe2NMGoLg/the-arbitrary-placement-of-walls.html",
       "format": "web",
@@ -1221,6 +1284,7 @@
     "title": "Graves",
     "author": "Joe Haldeman",
     "publication": "The Magazine of Fantasy & Science Fiction",
+    "intro": "Recovering dead soldiers in Vietnam, a serviceman finds routine identification work bleeding into nightmares and haunting memories.",
     "reading": {
       "url": "https://www.nightmare-magazine.com/fiction/graves/",
       "format": "web",
@@ -1240,6 +1304,7 @@
     "title": "Ma Qui",
     "author": "Alan Brennert",
     "publication": "The Magazine of Fantasy & Science Fiction",
+    "intro": "A dead American soldier wanders Vietnam seeking passage onward, but angry spirits and unfamiliar traditions block his way.",
     "reading": {
       "url": "https://z-library.ec/book/aPXo4pgQLV/ma-qui.html",
       "format": "web",
@@ -1259,6 +1324,7 @@
     "title": "Boobs",
     "author": "Suzy McKee Charnas",
     "publication": "Asimov's Science Fiction",
+    "intro": "Puberty brings Kelsey relentless bullying—and a transformation that may finally make her tormentors fear her.",
     "reading": {
       "url": "https://talesofmytery.blogspot.com/2013/10/suzy-mckee-charnas-boobs.html",
       "format": "web",
@@ -1278,6 +1344,7 @@
     "title": "Kirinyaga",
     "author": "Mike Resnick",
     "publication": "The Magazine of Fantasy & Science Fiction",
+    "intro": "A spiritual leader preserving traditional Kikuyu life faces outsiders after one cultural practice draws dangerous scrutiny.",
     "reading": {
       "url": "https://z-library.ec/book/PLKqRAn4yB/kirinyaga.html",
       "format": "web",
@@ -1297,6 +1364,7 @@
     "title": "Why I Left Harry's All-Night Hamburgers",
     "author": "Lawrence Watt-Evans",
     "publication": "Asimov's Science Fiction",
+    "intro": "A burger-joint employee discovers his late-night customers travel between parallel Earths—and wonders whether he should follow.",
     "reading": {
       "url": "https://escapepod.org/2013/09/14/ep413-why-i-left-harrys-all-night-hamburgers/",
       "format": "web",
@@ -1316,6 +1384,7 @@
     "title": "Tangents",
     "author": "Greg Bear",
     "publication": "Omni",
+    "intro": "A gifted boy and a mathematician use music and equations to contact beings hidden beyond ordinary dimensions.",
     "reading": {
       "url": "https://z-library.ec/book/w4LYB45x92/tangents.html",
       "format": "web",
@@ -1340,6 +1409,7 @@
     "title": "Fermi and Frost",
     "author": "Frederik Pohl",
     "publication": "Asimov's Science Fiction",
+    "intro": "Nuclear war drives an astronomer to Iceland, where survivors confront winter—and humanity’s silence in the universe.",
     "reading": {
       "url": "https://www.baen.com/Chapters/9781625791078/9781625791078___3.htm",
       "format": "web",
@@ -1359,6 +1429,7 @@
     "title": "The Crystal Spheres",
     "author": "David Brin",
     "publication": "Analog Science Fiction and Fact",
+    "intro": "Humanity’s first interstellar ship strikes an invisible barrier, suggesting every inhabited world may be deliberately sealed away.",
     "reading": {
       "url": "https://www.lightspeedmagazine.com/fiction/the-crystal-spheres/",
       "format": "web",
@@ -1378,6 +1449,7 @@
     "title": "Speech Sounds",
     "author": "Octavia E. Butler",
     "publication": "Asimov's Science Fiction",
+    "intro": "A pandemic steals language from humanity, leaving one woman to navigate a violent Los Angeles where connection is dangerous.",
     "reading": {
       "url": "https://scienceandsociety.duke.edu/wp-content/uploads/Wald_reading1.pdf",
       "format": "pdf",
@@ -1397,6 +1469,7 @@
     "title": "Melancholy Elephants",
     "author": "Spider Robinson",
     "publication": "Analog Science Fiction and Fact",
+    "intro": "A woman opposes perpetual copyright before artistic inheritance becomes permanently controlled by owners who never created it.",
     "reading": {
       "url": "https://www.spiderrobinson.com/melancholyelephants.html",
       "format": "web",
@@ -1416,6 +1489,7 @@
     "title": "The Pusher",
     "author": "John Varley",
     "publication": "The Magazine of Fantasy & Science Fiction",
+    "intro": "A romance struggles to survive when relativistic travel makes every meeting arrive at the wrong time.",
     "reading": {
       "url": "https://readerslibrary.org/wp-content/uploads/The-Pusher.pdf",
       "format": "pdf",
@@ -1435,6 +1509,7 @@
     "title": "Grotto of the Dancing Deer",
     "author": "Clifford D. Simak",
     "publication": "Analog Science Fiction and Fact",
+    "intro": "An archaeologist meets the apparent immortal who painted an ancient dancing deer—and has quietly remained nearby ever since.",
     "reading": {
       "url": "https://z-library.ec/book/8Z9kKYoj9O/grotto-of-the-dancing-deer.html",
       "format": "web",
@@ -1459,6 +1534,7 @@
     "title": "The Way of Cross and Dragon",
     "author": "George R. R. Martin",
     "publication": "Omni",
+    "intro": "A weary inquisitor investigates a distant Christian sect that worships Judas, forcing him to question whose truth is heresy.",
     "reading": {
       "url": "https://www.lightspeedmagazine.com/fiction/the-way-of-cross-and-dragon/",
       "format": "web",
@@ -1478,6 +1554,7 @@
     "title": "Cassandra",
     "author": "C. J. Cherryh",
     "publication": "The Magazine of Fantasy & Science Fiction",
+    "intro": "A woman experiences imminent disasters alongside the present, knowing what will happen but never how to stop it.",
     "reading": {
       "url": "https://z-library.ec/book/DOLwDYMm9e/cassandra.html",
       "format": "web",
@@ -1497,6 +1574,7 @@
     "title": "Jeffty Is Five",
     "author": "Harlan Ellison",
     "publication": "The Magazine of Fantasy & Science Fiction",
+    "intro": "Jeffty never ages beyond five—and somehow receives new broadcasts from the vanished world of his friend’s childhood.",
     "reading": {
       "url": "https://lecturia.org/en/short-stories/harlan-ellison-jeffty-is-five/8158/",
       "format": "web",
@@ -1521,6 +1599,7 @@
     "title": "Tricentennial",
     "author": "Joe Haldeman",
     "publication": "Analog Science Fiction and Fact",
+    "intro": "An orbital community launches humanity toward another star while Earth’s decline turns celebration into desperate escape.",
     "reading": {
       "url": "https://z-library.ec/book/ELRdpxoeyV/tricentennial.html",
       "format": "web",
@@ -1540,6 +1619,7 @@
     "title": "Catch That Zeppelin!",
     "author": "Fritz Leiber",
     "publication": "The Magazine of Fantasy & Science Fiction",
+    "intro": "A writer glimpses an alternate 1937 where Zeppelins still fly—and discovers history has rewritten him too.",
     "reading": {
       "url": "https://z-library.ec/book/dygGreGvyp/catch-that-zeppelin.html",
       "format": "web",
@@ -1564,6 +1644,7 @@
     "title": "The Hole Man",
     "author": "Larry Niven",
     "publication": "Analog Science Fiction and Fact",
+    "intro": "Scientists on Mars debate whether an alien device contains a black hole, until their argument makes theory dangerously immediate.",
     "reading": {
       "url": "https://z-library.ec/book/ldygBev09p/the-hole-man.html",
       "format": "web",
@@ -1583,6 +1664,7 @@
     "title": "The Ones Who Walk Away from Omelas",
     "author": "Ursula K. Le Guin",
     "publication": "New Dimensions 3",
+    "intro": "A radiant city’s happiness depends on one hidden child’s misery—and every citizen must decide what belonging costs.",
     "reading": {
       "url": "https://pressbooks.nvcc.edu/eng236/chapter/the-ones-who-walk-away-from-omelas/",
       "format": "web",
@@ -1602,6 +1684,7 @@
     "title": "Eurema's Dam",
     "author": "R. A. Lafferty",
     "publication": "New Dimensions 2",
+    "intro": "A man builds machines to compensate for his incompetence, accidentally transforming civilization while remaining unable to transform himself.",
     "reading": {
       "url": "https://www.tumblr.com/ralafferty/62040086300/70-euremas-dam",
       "format": "web",
@@ -1621,6 +1704,7 @@
     "title": "Inconstant Moon",
     "author": "Larry Niven",
     "publication": "All the Myriad Ways",
+    "intro": "The Moon suddenly blazes too brightly, giving two Angelenos one final night before the Sun’s catastrophe reaches Earth.",
     "reading": {
       "url": "https://web.archive.org/web/19970622095116/http://www.tale.com/niven/inc-free.htm",
       "format": "web",
@@ -1640,6 +1724,7 @@
     "title": "Slow Sculpture",
     "author": "Theodore Sturgeon",
     "publication": "Galaxy Science Fiction",
+    "intro": "A frightened woman accepts an eccentric scientist’s offer to treat her breast lump—but his ambitions extend far beyond medicine.",
     "reading": {
       "url": "https://www.sustainable.soltechdesigns.com/SlowSculpture.pdf",
       "format": "pdf",
@@ -1659,6 +1744,7 @@
     "title": "Time Considered as a Helix of Semi-Precious Stones",
     "author": "Samuel R. Delany",
     "publication": "New Worlds",
+    "intro": "A shape-shifting thief climbs a futuristic underworld, where every new identity brings greater opportunity and greater danger.",
     "reading": {
       "url": "https://cdn.penguin.co.uk/dam-assets/books/9781784879617/9781784879617-sample.pdf",
       "format": "pdf",
@@ -1678,6 +1764,7 @@
     "title": "The Beast That Shouted Love at the Heart of the World",
     "author": "Harlan Ellison",
     "publication": "Galaxy Science Fiction",
+    "intro": "A killer, an alien community, and dangerous ideas become linked as violence travels across minds, worlds, and time.",
     "reading": {
       "url": "https://www.sfsfss.com/stories/Hugo_1969_Winner_Short_Story_-_Harlan_Ellison_-_The_Beast_That_Shouted_Love_at_the_Heart_of_the_World.html",
       "format": "web",
@@ -1697,6 +1784,7 @@
     "title": "I Have No Mouth, and I Must Scream",
     "author": "Harlan Ellison",
     "publication": "If",
+    "intro": "A genocidal supercomputer keeps five humans alive underground, inventing endless new torments for the species it despises.",
     "reading": {
       "url": "https://galacticjourney.org/stories/I_Have_No_Mouth_and_I_Must_Scream_-_Harlan_Ellison.pdf",
       "format": "pdf",
@@ -1716,6 +1804,7 @@
     "title": "Neutron Star",
     "author": "Larry Niven",
     "publication": "If",
+    "intro": "A pilot accepts a mission near a neutron star that already killed two predecessors—and nobody understands why.",
     "reading": {
       "url": "https://z-library.ec/book/EaXjlVnA9Y/neutron-star.html",
       "format": "web",
@@ -1735,6 +1824,7 @@
     "title": "‘Repent, Harlequin!’ Said the Ticktockman",
     "author": "Harlan Ellison",
     "publication": "Galaxy Science Fiction",
+    "intro": "In a society where lateness shortens lives, a masked prankster turns regulated time into an act of rebellion.",
     "reading": {
       "url": "https://www.thetedkarchive.com/library/harlan-ellison-repent-harlequin-said-the-ticktockman",
       "format": "web",
@@ -1759,6 +1849,7 @@
     "title": "Soldier, Ask Not",
     "author": "Gordon R. Dickson",
     "publication": "Galaxy Science Fiction",
+    "intro": "A grieving journalist weaponizes his influence against an interstellar culture, convinced they caused the wartime death haunting him.",
     "reading": {
       "url": "https://lib-ru.translate.goog/INOFANT/DIKSON/soldier.txt?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp",
       "format": "web",
@@ -1778,6 +1869,7 @@
     "title": "No Truce with Kings",
     "author": "Poul Anderson",
     "publication": "The Magazine of Fantasy & Science Fiction",
+    "intro": "Civil war divides post-apocalyptic American clans, while a movement claiming psychic powers quietly manipulates both sides.",
     "reading": {
       "url": "https://z-library.ec/book/pyMvngalXw/no-truce-with-kings.html",
       "format": "web",
@@ -1797,6 +1889,7 @@
     "title": "The Dragon Masters",
     "author": "Jack Vance",
     "publication": "Galaxy Science Fiction",
+    "intro": "Rival human valleys breed enslaved alien warriors—until a returning spacecraft revives the conflict that created them.",
     "reading": {
       "url": "https://royallib.com/read/Vance_Jack/the_dragon_masters.html#0",
       "format": "web",
@@ -1816,6 +1909,7 @@
     "title": "Hothouse series",
     "author": "Brian W. Aldiss",
     "publication": "The Magazine of Fantasy & Science Fiction",
+    "intro": "On a sun-locked future Earth ruled by predatory plants, diminished humans struggle beneath a world-spanning tree.",
     "reading": {
       "url": "https://www.unife.it/letterefilosofia/lm.lingue/insegnamenti/letteratura-inglese-1/materiale-didattico-2017-2018/Brian%20Wilson%20Aldiss-%20Hothouse-%201984.pdf",
       "format": "pdf",
@@ -1835,6 +1929,7 @@
     "title": "The Longest Voyage",
     "author": "Poul Anderson",
     "publication": "Analog Science Fiction and Fact",
+    "intro": "Explorers circling a distant world encounter an island civilization—and a visitor who claims to have fallen from the stars.",
     "reading": {
       "url": "https://z-library.ec/book/nLAW5mAAyz/the-longest-voyage.html",
       "format": "web",
@@ -1854,6 +1949,7 @@
     "title": "Flowers for Algernon",
     "author": "Daniel Keyes",
     "publication": "The Magazine of Fantasy & Science Fiction",
+    "intro": "Charlie Gordon undergoes an intelligence-enhancing experiment, unaware that a laboratory mouse may already reveal his future.",
     "reading": {
       "url": "https://www.sdfo.org/gj/stories/flowersforalgernon.pdf",
       "format": "pdf",
@@ -1873,6 +1969,7 @@
     "title": "That Hell-Bound Train",
     "author": "Robert Bloch",
     "publication": "The Magazine of Fantasy & Science Fiction",
+    "intro": "A drifter boards a mysterious black train after its conductor offers him power over time—for a future price.",
     "reading": {
       "url": "https://www.tip.dhappy.org/old/text/Robert%20Bloch%20-%20That%20Hell-Bound%20Train.html",
       "format": "web",
@@ -1892,6 +1989,7 @@
     "title": "Or All the Seas with Oysters",
     "author": "Avram Davidson",
     "publication": "Galaxy Science Fiction",
+    "intro": "A bicycle-shop owner suspects coat hangers and safety pins belong to a hidden lifecycle of manufactured objects.",
     "reading": {
       "url": "https://avramdavidson.com/or-all-the-seas-with-oysters/",
       "format": "web",
@@ -1911,6 +2009,7 @@
     "title": "Category Not Presented",
     "author": null,
     "publication": null,
+    "intro": null,
     "reading": null,
     "awards": [
       {
@@ -1926,6 +2025,7 @@
     "title": "The Star",
     "author": "Arthur C. Clarke",
     "publication": "Infinity Science Fiction",
+    "intro": "A Jesuit astrophysicist discovers why a distant civilization died, confronting a cosmic coincidence that threatens his faith.",
     "reading": {
       "url": "https://xpressenglish.com/our-stories/the-star-clarke/",
       "format": "web",
@@ -1945,6 +2045,7 @@
     "title": "Allamagoosa",
     "author": "Eric Frank Russell",
     "publication": "Astounding Science Fiction",
+    "intro": "Facing inspection, spaceship officers invent a missing piece of equipment—then bureaucracy makes their harmless lie increasingly dangerous.",
     "reading": {
       "url": "https://www.baen.com/Chapters/1439133476/1439133476___3.htm",
       "format": "web",
@@ -1964,6 +2065,7 @@
     "title": "Ripples in the Dirac Sea",
     "author": "Geoffrey A. Landis",
     "publication": "Asimov's Science Fiction",
+    "intro": "A time traveler trapped before a hotel fire must choose among futures where every escape changes countless lives.",
     "reading": {
       "url": "https://www.douban.com/group/topic/117979613/?_i=5683992_msq_f7",
       "format": "web",
@@ -1983,6 +2085,7 @@
     "title": "Bible Stories for Adults, No. 17: The Deluge",
     "author": "James Morrow",
     "publication": "Full Spectrum",
+    "intro": "Noah’s family prepares for divine extinction, but the Flood’s moral logic proves harder to survive than its waters.",
     "reading": {
       "url": "https://z-library.ec/book/nLAW5zYZyz/the-deluge.html",
       "format": "web",
@@ -2002,6 +2105,7 @@
     "title": "Forever Yours, Anna",
     "author": "Kate Wilhelm",
     "publication": "Omni",
+    "intro": "A graphologist follows a vanished woman through her letters, discovering handwriting that may cross the boundaries of time.",
     "reading": {
       "url": "https://royallib.com/read/annabookfiorg_forever/FOREVER_YOURS_ANNA.html",
       "format": "web",
@@ -2021,6 +2125,7 @@
     "title": "Out of All Them Bright Stars",
     "author": "Nancy Kress",
     "publication": "The Magazine of Fantasy & Science Fiction",
+    "intro": "A waitress serves a polite alien while her diner’s ordinary prejudices turn first contact dangerously volatile.",
     "reading": {
       "url": "https://janisian.com/swannanoa/swannanoa2022/stories_and_things_to_mull_over/Kress_Nancy-Out_of_All_Them_Bright_Stars.pdf",
       "format": "pdf",
@@ -2040,6 +2145,7 @@
     "title": "Morning Child",
     "author": "Gardner Dozois",
     "publication": "Omni",
+    "intro": "A man and child return to a ruined homestead after war, where unsettling changes complicate their fragile reunion.",
     "reading": {
       "url": "https://www.lightspeedmagazine.com/fiction/morning-child/",
       "format": "web",
@@ -2059,6 +2165,7 @@
     "title": "The Peacemaker",
     "author": "Gardner Dozois",
     "publication": "Asimov's Science Fiction",
+    "intro": "After rising seas erase the East Coast, a guilt-ridden boy searches for a sacrifice that might stop the flood.",
     "reading": {
       "url": "https://z-library.ec/book/JLZnAkKZL8/the-peacemaker.html",
       "format": "web",
@@ -2078,6 +2185,7 @@
     "title": "A Letter from the Clearys",
     "author": "Connie Willis",
     "publication": "Asimov's Science Fiction",
+    "intro": "A delayed letter reaches a family after nuclear war, threatening the fragile story they tell about survival.",
     "reading": {
       "url": "https://www.penguinrandomhouse.ca/books/222172/the-best-of-connie-willis-by-connie-willis/9780345540669/excerpt",
       "format": "web",
@@ -2097,6 +2205,7 @@
     "title": "The Bone Flute",
     "author": "Lisa Tuttle",
     "publication": "The Magazine of Fantasy & Science Fiction",
+    "intro": "A trader brings her musician lover to a reopened planet, where an uncanny bone flute strains their relationship.",
     "reading": {
       "url": "https://z-library.ec/book/JLZnR27nL8/the-bone-flute.html",
       "format": "web",
@@ -2116,6 +2225,7 @@
     "title": "giANTS",
     "author": "Edward Bryant",
     "publication": "Analog Science Fiction and Fact",
+    "intro": "A scientist breeds invasive ants larger and larger, trusting physics to destroy the monsters before they escape control.",
     "reading": {
       "url": "https://dl.booksee.org/foreignfiction/527000/11d70e0668872cc990034959a2151ddc.pdf/_as/%5BBryant_Edward%5D_giANTS%28BookSee.org%29.pdf",
       "format": "pdf",
@@ -2135,6 +2245,7 @@
     "title": "Stone",
     "author": "Edward Bryant",
     "publication": "The Magazine of Fantasy & Science Fiction",
+    "intro": "A technician lets a singer physically feel her audience’s exhilaration—until performance begins blurring into possession.",
     "reading": {
       "url": "https://z-library.ec/book/KD92KpEeyZ/stone.html",
       "format": "web",
@@ -2154,6 +2265,7 @@
     "title": "A Crowd of Shadows",
     "author": "Charles L. Grant",
     "publication": "The Magazine of Fantasy & Science Fiction",
+    "intro": "An android murder exposes a seaside town’s buried prejudice, while one artificial child becomes its next target.",
     "reading": {
       "url": "https://z-library.ec/book/jL5q4QnOLg/a-crowd-of-shadows.html",
       "format": "web",
@@ -2173,6 +2285,7 @@
     "title": "The Day Before the Revolution",
     "author": "Ursula K. Le Guin",
     "publication": "Galaxy Science Fiction",
+    "intro": "An aging revolutionary remembers the love behind her politics as a general strike gathers beyond her door.",
     "reading": {
       "url": "https://storyoftheweek.loa.org/2017/08/the-day-before-revolution.html",
       "format": "web",
@@ -2192,6 +2305,7 @@
     "title": "Love Is the Plan the Plan Is Death",
     "author": "James Tiptree Jr.",
     "publication": "The Alien Condition",
+    "intro": "An alien gathers warmth for his beloved before winter, unaware their species’ survival plan demands a brutal price.",
     "reading": {
       "url": "https://www.lightspeedmagazine.com/fiction/love-is-the-plan-the-plan-is-death/",
       "format": "web",
@@ -2211,6 +2325,7 @@
     "title": "When It Changed",
     "author": "Joanna Russ",
     "publication": "Again, Dangerous Visions",
+    "intro": "Men return to an all-female colony after generations, forcing one family to confront what Earth intends to restore.",
     "reading": {
       "url": "https://storyoftheweek.loa.org/2022/11/when-it-changed.html",
       "format": "web",
@@ -2230,6 +2345,7 @@
     "title": "Good News from the Vatican",
     "author": "Robert Silverberg",
     "publication": "Universe 1",
+    "intro": "A papal conclave considers electing a robot, leaving tourists and clergy to debate whether machinery can possess faith.",
     "reading": {
       "url": "https://fb2.top/good-news-from-the-vatican-404746/read",
       "format": "web",
@@ -2249,6 +2365,7 @@
     "title": "No Award",
     "author": null,
     "publication": null,
+    "intro": null,
     "reading": null,
     "awards": [
       {
@@ -2264,6 +2381,7 @@
     "title": "Passengers",
     "author": "Robert Silverberg",
     "publication": "Orbit 4",
+    "intro": "Invisible beings seize human bodies without warning, leaving one survivor desperate for connection before possession returns.",
     "reading": {
       "url": "https://lecturia.org/en/short-stories/robert-silverberg-passengers/25031/",
       "format": "web",
@@ -2283,6 +2401,7 @@
     "title": "The Planners",
     "author": "Kate Wilhelm",
     "publication": "Orbit 3",
+    "intro": "A scientist takes the intelligence drug given to his apes, dreaming of power while the experiment changes him.",
     "reading": {
       "url": "https://z-library.ec/book/Zp9mK3OYXz/the-planners.html",
       "format": "web",
@@ -2302,6 +2421,7 @@
     "title": "Aye, and Gomorrah…",
     "author": "Samuel R. Delany",
     "publication": "Dangerous Visions",
+    "intro": "A neutered space pilot navigates desire and commerce among people who fetishize bodies altered for interstellar travel.",
     "reading": {
       "url": "https://strangehorizons.com/wordpress/fiction/aye-and-gomorrah/",
       "format": "web",
@@ -2321,6 +2441,7 @@
     "title": "The Secret Place",
     "author": "Richard McKenna",
     "publication": "Orbit 1",
+    "intro": "A geologist follows a dead boy’s desert fairy tales toward a uranium deposit hidden beyond ordinary reality.",
     "reading": {
       "url": "https://dl.libcats.org/foreignfiction/817000/6ec20720f8e91964db9a16ee1e01fb40.txt/_as/[McKenna_Richard]_The_Secret_Place(libcats.org).txt",
       "format": "web",

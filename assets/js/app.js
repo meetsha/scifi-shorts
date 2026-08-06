@@ -5,12 +5,12 @@ import {
   getCatalogueYears,
   paginateStories,
   parseCatalogueState,
-} from "./catalogue.js?v=5";
+} from "./catalogue.js?v=6";
 import {
   renderCatalogueMessage,
   renderPagination,
   renderStories,
-} from "./catalogue-view.js?v=3";
+} from "./catalogue-view.js?v=4";
 
 const searchInput = document.querySelector("#search");
 const awardButtons = [...document.querySelectorAll("[data-award]")];
@@ -193,7 +193,7 @@ async function loadCatalogue() {
   for (const view of paginationViews) view.container.hidden = true;
 
   try {
-    const response = await fetch("./data/stories.json?v=8");
+    const response = await fetch("./data/stories.json?v=10");
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
     const data = await response.json();

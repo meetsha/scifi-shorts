@@ -125,6 +125,11 @@ function createStoryCard(story, getAuthorHref) {
 
     meta.append(author, separator, publication);
     card.appendChild(meta);
+
+    const intro = document.createElement("p");
+    intro.className = "story-intro";
+    intro.textContent = story.intro;
+    card.appendChild(intro);
   }
 
   const readAction = createReadAction(story);

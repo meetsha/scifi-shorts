@@ -73,6 +73,7 @@ logic; and `catalogue-view.js` creates the catalogue DOM.
   "title": "Example Story",
   "author": "Example Author",
   "publication": "Example Magazine",
+  "intro": "A concise story hook establishes an unusual premise—but leaves its central complication unresolved.",
   "reading": {
     "url": "https://example.com/story.pdf",
     "format": "pdf",
@@ -100,6 +101,10 @@ are not merged with stories or other special results.
 `reading` is either `null` or an object with an HTTP(S) `url`, a `web` or `pdf` format, and a
 `publication`, `archive`, or `third-party` source type. The format controls whether the card shows
 **Read story** or **Read PDF**. Source type is maintenance metadata and is not displayed on cards.
+
+Every winner has an original, factual, spoiler-light `intro`: one sentence containing 12-20 words
+and an unresolved complication, contrast, or question. Special-result records use `intro: null`.
+Introductions appear on cards but are not included in catalogue search.
 
 Award years follow the labels used by each official archive. Hugo pages use the ceremony year;
 Nebula pages use SFWA's award-year label, even when the presentation took place the following year.

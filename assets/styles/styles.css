@@ -507,6 +507,14 @@ p {
   color: var(--line-strong);
 }
 
+.story-intro {
+  max-width: 65ch;
+  margin-bottom: 0.95rem;
+  color: var(--text-soft);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
 .links {
   display: flex;
   align-items: center;
@@ -840,6 +848,10 @@ p {
     display: none;
   }
 
+  .story-intro {
+    margin-top: 0.65rem;
+  }
+
   .reading-tip__label {
     display: block;
     margin-right: 0;
@@ -930,12 +942,13 @@ p {
 
   .story-card:has(> .links) > .award-badges,
   .story-card:has(> .links) > h3,
-  .story-card:has(> .links) > .meta {
+  .story-card:has(> .links) > .meta,
+  .story-card:has(> .links) > .story-intro {
     grid-column: 1;
   }
 
   .story-card:has(> .links) > .links {
-    grid-row: 1 / 4;
+    grid-row: 1 / 5;
     grid-column: 2;
     align-self: stretch;
     justify-content: center;

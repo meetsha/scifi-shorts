@@ -25,6 +25,8 @@ const dualWinner = {
   title: "Shared Winner",
   author: "Example Author",
   publication: "Example Magazine",
+  intro:
+    "A test introduction describes a speculative situation clearly enough for validation while avoiding spoilers, recommendations, interpretation, and unnecessary plot details.",
   reading: null,
   awards: [
     { award: "hugo", year: 2024, sourceUrl: "https://example.com/hugo" },
@@ -38,6 +40,8 @@ const tiedNebulaWinner = {
   title: "Tied Winner",
   author: "Another Author",
   publication: "Another Magazine",
+  intro:
+    "A second introduction presents another speculative situation while remaining factual, concise, neutral, readable, and within the editorial limit.",
   reading: null,
   awards: [
     { award: "nebula", year: 2023, sourceUrl: "https://example.com/nebula" },
@@ -72,6 +76,23 @@ test("catalogue has the expected merged story and award counts", () => {
   assert.equal(
     awardRecords.filter((entry) => entry.award === "nebula").length,
     62,
+  );
+});
+
+test("validates introductions for the complete catalogue", () => {
+  const validation = validateCatalogueData(stories, testSiteConfig);
+
+  assert.deepEqual(validation.errors, []);
+  assert.equal(
+    stories.filter(
+      (story) => story.resultType === "winner" && typeof story.intro === "string",
+    ).length,
+    118,
+  );
+  assert.ok(
+    stories
+      .filter((story) => story.resultType !== "winner")
+      .every((story) => story.intro === null),
   );
 });
 
@@ -279,6 +300,57 @@ test("rejects incomplete or unknown reading metadata", () => {
   );
 });
 
+test("rejects missing, incorrectly sized, or multi-sentence introductions", () => {
+  const missingIntro = { ...dualWinner };
+  delete missingIntro.intro;
+  const validation = validateCatalogueData(
+    [
+      missingIntro,
+      { ...tiedNebulaWinner, intro: "Too short." },
+      {
+        ...dualWinner,
+        id: "multi-sentence-intro",
+        intro:
+          "A valid opening sentence establishes an unusual speculative premise. A second sentence should fail validation immediately.",
+      },
+    ],
+    testSiteConfig,
+    { expectedAwardYears: {} },
+  );
+
+  assert.ok(
+    validation.errors.some((error) =>
+      error.includes("intro is required for a winner"),
+    ),
+  );
+  assert.ok(
+    validation.errors.some((error) =>
+      error.includes("intro must contain 12-20 words"),
+    ),
+  );
+  assert.ok(
+    validation.errors.some((error) =>
+      error.includes("intro must be exactly one sentence"),
+    ),
+  );
+});
+
+test("does not include introduction text in catalogue search", () => {
+  assert.deepEqual(
+    filterAndSortStories(
+      [
+        {
+          ...dualWinner,
+          intro:
+            "A zephyr carries this deliberately unique search term through an otherwise ordinary speculative introduction written solely to verify catalogue search boundaries.",
+        },
+      ],
+      { query: "zephyr" },
+    ),
+    [],
+  );
+});
+
 test("labels web, PDF, and unavailable reading actions", () => {
   assert.deepEqual(
     getReadActionLabels({
@@ -342,14 +414,14 @@ test("sorts shared winners by the selected award year", () => {
   );
 });
 
-test("paginates filtered stories in groups of 12", () => {
+test("paginates filtered stories in groups of 10", () => {
   const firstPage = paginateStories(stories, 1);
-  const finalPage = paginateStories(stories, 11);
+  const finalPage = paginateStories(stories, 13);
 
-  assert.equal(firstPage.items.length, 12);
+  assert.equal(firstPage.items.length, 10);
   assert.deepEqual(
     [firstPage.rangeStart, firstPage.rangeEnd, firstPage.totalPages],
-    [1, 12, 11],
+    [1, 10, 13],
   );
   assert.equal(finalPage.items.length, 1);
   assert.deepEqual([finalPage.rangeStart, finalPage.rangeEnd], [121, 121]);
@@ -357,7 +429,7 @@ test("paginates filtered stories in groups of 12", () => {
 
 test("clamps invalid page requests", () => {
   assert.equal(paginateStories(stories, 0).page, 1);
-  assert.equal(paginateStories(stories, 99).page, 11);
+  assert.equal(paginateStories(stories, 99).page, 13);
 });
 
 test("round-trips non-default catalogue URL state", () => {
