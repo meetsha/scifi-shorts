@@ -558,10 +558,6 @@ p {
   color: var(--phosphor);
 }
 
-.finished-toggle:hover .finished-toggle__input::before {
-  opacity: 0.48;
-}
-
 .finished-toggle:hover,
 .finished-toggle:has(.finished-toggle__input:focus-visible) {
   border-color: var(--phosphor);
