@@ -91,14 +91,6 @@ function createStoryCard(story, getAuthorHref) {
   for (const award of [...story.awards].sort((a, b) => b.year - a.year)) {
     badges.appendChild(createAwardBadge(award));
   }
-  if (story.resultType !== "winner") {
-    const warning = document.createElement("span");
-    warning.className = "result-warning";
-    warning.setAttribute("aria-hidden", "true");
-    warning.textContent = "!";
-    badges.appendChild(warning);
-  }
-
   const title = document.createElement("h3");
   title.textContent = RESULT_TITLES[story.resultType] ?? story.title;
   card.append(badges, title);
@@ -194,7 +186,7 @@ function createPageButton(page, current, onPageChange) {
 
 export function renderPagination(paginationViews, pageData, onPageChange) {
   for (const view of paginationViews) {
-    view.container.hidden = pageData.totalPages <= 1;
+    view.container.hidden = false;
     view.previousButton.disabled = pageData.page === 1;
     view.nextButton.disabled = pageData.page === pageData.totalPages;
     view.pageStatus.textContent = `Page ${pageData.page} of ${pageData.totalPages}`;

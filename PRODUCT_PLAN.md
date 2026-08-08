@@ -1,4 +1,4 @@
-# SciFi Short Story Collection
+# SciFi Short Stories
 
 ## Product
 
@@ -17,7 +17,7 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - Local working scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Local working catalogue: 121 unique entries and 133 award records
 - Local reading availability: 115 selected reading links, including 104 web pages and 11 PDFs; 3 winners remain unavailable
-- Latest local milestone: Remove the separate award-year control and place Sort order and Reset on one row
+- Latest local milestone: Stabilize pagination, restore catalogue accessibility, and compact special results
 - Local preview: <http://localhost:8000>
 
 During an active working session, keep the local preview running on port `8000`. Stop it only when explicitly requested.
@@ -35,9 +35,9 @@ During an active working session, keep the local preview running on port `8000`.
 - Show a fixed, disabled-style **NA** action when no reading link is available
 - Link bracketed award-year labels directly to official award sources
 - Link each author name to an all-awards catalogue view for that author
-- Show a quiet bracketed Reader mode tip in the homepage footer
 - Provide a concise About page and corrections contact
 - Support desktop and mobile with a quiet terminal-library visual direction
+- Use **SciFi Short Stories** as the product name throughout the site and repository documentation
 
 ## Product decisions
 
@@ -73,15 +73,23 @@ During an active working session, keep the local preview running on port `8000`.
 - Use `publication`, `archive`, and `third-party` as factual source types; keep source type internal rather than adding confidence labels to story cards
 - Treat `LINK_REVIEW.md` as a temporary migration artifact, not a synchronized catalogue; it was removed after migration
 - Keep unavailable winners visible without purchase or borrowing substitutes
-- Keep the 2015 Hugo No Award result visible with distinct warning treatment
-- Keep the 1957 Hugo category-not-presented record visible with the same warning treatment and distinct copy
+- Keep the 2015 Hugo No Award result visible with distinct compact status treatment
+- Keep the 1957 Hugo category-not-presented record visible with the same compact treatment and distinct copy
+- Keep special-result award metadata above the result sentence on desktop and mobile
 - Keep the restrained near-black, monospaced terminal-library design
+- Use the subtitle **Hugo and Nebula short story winners**
+- Reduce mobile header padding and keep the title on one line down to the supported 320px minimum
+- Remove the **Award results** heading and entry-range row
+- Preserve a visually hidden catalogue heading and live result-count announcements for assistive technology
+- Keep top and bottom pagination visible for one-page and empty filtered states so the layout remains stable
+- On mobile, place **Page X of Y** between the Previous and Next controls
+- Use a consistent 10px rhythm between catalogue dividers, pagination controls, and story cards across viewport sizes
+- Keep the footer compact across viewport sizes while preserving a 44px About tap target
 - Keep both HTML entry pages at the repository root
 - Group browser JavaScript, CSS, and the favicon under `assets/`; keep runtime JSON under `data/`
 - Keep the browser site dependency-free and directly served without a frontend framework or bundler
 - Generate releases in ignored `dist/` using a dependency-free allowlist build script
 - Keep repository-wide agent guidance in root `AGENTS.md`; use nested files only for genuinely narrower scope
-- Add one quiet bracketed Reader mode tip to the homepage footer without introducing a banner or boxed component
 
 ## Roadmap
 
@@ -221,9 +229,9 @@ Goal: migrate the completed manual review into the canonical catalogue while kee
 - [x] Perform focused desktop and mobile checks without rerunning the full external-link sweep
 - [x] Remove `LINK_REVIEW.md` after confirming it is no longer needed
 
-### 7. Improve author discovery and reading guidance
+### 7. Improve author discovery
 
-Goal: add two small, design-consistent conveniences without making story cards or the footer feel busier.
+Goal: make author names a small, design-consistent discovery tool without making story cards feel busier.
 
 - [x] Render each winner's author as a keyboard-accessible internal catalogue link
 - [x] Show all stories by the selected author across both awards and all years
@@ -231,8 +239,6 @@ Goal: add two small, design-consistent conveniences without making story cards o
 - [x] Update URL history so browser Back restores the previous catalogue state
 - [x] Avoid focusing the search field or opening the mobile keyboard
 - [x] Style author links with the existing thin underline, phosphor hover/focus colour, and restrained glow
-- [x] Add `[ READING TIP ] On mobile, try Reader mode on supported story pages.` to the homepage footer
-- [x] Reuse the existing bracket, muted-text, typography, and responsive footer treatments without adding a box
 - [x] Run focused interaction, keyboard, desktop, and mobile checks
 - [x] Strengthen mobile author-link discoverability with a permanent phosphor underline and 40px tap target
 - [x] Preserve the existing card hierarchy and compensate for the larger tap target in metadata spacing
@@ -426,9 +432,10 @@ Do not include the external-link checker in production smoke testing unless it w
 - [x] Migrated reading links into canonical `reading` objects with format and source-type metadata
 - [x] Published the cleaned repository at `meetsha/scifi-shorts` on GitHub
 - [x] Deployed commit `b3eec80` to Cloudflare Pages and completed focused desktop and mobile smoke testing on August 3, 2026
-- [x] Added internal author catalogue links with URL history support and a restrained mobile Reader mode footer tip
+- [x] Added internal author catalogue links with URL history support
 - [x] Improved mobile author-link discoverability with a permanent phosphor underline and 40px tap target
 - [x] Excluded the local `stories/` research folder from version control
 - [x] Added 118 spoiler-light, 12-20-word story hooks, validated their editorial limits, and reduced pagination to 10 entries
 - [x] Updated 29 reading links to z-lib.gl and added an optional reading `note` field for the one collection link
 - [x] Removed the separate award-year control and moved Reset beside Sort order to reduce the controls by one row
+- [x] Renamed the product to **SciFi Short Stories**, standardized catalogue and footer spacing, kept pagination stable, restored hidden accessibility context, compacted special results, and removed the Reader mode tip

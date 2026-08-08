@@ -1,4 +1,4 @@
-# SciFi Short Story Collection
+# SciFi Short Stories
 
 A dependency-free static catalogue of the Hugo short-fiction lineage from 1955 and Nebula Best
 Short Story from 1965, through 2025. The data contains 121 unique entries, preserves the 2010

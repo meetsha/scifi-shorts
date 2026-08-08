@@ -154,7 +154,7 @@ p {
   grid-template-columns: minmax(0, 1fr) 176px 92px;
   align-items: end;
   gap: 0.85rem;
-  padding: 1.9rem 0;
+  padding: 1.9rem 0 0.625rem;
   border-bottom: 1px solid var(--line);
 }
 
@@ -318,30 +318,7 @@ p {
 /* Catalogue layout and story cards */
 
 .catalogue {
-  padding: 2.35rem 0 4.5rem;
-}
-
-.catalogue-heading {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 1.25rem;
-}
-
-.catalogue-heading h2 {
-  margin-bottom: 0;
-  font-family: var(--display-mono);
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-
-#result-count {
-  margin-bottom: 0;
-  color: var(--muted);
-  font-family: var(--body-mono);
-  font-size: 0.75rem;
-  letter-spacing: 0.04em;
+  padding: 0 0 0.625rem;
 }
 
 .story-list {
@@ -376,6 +353,10 @@ p {
 .story-card--special-result:hover,
 .story-card--special-result:focus-within {
   border-left-color: var(--signal-yellow);
+}
+
+.story-card--special-result .award-badge {
+  padding-left: 0;
 }
 
 .award-badges {
@@ -437,20 +418,6 @@ p {
   color: var(--amber);
 }
 
-.result-warning {
-  display: inline-grid;
-  width: 1.35rem;
-  height: 1.35rem;
-  place-items: center;
-  border: 1px solid var(--signal-yellow);
-  color: var(--signal-yellow);
-  font-family: var(--body-mono);
-  font-size: 0.75rem;
-  font-weight: 600;
-  line-height: 1;
-  box-shadow: 0 0 10px rgba(227, 202, 98, 0.16);
-}
-
 .story-card h3 {
   max-width: 680px;
   margin-bottom: 0.4rem;
@@ -462,7 +429,7 @@ p {
 }
 
 .story-card--special-result h3 {
-  margin-bottom: 0.95rem;
+  margin-bottom: 0;
   color: var(--signal-yellow);
 }
 
@@ -608,16 +575,16 @@ p {
   grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 0.75rem;
-  margin-top: 1rem;
-  padding-top: 1rem;
+  margin-top: 0.625rem;
+  padding-top: 0.625rem;
   border-top: 1px solid var(--line);
 }
 
 .pagination--top {
   margin-top: 0;
-  margin-bottom: 1rem;
-  padding-top: 0;
-  padding-bottom: 1rem;
+  margin-bottom: 0.625rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
   border-top: 0;
   border-bottom: 1px solid var(--line);
 }
@@ -687,7 +654,7 @@ p {
 /* Footer and About page */
 
 .site-footer {
-  padding: 2rem 0;
+  padding: 0;
   border-top: 1px solid var(--line);
   color: var(--muted);
   font-family: var(--body-mono);
@@ -703,30 +670,11 @@ p {
   margin-bottom: 0;
 }
 
-.site-footer .reading-tip {
-  margin-bottom: 0.85rem;
-}
-
-.reading-tip__label {
-  margin-right: 0.35rem;
-  color: var(--phosphor);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.reading-tip__label::before {
-  margin-right: 0.3rem;
-  content: "[";
-  opacity: 0.62;
-}
-
-.reading-tip__label::after {
-  margin-left: 0.3rem;
-  content: "]";
-  opacity: 0.62;
-}
-
 .site-footer a {
+  display: inline-flex;
+  min-height: 44px;
+  padding: 0 0.5rem;
+  align-items: center;
   color: var(--muted);
   text-underline-offset: 0.2rem;
 }
@@ -784,12 +732,12 @@ p {
   }
 
   .site-header {
-    padding: 2.6rem 0 2.15rem;
+    padding: 1.75rem 0 1.45rem;
   }
 
   .controls {
     grid-template-columns: minmax(0, 1fr) 92px;
-    padding: 1.65rem 0;
+    padding: 1.65rem 0 0.625rem;
   }
 
   .control--search,
@@ -816,10 +764,6 @@ p {
 
   .award-options button {
     flex: 1;
-  }
-
-  .catalogue {
-    padding: 2rem 0 3.5rem;
   }
 
   .story-card {
@@ -856,12 +800,6 @@ p {
     margin-top: 0.65rem;
   }
 
-  .reading-tip__label {
-    display: block;
-    margin-right: 0;
-    margin-bottom: 0.25rem;
-  }
-
   .links {
     align-items: stretch;
     flex-direction: column;
@@ -891,15 +829,6 @@ p {
 
   .pagination {
     gap: 0.65rem;
-    margin-top: 0.625rem;
-    padding-top: 0.625rem;
-  }
-
-  .pagination--top {
-    margin-top: 0;
-    margin-bottom: 0.625rem;
-    padding-top: 0;
-    padding-bottom: 0.625rem;
   }
 
   .pagination button {
@@ -915,6 +844,12 @@ p {
 
   .controls {
     grid-template-columns: minmax(0, 1fr) 168px 92px;
+  }
+}
+
+@media (max-width: 340px) {
+  .site-title {
+    font-size: 1.6rem;
   }
 }
 

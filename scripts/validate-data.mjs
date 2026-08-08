@@ -26,7 +26,7 @@ async function validateLinks(stories) {
         method: "HEAD",
         redirect: "follow",
         signal: controller.signal,
-        headers: { "user-agent": "SciFiShortStoryCollection-LinkCheck/1.0" },
+        headers: { "user-agent": "SciFiShortStories-LinkCheck/1.0" },
       });
 
       if (response.status === 405 || response.status === 403) {
@@ -35,7 +35,7 @@ async function validateLinks(stories) {
           redirect: "follow",
           signal: controller.signal,
           headers: {
-            "user-agent": "SciFiShortStoryCollection-LinkCheck/1.0",
+            "user-agent": "SciFiShortStories-LinkCheck/1.0",
             range: "bytes=0-1024",
           },
         });

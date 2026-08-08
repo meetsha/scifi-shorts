@@ -9,14 +9,14 @@ import {
   renderCatalogueMessage,
   renderPagination,
   renderStories,
-} from "./catalogue-view.js?v=4";
+} from "./catalogue-view.js?v=5";
 
 const searchInput = document.querySelector("#search");
 const awardButtons = [...document.querySelectorAll("[data-award]")];
 const sortSelect = document.querySelector("#sort-order");
 const resetButton = document.querySelector("#reset-filters");
 const listEl = document.querySelector("#story-list");
-const resultCountEl = document.querySelector("#result-count");
+const resultStatusEl = document.querySelector("#result-status");
 const paginationViews = [...document.querySelectorAll("[data-pagination]")].map(
   (container) => ({
     container,
@@ -100,9 +100,9 @@ function applyControls({ historyMode = null } = {}) {
     return `${window.location.pathname}?${queryString}`;
   });
   renderPagination(paginationViews, pageData, changePage);
-  resultCountEl.textContent = pageData.totalItems
-    ? `${pageData.rangeStart}–${pageData.rangeEnd} of ${pageData.totalItems} entries`
-    : "0 entries";
+  resultStatusEl.textContent = pageData.totalItems
+    ? `${pageData.totalItems} ${pageData.totalItems === 1 ? "story" : "stories"} shown.`
+    : "No stories match these filters.";
   updateResetState();
 
   if (historyMode) writeUrl(historyMode);
@@ -163,7 +163,7 @@ function handleAuthorFilter(event) {
 
 async function loadCatalogue() {
   renderCatalogueMessage(listEl, "Loading catalogue…", "loading");
-  resultCountEl.textContent = "";
+  resultStatusEl.textContent = "";
   for (const view of paginationViews) view.container.hidden = true;
 
   try {
@@ -185,7 +185,7 @@ async function loadCatalogue() {
       "The catalogue could not be loaded. Please refresh the page or try again later.",
       "error",
     );
-    resultCountEl.textContent = "Unavailable";
+    resultStatusEl.textContent = "Catalogue unavailable.";
     searchInput.disabled = true;
     sortSelect.disabled = true;
     resetButton.disabled = true;
