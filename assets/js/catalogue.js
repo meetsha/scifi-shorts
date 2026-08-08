@@ -83,13 +83,11 @@ export function paginateStories(stories, requestedPage, pageSize = PAGE_SIZE) {
 
 export function parseCatalogueState(search = "") {
   const params = new URLSearchParams(search);
-  const rawYear = params.get("year");
   const rawPage = Number(params.get("page"));
 
   return {
     query: params.get("q") || "",
     award: normaliseAward(params.get("award")),
-    year: rawYear && /^\d{4}$/.test(rawYear) ? Number(rawYear) : null,
     sort: params.get("sort") === "oldest" ? "oldest" : "newest",
     page: Number.isInteger(rawPage) && rawPage > 0 ? rawPage : 1,
   };
@@ -99,12 +97,10 @@ export function buildCatalogueSearch(state = {}) {
   const params = new URLSearchParams();
   const query = String(state.query || "").trim();
   const award = normaliseAward(state.award);
-  const year = Number(state.year);
   const page = Number(state.page);
 
   if (query) params.set("q", query);
   if (award !== "all") params.set("award", award);
-  if (Number.isInteger(year) && year > 0) params.set("year", String(year));
   if (state.sort === "oldest") params.set("sort", "oldest");
   if (Number.isInteger(page) && page > 1) params.set("page", String(page));
 
@@ -115,7 +111,6 @@ export function buildAuthorCatalogueState(author, sort = "newest") {
   return {
     query: author,
     award: "all",
-    year: null,
     sort: sort === "oldest" ? "oldest" : "newest",
     page: 1,
   };

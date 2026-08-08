@@ -476,7 +476,6 @@ test("round-trips non-default catalogue URL state", () => {
   const state = {
     query: "Ted Chiang",
     award: "hugo",
-    year: 2009,
     sort: "oldest",
     page: 2,
   };
@@ -490,7 +489,6 @@ test("omits default catalogue state from the URL", () => {
     buildCatalogueSearch({
       query: "",
       award: "all",
-      year: null,
       sort: "newest",
       page: 1,
     }),
@@ -502,7 +500,6 @@ test("builds an all-awards author view while preserving sort order", () => {
   assert.deepEqual(buildAuthorCatalogueState("Harlan Ellison", "oldest"), {
     query: "Harlan Ellison",
     award: "all",
-    year: null,
     sort: "oldest",
     page: 1,
   });

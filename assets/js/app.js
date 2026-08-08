@@ -2,10 +2,9 @@ import {
   buildAuthorCatalogueState,
   buildCatalogueSearch,
   filterAndSortStories,
-  getCatalogueYears,
   paginateStories,
   parseCatalogueState,
-} from "./catalogue.js?v=6";
+} from "./catalogue.js?v=7";
 import {
   renderCatalogueMessage,
   renderPagination,
@@ -14,7 +13,6 @@ import {
 
 const searchInput = document.querySelector("#search");
 const awardButtons = [...document.querySelectorAll("[data-award]")];
-const yearSelect = document.querySelector("#year-filter");
 const sortSelect = document.querySelector("#sort-order");
 const resetButton = document.querySelector("#reset-filters");
 const listEl = document.querySelector("#story-list");
@@ -65,30 +63,10 @@ function setAwardAvailability() {
   }
 }
 
-function populateYearFilter(award, preferredYear = null) {
-  const allYearsOption = document.createElement("option");
-  allYearsOption.value = "";
-  allYearsOption.textContent = "All years";
-  yearSelect.replaceChildren(allYearsOption);
-
-  const years = getCatalogueYears(stories, award);
-  for (const year of years) {
-    const option = document.createElement("option");
-    option.value = String(year);
-    option.textContent = String(year);
-    yearSelect.appendChild(option);
-  }
-
-  yearSelect.value = years.includes(Number(preferredYear))
-    ? String(preferredYear)
-    : "";
-}
-
 function getControlState() {
   return {
     query: searchInput.value,
     award: getSelectedAward(),
-    year: yearSelect.value ? Number(yearSelect.value) : null,
     sort: sortSelect.value,
     page: currentPage,
   };
@@ -105,7 +83,6 @@ function updateResetState() {
   resetButton.disabled =
     !state.query &&
     state.award === "all" &&
-    !state.year &&
     state.sort === "newest" &&
     state.page === 1;
 }
@@ -134,7 +111,6 @@ function applyControls({ historyMode = null } = {}) {
 function applyState(state, { historyMode = null } = {}) {
   searchInput.value = state.query;
   setSelectedAward(state.award);
-  populateYearFilter(getSelectedAward(), state.year);
   sortSelect.value = state.sort;
   currentPage = state.page;
   applyControls({ historyMode });
@@ -151,7 +127,6 @@ function resetControls() {
     {
       query: "",
       award: "all",
-      year: null,
       sort: "newest",
       page: 1,
     },
@@ -162,7 +137,6 @@ function resetControls() {
 function handleAwardChange(button) {
   if (button.disabled || button.getAttribute("aria-pressed") === "true") return;
   setSelectedAward(button.dataset.award);
-  populateYearFilter(button.dataset.award);
   currentPage = 1;
   applyControls({ historyMode: "push" });
 }
@@ -213,7 +187,6 @@ async function loadCatalogue() {
     );
     resultCountEl.textContent = "Unavailable";
     searchInput.disabled = true;
-    yearSelect.disabled = true;
     sortSelect.disabled = true;
     resetButton.disabled = true;
     for (const button of awardButtons) button.disabled = true;
@@ -223,11 +196,6 @@ async function loadCatalogue() {
 searchInput.addEventListener("input", () => {
   currentPage = 1;
   applyControls({ historyMode: "replace" });
-});
-
-yearSelect.addEventListener("change", () => {
-  currentPage = 1;
-  applyControls({ historyMode: "push" });
 });
 
 sortSelect.addEventListener("change", () => {

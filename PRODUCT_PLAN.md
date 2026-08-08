@@ -17,7 +17,7 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - Local working scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Local working catalogue: 121 unique entries and 133 award records
 - Local reading availability: 115 selected reading links, including 104 web pages and 11 PDFs; 3 winners remain unavailable
-- Latest local milestone: Shorten every story introduction into a 12-20-word hook and reduce pagination to 10 entries
+- Latest local milestone: Remove the separate award-year control and place Sort order and Reset on one row
 - Local preview: <http://localhost:8000>
 
 During an active working session, keep the local preview running on port `8000`. Stop it only when explicitly requested.
@@ -26,7 +26,6 @@ During an active working session, keep the local preview running on port `8000`.
 
 - Search by title, author, publication, award, or year
 - Filter by Hugo, Nebula, or All Awards
-- Filter by exact award year
 - Sort newest or oldest first
 - Browse 10 entries per page with synchronized top and bottom pagination
 - Preserve catalogue state in the URL
@@ -56,7 +55,7 @@ During an active working session, keep the local preview running on port `8000`.
 - Keep square brackets plain and permanently underline the clickable inner label
 - Do not repeat official award-source links beneath the card
 - Use 10-entry numbered pagination rather than infinite scrolling so the longer story cards do not make each page feel excessive
-- Keep one exact-year filter and do not add decade navigation yet
+- Use catalogue search for award-year lookup instead of a separate exact-year control
 - Store catalogue state in URL parameters
 - Keep publication as quiet secondary metadata
 - Add one original, factual, spoiler-light hook of 12-20 words to every winning story
@@ -64,7 +63,7 @@ During an active working session, keep the local preview running on port `8000`.
 - Keep introductions out of search for now rather than presenting incomplete theme search
 - Give each introduction an unresolved complication, contrast, or question rather than reducing it to flat plot metadata
 - Make author names understated internal links that show all catalogue entries by that author
-- When an author is selected, clear award and year filters, retain the current sort order, update URL history, and do not focus the search field
+- When an author is selected, clear the award filter, retain the current sort order, update URL history, and do not focus the search field
 - On mobile, keep author text cream but use a permanent phosphor underline and a 40px tap target so the link is discoverable without adding an icon or button
 - Use a separate **Read story** action rather than linking the title
 - Prefer author, publisher, and established publication sources while retaining selected archives and third-party full-text sources when they improve reader access
@@ -118,7 +117,7 @@ During an active working session, keep the local preview running on port `8000`.
 - [x] Confirm the expected year coverage for each award
 - [x] Confirm every award result appears exactly once, except legitimate ties
 - [x] Confirm shared winners appear as one story with multiple award labels
-- [x] Test search, award, year, sorting, pagination, and Reset together
+- [x] Test search, award filtering, sorting, pagination, and Reset together
 - [x] Test records with one award, multiple awards, no reading link, and No Award
 - [x] Run data validation and review all reported problems
 - [x] Complete the relevant manual checks for the changed features
@@ -388,7 +387,7 @@ Run these checks after an explicitly requested deployment:
 
 Run these only when the related behavior changed:
 
-- [ ] Test search, award, year, sort, and Reset
+- [ ] Test search, award, sort, and Reset
 - [ ] Confirm Reset does not focus search or open the mobile keyboard
 - [ ] Test top and bottom pagination
 - [ ] Test URL state, refresh, Back, and Forward behavior
@@ -403,7 +402,7 @@ Do not include the external-link checker in production smoke testing unless it w
 - [x] Added and verified Hugo and Nebula Best Short Story results for 2001-2025
 - [x] Added 37 verified reading links and honest unavailable states
 - [x] Migrated to unique story records with award arrays, tie support, and duplicate validation
-- [x] Built search, award and year filters, sorting, Reset, URL state, and pagination
+- [x] Built search, award filtering, sorting, Reset, URL state, and pagination
 - [x] Merged twelve shared winners while preserving both award years and sources
 - [x] Implemented the quiet terminal-library design for desktop and mobile
 - [x] Simplified the About page and configured corrections through `data/site.json`
@@ -432,3 +431,4 @@ Do not include the external-link checker in production smoke testing unless it w
 - [x] Excluded the local `stories/` research folder from version control
 - [x] Added 118 spoiler-light, 12-20-word story hooks, validated their editorial limits, and reduced pagination to 10 entries
 - [x] Updated 29 reading links to z-lib.gl and added an optional reading `note` field for the one collection link
+- [x] Removed the separate award-year control and moved Reset beside Sort order to reduce the controls by one row
