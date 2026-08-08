@@ -14,6 +14,12 @@ import {
   validateCatalogueData,
 } from "../scripts/catalogue-validation.mjs";
 import { getReadActionLabels } from "../assets/js/catalogue-view.js";
+import {
+  FINISHED_STORIES_STORAGE_KEY,
+  loadFinishedStoryIds,
+  parseFinishedStoryIds,
+  saveFinishedStoryIds,
+} from "../assets/js/finished-stories.js";
 
 const stories = JSON.parse(
   await readFile(new URL("../data/stories.json", import.meta.url), "utf8"),
@@ -49,6 +55,49 @@ const tiedNebulaWinner = {
 };
 
 const testSiteConfig = { correctionsUrl: null };
+
+test("parses finished story IDs and safely rejects invalid stored values", () => {
+  assert.deepEqual(
+    [...parseFinishedStoryIds('["story-two","story-one","story-one"]')],
+    ["story-two", "story-one"],
+  );
+  assert.deepEqual([...parseFinishedStoryIds("not json")], []);
+  assert.deepEqual([...parseFinishedStoryIds('{"story-one":true}')], []);
+  assert.deepEqual([...parseFinishedStoryIds('["story-one",3]')], []);
+});
+
+test("loads and saves finished story IDs without depending on storage availability", () => {
+  const values = new Map();
+  const storage = {
+    getItem: (key) => values.get(key) ?? null,
+    setItem: (key, value) => values.set(key, value),
+  };
+
+  assert.deepEqual([...loadFinishedStoryIds(storage)], []);
+  assert.equal(
+    saveFinishedStoryIds(storage, new Set(["story-two", "story-one"])),
+    true,
+  );
+  assert.equal(
+    values.get(FINISHED_STORIES_STORAGE_KEY),
+    '["story-one","story-two"]',
+  );
+  assert.deepEqual([...loadFinishedStoryIds(storage)], [
+    "story-one",
+    "story-two",
+  ]);
+
+  const unavailableStorage = {
+    getItem: () => {
+      throw new Error("Storage unavailable");
+    },
+    setItem: () => {
+      throw new Error("Storage unavailable");
+    },
+  };
+  assert.deepEqual([...loadFinishedStoryIds(unavailableStorage)], []);
+  assert.equal(saveFinishedStoryIds(unavailableStorage, new Set()), false);
+});
 
 test("catalogue covers the Hugo short-fiction lineage from 1955 through 2025", () => {
   assert.deepEqual(

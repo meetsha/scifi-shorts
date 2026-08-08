@@ -9,7 +9,11 @@ import {
   renderCatalogueMessage,
   renderPagination,
   renderStories,
-} from "./catalogue-view.js?v=5";
+} from "./catalogue-view.js?v=6";
+import {
+  loadFinishedStoryIds,
+  saveFinishedStoryIds,
+} from "./finished-stories.js?v=1";
 
 const searchInput = document.querySelector("#search");
 const awardButtons = [...document.querySelectorAll("[data-award]")];
@@ -30,6 +34,23 @@ const catalogueEl = document.querySelector(".catalogue");
 
 let stories = [];
 let currentPage = 1;
+
+function getBrowserStorage() {
+  try {
+    return window.localStorage;
+  } catch {
+    return null;
+  }
+}
+
+const finishedStoriesStorage = getBrowserStorage();
+const finishedStoryIds = loadFinishedStoryIds(finishedStoriesStorage);
+
+function setFinishedStory(storyId, isFinished) {
+  if (isFinished) finishedStoryIds.add(storyId);
+  else finishedStoryIds.delete(storyId);
+  saveFinishedStoryIds(finishedStoriesStorage, finishedStoryIds);
+}
 
 function getSelectedAward() {
   return (
@@ -93,12 +114,18 @@ function applyControls({ historyMode = null } = {}) {
   const pageData = paginateStories(filteredStories, currentPage);
   currentPage = pageData.page;
 
-  renderStories(listEl, pageData.items, (author) => {
-    const queryString = buildCatalogueSearch(
-      buildAuthorCatalogueState(author, sortSelect.value),
-    );
-    return `${window.location.pathname}?${queryString}`;
-  });
+  renderStories(
+    listEl,
+    pageData.items,
+    (author) => {
+      const queryString = buildCatalogueSearch(
+        buildAuthorCatalogueState(author, sortSelect.value),
+      );
+      return `${window.location.pathname}?${queryString}`;
+    },
+    finishedStoryIds,
+    setFinishedStory,
+  );
   renderPagination(paginationViews, pageData, changePage);
   resultStatusEl.textContent = pageData.totalItems
     ? `${pageData.totalItems} ${pageData.totalItems === 1 ? "story" : "stories"} shown.`

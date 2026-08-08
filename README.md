@@ -58,9 +58,10 @@ The site is plain HTML, CSS, JavaScript, and JSON and can be hosted by any stati
 - `tests/`: catalogue behavior tests
 - `dist/`: generated static release; never edit or commit it
 
-The catalogue JavaScript has three deliberate boundaries: `app.js` coordinates loading, controls,
-URL history, and events; `catalogue.js` contains pure filtering, sorting, pagination, and URL-state
-logic; and `catalogue-view.js` creates the catalogue DOM.
+The catalogue JavaScript has four deliberate boundaries: `app.js` coordinates loading, controls,
+URL history, finished-state wiring, and events; `catalogue.js` contains pure filtering, sorting,
+pagination, and URL-state logic; `catalogue-view.js` creates the catalogue DOM; and
+`finished-stories.js` safely loads and saves locally finished story IDs.
 
 ## Catalogue data model
 

@@ -80,11 +80,40 @@ function createReadAction(story) {
   return unavailable;
 }
 
-function createStoryCard(story, getAuthorHref) {
+function createFinishedToggle(story, card, isFinished, onFinishedChange) {
+  const label = document.createElement("label");
+  label.className = "finished-toggle";
+  label.title = isFinished ? "Mark as unfinished" : "Mark as finished";
+
+  const checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
+  checkbox.className = "finished-toggle__input";
+  checkbox.checked = isFinished;
+  checkbox.setAttribute("aria-label", `Finished: ${story.title}`);
+  checkbox.addEventListener("change", () => {
+    card.classList.toggle("story-card--finished", checkbox.checked);
+    label.title = checkbox.checked ? "Mark as unfinished" : "Mark as finished";
+    onFinishedChange(story.id, checkbox.checked);
+  });
+
+  label.appendChild(checkbox);
+  return label;
+}
+
+function createStoryCard(
+  story,
+  getAuthorHref,
+  finishedStoryIds,
+  onFinishedChange,
+) {
   const card = document.createElement("li");
   card.className = `story-card${
     story.resultType === "winner" ? "" : " story-card--special-result"
   }`;
+
+  const isFinished =
+    story.resultType === "winner" && finishedStoryIds.has(story.id);
+  card.classList.toggle("story-card--finished", isFinished);
 
   const badges = document.createElement("div");
   badges.className = "award-badges";
@@ -128,7 +157,15 @@ function createStoryCard(story, getAuthorHref) {
   if (readAction) {
     const links = document.createElement("div");
     links.className = "links";
-    links.appendChild(readAction);
+    links.append(
+      readAction,
+      createFinishedToggle(
+        story,
+        card,
+        isFinished,
+        onFinishedChange,
+      ),
+    );
     card.appendChild(links);
   }
 
@@ -146,14 +183,27 @@ export function renderCatalogueMessage(
   listElement.replaceChildren(item);
 }
 
-export function renderStories(listElement, visibleStories, getAuthorHref) {
+export function renderStories(
+  listElement,
+  visibleStories,
+  getAuthorHref,
+  finishedStoryIds,
+  onFinishedChange,
+) {
   if (!visibleStories.length) {
     renderCatalogueMessage(listElement, "No stories match these filters.");
     return;
   }
 
   listElement.replaceChildren(
-    ...visibleStories.map((story) => createStoryCard(story, getAuthorHref)),
+    ...visibleStories.map((story) =>
+      createStoryCard(
+        story,
+        getAuthorHref,
+        finishedStoryIds,
+        onFinishedChange,
+      ),
+    ),
   );
 }
 

@@ -17,7 +17,7 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - Local working scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Local working catalogue: 121 unique entries and 133 award records
 - Local reading availability: 115 selected reading links, including 104 web pages and 11 PDFs; 3 winners remain unavailable
-- Latest local milestone: Stabilize pagination, restore catalogue accessibility, and compact special results
+- Latest local milestone: Add quiet, locally stored finished-story tracking
 - Local preview: <http://localhost:8000>
 
 During an active working session, keep the local preview running on port `8000`. Stop it only when explicitly requested.
@@ -28,6 +28,7 @@ During an active working session, keep the local preview running on port `8000`.
 - Filter by Hugo, Nebula, or All Awards
 - Sort newest or oldest first
 - Browse 10 entries per page with synchronized top and bottom pagination
+- Mark winner cards as finished with a compact checkbox beside the reading action
 - Preserve catalogue state in the URL
 - Show one card per unique story, including shared Hugo and Nebula winners
 - Show one factual, spoiler-light introduction on every winner card
@@ -289,6 +290,21 @@ Goal: help readers understand each story's opening premise without turning the c
 - [ ] Choose and connect a custom domain
 - [ ] Add canonical URLs and sitemap details
 - [ ] Define the process for adding new annual award results
+
+### 9. Track finished stories
+
+Goal: let readers quietly record which stories they have finished without adding another prominent catalogue control.
+
+- [x] Add a compact checkbox immediately to the right of the existing **Read story**, **Read PDF**, or **NA** action on both desktop and mobile
+- [x] Keep the checkbox visually unlabeled but clearly interactive through its pointer, hover, focus, and pressed states; provide an accessible name that describes marking the story as finished
+- [x] Keep the checkbox and reading action on one row; give the checkbox the same height and bordered control treatment as the reading action without weakening that primary action
+- [x] Store finished state locally by stable story ID; opening a reading link never marks a story automatically, and catalogue Reset or navigation never clears finished state
+- [x] When checked, use the existing green accent and subtly quiet the completed card while keeping its text legible, its reading action fully usable, and its dimensions unchanged
+- [x] Restore the normal card treatment immediately when unchecked
+- [x] Include all winner cards, including those with **NA** reading actions, while excluding **No Award** and **Category Not Presented** results
+- [x] Keep reading-action labels free of a trailing external-link arrow
+- [x] Do not add a progress summary, finished-story filter, or additional catalogue row in this first version
+- [x] Verify persistence, safe storage failure, keyboard accessibility, and the checked and unchecked layouts on desktop and mobile
 
 ### Later possibilities
 
