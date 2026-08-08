@@ -10,7 +10,8 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - Current hosting: Cloudflare Pages through GitHub integration
 - Source repository: <https://github.com/meetsha/scifi-shorts>
 - Previous deployment: <https://scifi-short-story-collection.uiandgame.chatgpt.site/>
-- Current deployed site content: introduced in commit `b3eec80` and verified on Cloudflare Pages
+- Last smoke-tested production content: commit `b3eec80`, verified on Cloudflare Pages
+- Current source status: `main` includes finished-story tracking, clearer desktop pagination states, and preserved toggle contrast; production has not been smoke-tested after these changes
 - Deployed scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Deployed catalogue: 121 unique entries and 133 award records
 - Deployed reading availability: 115 selected reading links, including 104 web pages and 11 PDFs; 3 winners remain unavailable
@@ -49,7 +50,7 @@ During an active working session, keep the local preview running on port `8000`.
 - Show 1957 as a distinct Hugo category-not-presented record because no equivalent category existed that year
 - Use one card per unique story
 - Keep the catalogue as a streamlined one-column list on desktop and mobile
-- Place **Read story** and **NA** in a compact right-side action area on desktop while retaining full-width mobile actions
+- Keep the reading action and finished toggle together in a compact right-side action area on desktop and a single full-width action row on mobile
 - Preserve separate award years and sources when a story won both awards
 - Show award names in text as well as colour
 - Render award sources as `[ HUGO · YEAR ]` and `[ NEBULA · YEAR ]`
@@ -84,7 +85,7 @@ During an active working session, keep the local preview running on port `8000`.
 - Preserve a visually hidden catalogue heading and live result-count announcements for assistive technology
 - Keep top and bottom pagination visible for one-page and empty filtered states so the layout remains stable
 - On mobile, place **Page X of Y** between the Previous and Next controls
-- Distinguish desktop pagination states with an outlined hover treatment and a solid green current-page treatment
+- Distinguish desktop pagination states with an outlined hover treatment and a solid green current-page treatment whose dark number remains legible through hover and focus
 - Use a consistent 10px rhythm between catalogue dividers, pagination controls, and story cards across viewport sizes
 - Keep the footer compact across viewport sizes while preserving a 44px About tap target
 - Keep both HTML entry pages at the repository root
@@ -292,7 +293,7 @@ Goal: help readers understand each story's opening premise without turning the c
 - [ ] Add canonical URLs and sitemap details
 - [ ] Define the process for adding new annual award results
 
-### 9. Track finished stories
+### 10. Track finished stories
 
 Goal: let readers quietly record which stories they have finished without adding another prominent catalogue control.
 
@@ -300,7 +301,7 @@ Goal: let readers quietly record which stories they have finished without adding
 - [x] Keep the checkbox visually unlabeled but clearly interactive through its pointer, hover, focus, and pressed states; provide an accessible name that describes marking the story as finished
 - [x] Keep the checkbox and reading action on one row; give the checkbox the same height and bordered control treatment as the reading action without weakening that primary action
 - [x] Store finished state locally by stable story ID; opening a reading link never marks a story automatically, and catalogue Reset or navigation never clears finished state
-- [x] When checked, use the existing green accent and subtly quiet the completed card while keeping its text legible, its reading action fully usable, and its dimensions unchanged
+- [x] Use a dim check for unfinished stories and a fully bright green check for finished stories; preserve that distinction through hover and focus while subtly quieting completed cards without weakening their reading actions
 - [x] Restore the normal card treatment immediately when unchecked
 - [x] Include all winner cards, including those with **NA** reading actions, while excluding **No Award** and **Category Not Presented** results
 - [x] Keep reading-action labels free of a trailing external-link arrow
@@ -429,7 +430,7 @@ Do not include the external-link checker in production smoke testing unless it w
 - [x] Merged twelve shared winners while preserving both award years and sources
 - [x] Implemented the quiet terminal-library design for desktop and mobile
 - [x] Simplified the About page and configured corrections through `data/site.json`
-- [x] Added 28 automated catalogue tests and dependency-free data validation
+- [x] Expanded the automated catalogue suite to 32 tests and retained dependency-free data validation
 - [x] Fixed mobile Reset focus behavior
 - [x] Replaced duplicate award-source actions with bracketed clickable award labels
 - [x] Published and verified Sites version 3 on July 30, 2026
@@ -456,3 +457,5 @@ Do not include the external-link checker in production smoke testing unless it w
 - [x] Updated 29 reading links to z-lib.gl and added an optional reading `note` field for the one collection link
 - [x] Removed the separate award-year control and moved Reset beside Sort order to reduce the controls by one row
 - [x] Renamed the product to **SciFi Short Stories**, standardized catalogue and footer spacing, kept pagination stable, restored hidden accessibility context, compacted special results, and removed the Reader mode tip
+- [x] Added locally persisted finished-story tracking with a compact desktop and mobile toggle, clear checked and unchecked states, safe storage handling, and no additional catalogue filter or progress row
+- [x] Removed trailing external-link arrows from reading actions and clarified desktop pagination with distinct hover, focus, and solid current-page treatments
