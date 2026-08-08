@@ -18,7 +18,7 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - Local working scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Local working catalogue: 121 unique entries and 133 award records
 - Local reading availability: 115 selected reading links, including 104 web pages and 11 PDFs; 3 winners remain unavailable
-- Latest local milestone: Preserve clear finished-toggle contrast through hover and focus on desktop and mobile
+- Latest local milestone: Keep the compact footer at the bottom of short pages without constraining long content
 - Local preview: <http://localhost:8000>
 
 During an active working session, keep the local preview running on port `8000`. Stop it only when explicitly requested.
@@ -87,7 +87,7 @@ During an active working session, keep the local preview running on port `8000`.
 - On mobile, place **Page X of Y** between the Previous and Next controls
 - Distinguish desktop pagination states with an outlined hover treatment and a solid green current-page treatment whose dark number remains legible through hover and focus
 - Use a consistent 10px rhythm between catalogue dividers, pagination controls, and story cards across viewport sizes
-- Keep the footer compact across viewport sizes while preserving a 44px About tap target
+- Keep the footer at a fixed 45px height with a 44px About tap target; use a non-shrinking flex page shell so it sits at the bottom of short pages and follows long content naturally
 - Keep both HTML entry pages at the repository root
 - Group browser JavaScript, CSS, and the favicon under `assets/`; keep runtime JSON under `data/`
 - Keep the browser site dependency-free and directly served without a frontend framework or bundler
