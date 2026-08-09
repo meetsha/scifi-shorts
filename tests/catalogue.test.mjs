@@ -450,7 +450,7 @@ test("labels web, PDF, and unavailable reading actions", () => {
         sourceType: "publication",
       },
     }),
-    { visible: "Read story", accessible: "Read Shared Winner" },
+    { visible: "Read story", accessible: "Read story: Shared Winner" },
   );
   assert.deepEqual(
     getReadActionLabels({
@@ -461,7 +461,7 @@ test("labels web, PDF, and unavailable reading actions", () => {
         sourceType: "publication",
       },
     }),
-    { visible: "Read PDF", accessible: "Read Shared Winner as a PDF" },
+    { visible: "Read PDF", accessible: "Read PDF: Shared Winner" },
   );
   assert.deepEqual(getReadActionLabels(dualWinner), {
     visible: "NA",

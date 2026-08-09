@@ -9,7 +9,7 @@ import {
   renderCatalogueMessage,
   renderPagination,
   renderStories,
-} from "./catalogue-view.js?v=6";
+} from "./catalogue-view.js?v=7";
 import {
   loadFinishedStoryIds,
   saveFinishedStoryIds,
@@ -189,9 +189,9 @@ function handleAuthorFilter(event) {
 }
 
 async function loadCatalogue() {
+  catalogueEl.setAttribute("aria-busy", "true");
   renderCatalogueMessage(listEl, "Loading catalogue…", "loading");
   resultStatusEl.textContent = "";
-  for (const view of paginationViews) view.container.hidden = true;
 
   try {
     const response = await fetch("./data/stories.json?v=10");
@@ -207,6 +207,7 @@ async function loadCatalogue() {
     });
   } catch (error) {
     console.error("Unable to load catalogue:", error);
+    for (const view of paginationViews) view.container.hidden = true;
     renderCatalogueMessage(
       listEl,
       "The catalogue could not be loaded. Please refresh the page or try again later.",
@@ -217,6 +218,8 @@ async function loadCatalogue() {
     sortSelect.disabled = true;
     resetButton.disabled = true;
     for (const button of awardButtons) button.disabled = true;
+  } finally {
+    catalogueEl.setAttribute("aria-busy", "false");
   }
 }
 

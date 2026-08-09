@@ -23,11 +23,10 @@ function createAwardBadge(entry) {
   const label = document.createElement("span");
   label.className = "award-badge__label";
   label.textContent = `${entry.award} · ${entry.year}`;
-  badge.appendChild(label);
-  badge.setAttribute(
-    "aria-label",
-    `View official ${awardName} ${entry.year} award results`,
-  );
+  const context = document.createElement("span");
+  context.className = "sr-only";
+  context.textContent = ` official ${awardName} award results`;
+  badge.append(label, context);
   return badge;
 }
 
@@ -36,7 +35,9 @@ export function getReadActionLabels(story) {
     const isPdf = story.reading.format === "pdf";
     return {
       visible: isPdf ? "Read PDF" : "Read story",
-      accessible: isPdf ? `Read ${story.title} as a PDF` : `Read ${story.title}`,
+      accessible: isPdf
+        ? `Read PDF: ${story.title}`
+        : `Read story: ${story.title}`,
     };
   }
 
@@ -59,7 +60,10 @@ function createReadAction(story) {
       labels.visible,
       "read-action read-link",
     );
-    link.setAttribute("aria-label", labels.accessible);
+    const context = document.createElement("span");
+    context.className = "sr-only";
+    context.textContent = labels.accessible.slice(labels.visible.length);
+    link.appendChild(context);
     return link;
   }
 

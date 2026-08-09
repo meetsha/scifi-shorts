@@ -18,8 +18,8 @@ python3 -m http.server 8000 --bind 127.0.0.1
 
 Open <http://localhost:8000>.
 
-The two HTML entry pages stay at the repository root. Browser JavaScript, CSS, and the favicon
-live under `assets/`; runtime catalogue files live under `data/`.
+The two HTML entry pages stay at the repository root. Browser JavaScript, CSS, the favicon, and
+self-hosted font assets live under `assets/`; runtime catalogue files live under `data/`.
 
 ## Checks
 
@@ -52,7 +52,7 @@ The site is plain HTML, CSS, JavaScript, and JSON and can be hosted by any stati
 ## Repository structure
 
 - `index.html` and `about.html`: browser entry pages
-- `assets/`: browser JavaScript, CSS, and the favicon
+- `assets/`: browser JavaScript, CSS, the favicon, and Latin-subset IBM Plex Mono and Space Mono WOFF2 files with their OFL licenses
 - `data/`: runtime catalogue and site configuration
 - `scripts/`: dependency-free build and validation tools
 - `tests/`: catalogue behavior tests

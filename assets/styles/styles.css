@@ -1,5 +1,37 @@
 /* Foundations */
 
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: optional;
+  src: url("../fonts/ibm-plex-mono-400-latin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: optional;
+  src: url("../fonts/ibm-plex-mono-500-latin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 600;
+  font-display: optional;
+  src: url("../fonts/ibm-plex-mono-600-latin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: optional;
+  src: url("../fonts/space-mono-700-latin.woff2") format("woff2");
+}
+
 :root {
   color-scheme: dark;
   --bg: #050807;
@@ -15,8 +47,10 @@
   --signal-yellow: #e3ca62;
   --glow-soft: 0 0 12px rgba(94, 231, 131, 0.24);
   --glow-active: 0 0 16px rgba(94, 231, 131, 0.38);
-  --body-mono: "IBM Plex Mono", monospace;
-  --display-mono: "Space Mono", monospace;
+  --body-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Monaco,
+    Consolas, "Liberation Mono", monospace;
+  --display-mono: "Space Mono", ui-monospace, "SFMono-Regular", Menlo, Monaco,
+    Consolas, "Liberation Mono", monospace;
 }
 
 * {
@@ -338,6 +372,12 @@ p {
   list-style: none;
 }
 
+.catalogue[aria-busy="true"] .story-list {
+  align-content: start;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
 .story-card {
   padding: 1.25rem 1.35rem;
   border: 1px solid var(--line);
@@ -362,9 +402,12 @@ p {
 
 .story-card.story-card--finished > .award-badges,
 .story-card.story-card--finished > h3,
-.story-card.story-card--finished > .meta,
 .story-card.story-card--finished > .story-intro {
   opacity: 0.68;
+}
+
+.story-card.story-card--finished .meta-author {
+  color: var(--muted);
 }
 
 .story-card.story-card--finished:hover,

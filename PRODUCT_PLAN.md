@@ -11,14 +11,14 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - Source repository: <https://github.com/meetsha/scifi-shorts>
 - Previous deployment: <https://scifi-short-story-collection.uiandgame.chatgpt.site/>
 - Last smoke-tested production content: commit `b3eec80`, verified on Cloudflare Pages
-- Current source status: `main` includes finished-story tracking, clearer desktop pagination states, and preserved toggle contrast; production has not been smoke-tested after these changes
+- Current source status: `main` includes finished-story tracking and the anchored short-page footer; self-hosted-font Lighthouse improvements are locally verified but not deployed
 - Deployed scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Deployed catalogue: 121 unique entries and 133 award records
 - Deployed reading availability: 115 selected reading links, including 104 web pages and 11 PDFs; 3 winners remain unavailable
 - Local working scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Local working catalogue: 121 unique entries and 133 award records
 - Local reading availability: 115 selected reading links, including 104 web pages and 11 PDFs; 3 winners remain unavailable
-- Latest local milestone: Keep the compact footer at the bottom of short pages without constraining long content
+- Latest local milestone: Preserve the preferred IBM Plex Mono and Space Mono design while reaching a 99/100/100/100 local mobile Lighthouse result
 - Local preview: <http://localhost:8000>
 
 During an active working session, keep the local preview running on port `8000`. Stop it only when explicitly requested.
@@ -79,11 +79,14 @@ During an active working session, keep the local preview running on port `8000`.
 - Keep the 1957 Hugo category-not-presented record visible with the same compact treatment and distinct copy
 - Keep special-result award metadata above the result sentence on desktop and mobile
 - Keep the restrained near-black, monospaced terminal-library design
+- Preserve IBM Plex Mono and Space Mono through local Latin-subset WOFF2 files; do not make runtime requests to Google Fonts
 - Use the subtitle **Hugo and Nebula short story winners**
 - Reduce mobile header padding and keep the title on one line down to the supported 320px minimum
 - Remove the **Award results** heading and entry-range row
 - Preserve a visually hidden catalogue heading and live result-count announcements for assistive technology
 - Keep top and bottom pagination visible for one-page and empty filtered states so the layout remains stable
+- Reserve the top pagination row before catalogue data loads; insert the bottom row only with the populated list so neither row moves through the viewport
+- Reserve one viewport of catalogue space only while data is loading, while keeping the bordered loading message compact at the top of that space
 - On mobile, place **Page X of Y** between the Previous and Next controls
 - Distinguish desktop pagination states with an outlined hover treatment and a solid green current-page treatment whose dark number remains legible through hover and focus
 - Use a consistent 10px rhythm between catalogue dividers, pagination controls, and story cards across viewport sizes
@@ -308,6 +311,39 @@ Goal: let readers quietly record which stories they have finished without adding
 - [x] Do not add a progress summary, finished-story filter, or additional catalogue row in this first version
 - [x] Verify persistence, safe storage failure, keyboard accessibility, and the checked and unchecked layouts on desktop and mobile
 
+### 11. Improve Lighthouse performance and accessibility
+
+Goal: raise the mobile Lighthouse baseline without complicating the dependency-free site or weakening the established catalogue experience.
+
+#### Baseline and decisions
+
+- [x] Record the August 8 local mobile baseline: Performance 73, Accessibility 96, Best Practices 100, SEO 100
+- [x] Treat the 0.472 cumulative layout shift as the primary performance problem; preserve the existing 0 ms Total Blocking Time
+- [x] Treat localhost cache and compression findings as local-server artifacts until production response headers are measured
+- [x] Keep the readable source stylesheet and skip a build-time minifier for the reported 3 KiB saving and 0 ms metric saving
+
+#### Implementation
+
+- [x] Render a disabled top pagination shell before catalogue data arrives and reveal the bottom row only at its final populated position
+- [x] Reserve loading-only catalogue height so the anchored footer is not painted inside the shifting region
+- [x] Mark the catalogue busy in the initial HTML and retain that state through its asynchronous load so reserved space exists before first paint
+- [x] Replace runtime Google Fonts requests with four self-hosted Latin-subset WOFF2 files, loading only IBM Plex Mono 400/500/600 and Space Mono 700
+- [x] Use `font-display: optional` and preload the required local faces so late font swaps cannot reintroduce layout shift
+- [x] Keep finished-card metadata at accessible contrast and mute the author with an explicit accessible colour rather than parent opacity
+- [x] Keep the loading message compact inside its reserved viewport and hide the pre-rendered pagination shell if catalogue loading fails
+- [x] Build award and reading-link accessible names from their visible labels plus visually hidden context
+- [x] Increment cache versions for every changed versioned asset
+
+#### Verification
+
+- [x] Run catalogue tests, data validation, and the production build without the external-link checker
+- [x] Verify the populated, filtered, and finished states remain usable; retain the existing explicit catalogue-load error treatment
+- [x] Check the 390px layout for overflow, stable pagination, readable typography, and console errors
+- [x] Record the platform-font comparison run from Lighthouse 13.3.0 on August 9: Performance 100, Accessibility 100, Best Practices 100, SEO 100
+- [x] Rerun Lighthouse 13.3.0 after restoring self-hosted fonts: Performance 99, Accessibility 100, Best Practices 100, SEO 100
+- [x] Record the final self-hosted-font metrics: FCP 1.1 s, LCP 2.1 s, Speed Index 1.1 s, TBT 0 ms, CLS 0, and 40.5 KiB across four local font transfers
+- [ ] Recheck caching and compression on Cloudflare Pages only after an explicitly requested deployment
+
 ### Later possibilities
 
 - [ ] Decide whether to include nominees
@@ -459,3 +495,4 @@ Do not include the external-link checker in production smoke testing unless it w
 - [x] Renamed the product to **SciFi Short Stories**, standardized catalogue and footer spacing, kept pagination stable, restored hidden accessibility context, compacted special results, and removed the Reader mode tip
 - [x] Added locally persisted finished-story tracking with a compact desktop and mobile toggle, clear checked and unchecked states, safe storage handling, and no additional catalogue filter or progress row
 - [x] Removed trailing external-link arrows from reading actions and clarified desktop pagination with distinct hover, focus, and solid current-page treatments
+- [x] Eliminated initial layout shifts, runtime Google font requests, contrast failures, and accessible-name mismatches, then restored the preferred typography through optimized local font assets
