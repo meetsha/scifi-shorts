@@ -190,6 +190,36 @@ p {
   line-height: 1.7;
 }
 
+.subtitle-context {
+  display: inline-block;
+  margin: 0 0.2rem;
+  font-size: 0.875em;
+}
+
+.subtitle-separator {
+  color: var(--line-strong);
+}
+
+.subtitle-link {
+  color: var(--muted);
+  text-decoration-color: var(--line-strong);
+  text-underline-offset: 0.2rem;
+  transition:
+    color 140ms ease,
+    text-decoration-color 140ms ease;
+}
+
+.subtitle-link:hover,
+.subtitle-link:focus-visible {
+  color: var(--text-soft);
+  text-decoration-color: var(--muted);
+}
+
+.subtitle-link:focus-visible {
+  outline: 2px solid var(--phosphor);
+  outline-offset: 3px;
+}
+
 /* Catalogue controls */
 
 .controls {
@@ -881,6 +911,17 @@ p {
 
   .site-header {
     padding: 1.75rem 0 1.45rem;
+  }
+
+  .subtitle-context {
+    display: block;
+    margin: 0.1rem 0 0;
+    font-size: 0.85em;
+    line-height: 1.5;
+  }
+
+  .subtitle-separator {
+    display: none;
   }
 
   .controls {
