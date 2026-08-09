@@ -11,14 +11,14 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - Source repository: <https://github.com/meetsha/scifi-shorts>
 - Previous deployment: <https://scifi-short-story-collection.uiandgame.chatgpt.site/>
 - Last smoke-tested production content: commit `b3eec80`, verified on Cloudflare Pages
-- Current source status: `main` includes finished-story tracking, the anchored short-page footer, and self-hosted-font Lighthouse improvements; the collection-onboarding copy is locally verified but not production-smoke-tested
+- Current source status: `main` includes finished-story tracking, the anchored short-page footer, self-hosted-font Lighthouse improvements, and collection onboarding; the compact award filter and rapid-tap pagination refinements are locally verified but not production-smoke-tested
 - Deployed scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Deployed catalogue: 121 unique entries and 133 award records
 - Deployed reading availability: 115 selected reading links, including 104 web pages and 11 PDFs; 3 winners remain unavailable
 - Local working scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Local working catalogue: 121 unique entries and 133 award records
 - Local reading availability: 115 selected reading links, including 104 web pages and 11 PDFs; 3 winners remain unavailable
-- Latest local milestone: Explain why the stories are collected through a quiet homepage link and a concise, official-source-linked About page
+- Latest local milestone: Remove the redundant award-filter label and prevent rapid pagination taps from triggering mobile double-tap zoom
 - Local preview: <http://localhost:8000>
 
 During an active working session, keep the local preview running on port `8000`. Stop it only when explicitly requested.
@@ -82,6 +82,7 @@ During an active working session, keep the local preview running on port `8000`.
 - Preserve IBM Plex Mono and Space Mono through local Latin-subset WOFF2 files; do not make runtime requests to Google Fonts
 - Use the subtitle **Hugo and Nebula short story winners**
 - Add a quiet **Why these stories?** link beside the homepage subtitle and label the footer link **About this collection**
+- Let the award buttons stand on their own without a redundant visible **Award** label while retaining an accessible group name
 - Reduce mobile header padding and keep the title on one line down to the supported 320px minimum
 - Remove the **Award results** heading and entry-range row
 - Preserve a visually hidden catalogue heading and live result-count announcements for assistive technology
@@ -90,6 +91,7 @@ During an active working session, keep the local preview running on port `8000`.
 - Reserve one viewport of catalogue space only while data is loading, while keeping the bordered loading message compact at the top of that space
 - On mobile, place **Page X of Y** between the Previous and Next controls
 - Distinguish desktop pagination states with an outlined hover treatment and a solid green current-page treatment whose dark number remains legible through hover and focus
+- Treat rapid pagination taps as button interactions without disabling page panning or pinch-to-zoom
 - Use a consistent 10px rhythm between catalogue dividers, pagination controls, and story cards across viewport sizes
 - Keep the footer at a fixed 45px height with a 44px About tap target; use a non-shrinking flex page shell so it sits at the bottom of short pages and follows long content naturally
 - Keep both HTML entry pages at the repository root

@@ -775,6 +775,7 @@ p {
   font-family: var(--body-mono);
   font-size: 0.75rem;
   cursor: pointer;
+  touch-action: manipulation;
 }
 
 .pagination [data-page-action] {
