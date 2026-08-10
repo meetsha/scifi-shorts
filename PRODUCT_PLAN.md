@@ -11,14 +11,14 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - Source repository: <https://github.com/meetsha/scifi-shorts>
 - Previous deployment: <https://scifi-short-story-collection.uiandgame.chatgpt.site/>
 - Last smoke-tested production content: commit `b3eec80`, verified on Cloudflare Pages
-- Current source status: `main` includes finished-story tracking, the anchored short-page footer, self-hosted-font Lighthouse improvements, and collection onboarding; the compact award filter and rapid-tap pagination refinements are locally verified but not production-smoke-tested
+- Current source status: `main` includes finished-story tracking, the anchored short-page footer, self-hosted-font Lighthouse improvements, collection onboarding, and compact mobile controls; the finished-action and iOS search refinements are locally verified but not production-smoke-tested
 - Deployed scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Deployed catalogue: 121 unique entries and 133 award records
 - Deployed reading availability: 115 selected reading links, including 104 web pages and 11 PDFs; 3 winners remain unavailable
 - Local working scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Local working catalogue: 121 unique entries and 133 award records
 - Local reading availability: 115 selected reading links, including 104 web pages and 11 PDFs; 3 winners remain unavailable
-- Latest local milestone: Remove the redundant award-filter label and prevent rapid pagination taps from triggering mobile double-tap zoom
+- Latest local milestone: Quiet finished-card reading actions and keep the complete mobile search prompt visible without triggering iOS Safari focus zoom
 - Local preview: <http://localhost:8000>
 
 During an active working session, keep the local preview running on port `8000`. Stop it only when explicitly requested.
@@ -93,6 +93,7 @@ During an active working session, keep the local preview running on port `8000`.
 - Distinguish desktop pagination states with an outlined hover treatment and a solid green current-page treatment whose dark number remains legible through hover and focus
 - Treat rapid pagination taps as button interactions without disabling page panning or pinch-to-zoom
 - Use a consistent 10px rhythm between catalogue dividers, pagination controls, and story cards across viewport sizes
+- Keep the mobile search input at 16px so focusing it does not trigger persistent iOS Safari zoom
 - Keep the footer at a fixed 45px height with a 44px About tap target; use a non-shrinking flex page shell so it sits at the bottom of short pages and follows long content naturally
 - Keep both HTML entry pages at the repository root
 - Group browser JavaScript, CSS, and the favicon under `assets/`; keep runtime JSON under `data/`
@@ -307,7 +308,8 @@ Goal: let readers quietly record which stories they have finished without adding
 - [x] Keep the checkbox visually unlabeled but clearly interactive through its pointer, hover, focus, and pressed states; provide an accessible name that describes marking the story as finished
 - [x] Keep the checkbox and reading action on one row; give the checkbox the same height and bordered control treatment as the reading action without weakening that primary action
 - [x] Store finished state locally by stable story ID; opening a reading link never marks a story automatically, and catalogue Reset or navigation never clears finished state
-- [x] Use a dim check for unfinished stories and a fully bright green check for finished stories; preserve that distinction through hover and focus while subtly quieting completed cards without weakening their reading actions
+- [x] Use a dim check for unfinished stories and a fully bright green check for finished stories; preserve that distinction through hover and focus while subtly quieting completed cards and their reading actions
+- [x] Dim finished-card reading actions without making them look disabled, restoring their normal green treatment on hover and focus
 - [x] Restore the normal card treatment immediately when unchecked
 - [x] Include all winner cards, including those with **NA** reading actions, while excluding **No Award** and **Category Not Presented** results
 - [x] Keep reading-action labels free of a trailing external-link arrow

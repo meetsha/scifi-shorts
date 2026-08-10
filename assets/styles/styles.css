@@ -706,6 +706,19 @@ p {
   text-decoration: none;
 }
 
+.story-card--finished .links .read-link {
+  border-color: var(--line);
+  background: rgba(94, 231, 131, 0.015);
+  color: var(--muted);
+}
+
+.story-card--finished .links .read-link:hover,
+.story-card--finished .links .read-link:focus-visible {
+  border-color: var(--phosphor);
+  background: rgba(94, 231, 131, 0.035);
+  color: var(--phosphor);
+}
+
 .read-action--unavailable {
   border-color: var(--line);
   background: rgba(255, 255, 255, 0.02);
@@ -934,6 +947,10 @@ p {
   .control--search {
     grid-column: 1 / -1;
     width: 100%;
+  }
+
+  .control--search input {
+    font-size: 1rem;
   }
 
   .reset-button {
