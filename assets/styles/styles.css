@@ -473,7 +473,7 @@ p {
 .award-badge {
   display: inline-flex;
   align-items: center;
-  padding: 0.25rem 0.15rem;
+  padding: 0.25rem 0.15rem 0.25rem 0;
   font-family: var(--body-mono);
   font-size: 0.75rem;
   font-weight: 500;
@@ -980,7 +980,7 @@ p {
 
   .award-badge {
     min-height: 40px;
-    padding: 0.5rem 0.15rem;
+    padding: 0.5rem 0.15rem 0.5rem 0;
   }
 
   .meta {

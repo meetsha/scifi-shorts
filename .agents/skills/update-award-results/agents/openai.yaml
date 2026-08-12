@@ -1,0 +1,4 @@
+interface:
+  display_name: "Update Award Results"
+  short_description: "Verify and add annual Hugo or Nebula results"
+  default_prompt: "Use $update-award-results to check for and prepare the latest official award-result update."

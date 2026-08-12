@@ -82,6 +82,7 @@ During an active working session, keep the local preview running on port `8000`.
 - Preserve IBM Plex Mono and Space Mono through local Latin-subset WOFF2 files; do not make runtime requests to Google Fonts
 - Use the subtitle **Hugo and Nebula short story winners**
 - Add a quiet **Why these stories?** link beside the homepage subtitle and label the footer link **About this collection**
+- Keep the About explanation to two concise paragraphs: collection scope and official links first, then source policy and independence
 - Let the award buttons stand on their own without a redundant visible **Award** label while retaining an accessible group name
 - Reduce mobile header padding and keep the title on one line down to the supported 320px minimum
 - Remove the **Award results** heading and entry-range row
@@ -298,8 +299,11 @@ Goal: help readers understand each story's opening premise without turning the c
 - [x] Configure Cloudflare Pages to run `npm run build` and publish `dist/`
 - [x] Verify the Cloudflare Pages deployment before changing the public domain
 - [x] Keep the existing `scifi-shorts.pages.dev` address rather than adding a custom domain for now
-- [ ] Add canonical URLs and sitemap details
-- [ ] Define the process for adding new annual award results
+- [x] Add stable canonical URLs plus a dateless sitemap and robots reference for the Cloudflare Pages domain
+- [x] Keep public scope copy and metadata evergreen by referring to the latest announced winners instead of a fixed final year
+- [x] Derive validation ranges and catalogue-size test expectations from canonical data so annual updates do not require public metadata or test-snapshot edits
+- [x] Define the annual-update process in a repo-local `$update-award-results` skill that verifies official sources, preserves award-year semantics, handles ties and merged winners, and stops at a reviewable diff
+- [x] Validate the skill against an isolated missing-2025-Nebula fixture and confirm an idempotent no-op against the current catalogue
 
 ### 10. Track finished stories
 

@@ -1,19 +1,37 @@
 export const AWARD_COVERAGE = Object.freeze({
-  hugo: Object.freeze({ firstYear: 1955, lastYear: 2025 }),
-  nebula: Object.freeze({ firstYear: 1965, lastYear: 2025 }),
+  hugo: Object.freeze({ firstYear: 1955 }),
+  nebula: Object.freeze({ firstYear: 1965 }),
 });
 
-export const EXPECTED_AWARD_YEARS = Object.freeze(
-  Object.fromEntries(
-    Object.entries(AWARD_COVERAGE).map(([award, { firstYear, lastYear }]) => [
-      award,
-      Array.from(
-        { length: lastYear - firstYear + 1 },
-        (_, index) => lastYear - index,
-      ),
-    ]),
-  ),
-);
+export function getExpectedAwardYears(stories) {
+  return Object.fromEntries(
+    Object.entries(AWARD_COVERAGE).map(([award, { firstYear }]) => {
+      const latestYear = Array.isArray(stories)
+        ? Math.max(
+            firstYear,
+            ...stories.flatMap((story) =>
+              Array.isArray(story?.awards)
+                ? story.awards
+                    .filter(
+                      (entry) =>
+                        entry?.award === award && Number.isInteger(entry.year),
+                    )
+                    .map((entry) => entry.year)
+                : [],
+            ),
+          )
+        : firstYear;
+
+      return [
+        award,
+        Array.from(
+          { length: latestYear - firstYear + 1 },
+          (_, index) => latestYear - index,
+        ),
+      ];
+    }),
+  );
+}
 
 const VALID_AWARDS = new Set(["hugo", "nebula"]);
 const VALID_READING_FORMATS = new Set(["web", "pdf"]);
@@ -191,7 +209,7 @@ function validateStory(story, index, errors) {
 export function validateCatalogueData(
   stories,
   siteConfig,
-  { expectedAwardYears = EXPECTED_AWARD_YEARS } = {},
+  { expectedAwardYears = getExpectedAwardYears(stories) } = {},
 ) {
   const errors = [];
   const warnings = [];

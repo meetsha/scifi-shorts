@@ -9,6 +9,8 @@ const siteAssets = [
   "about.html",
   "assets",
   "data",
+  "robots.txt",
+  "sitemap.xml",
 ];
 
 await rm(output, { recursive: true, force: true });

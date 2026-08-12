@@ -1,9 +1,9 @@
 # SciFi Short Stories
 
 A dependency-free static catalogue of the Hugo short-fiction lineage from 1955 and Nebula Best
-Short Story from 1965, through 2025. The data contains 121 unique entries, preserves the 2010
-Nebula tie, and merges stories that won both awards. Of 118 winning stories, 115 have selected
-reading links: 104 web pages and 11 PDFs.
+Short Story from 1965 through their latest announced winners. The catalogue preserves legitimate
+ties, merges stories that won both awards, and includes selected external reading links where
+available.
 
 The Hugo category was named Short Fiction from 1960 through 1966. No equivalent category was
 presented in 1957, so that year is represented by a distinct category-not-presented record.
@@ -31,6 +31,15 @@ npm run validate
 Run `npm run check:links` only when a full external-link review is explicitly requested. It makes
 live requests to every story and award page, and remote sites may block automated requests even
 when a link works in a browser.
+
+## Annual award updates
+
+Use the repo-local `$update-award-results` skill in
+`.agents/skills/update-award-results/` to verify newly announced Hugo Short Story or Nebula Best
+Short Story results and prepare the corresponding catalogue change. The workflow checks official
+award sources, preserves each archive's year convention, handles ties and dual winners, and runs
+the repository test, validation, and build commands. It stops at a reviewable local diff unless a
+later request explicitly authorizes commit, push, deployment, or scheduling.
 
 ## Build
 
