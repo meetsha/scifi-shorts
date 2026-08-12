@@ -10,15 +10,15 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - Current hosting: Cloudflare Pages through GitHub integration
 - Source repository: <https://github.com/meetsha/scifi-shorts>
 - Previous deployment: <https://scifi-short-story-collection.uiandgame.chatgpt.site/>
-- Last smoke-tested production content: commit `b3eec80`, verified on Cloudflare Pages
-- Current source status: `main` includes finished-story tracking, the anchored short-page footer, self-hosted-font Lighthouse improvements, collection onboarding, and compact mobile controls; the finished-action and iOS search refinements are locally verified but not production-smoke-tested
+- Last smoke-tested production content: commit `7f13c72`, verified on Cloudflare Pages on August 12, 2026
+- Current source status: `main` is production-smoke-tested through the finished-action and iOS search refinements; 44px mobile award and pagination targets are locally verified but not deployed
 - Deployed scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Deployed catalogue: 121 unique entries and 133 award records
 - Deployed reading availability: 115 selected reading links, including 104 web pages and 11 PDFs; 3 winners remain unavailable
 - Local working scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Local working catalogue: 121 unique entries and 133 award records
 - Local reading availability: 115 selected reading links, including 104 web pages and 11 PDFs; 3 winners remain unavailable
-- Latest local milestone: Quiet finished-card reading actions and keep the complete mobile search prompt visible without triggering iOS Safari focus zoom
+- Latest local milestone: Raise mobile award and pagination controls to a 44px comfortable touch target
 - Local preview: <http://localhost:8000>
 
 During an active working session, keep the local preview running on port `8000`. Stop it only when explicitly requested.
@@ -92,6 +92,7 @@ During an active working session, keep the local preview running on port `8000`.
 - On mobile, place **Page X of Y** between the Previous and Next controls
 - Distinguish desktop pagination states with an outlined hover treatment and a solid green current-page treatment whose dark number remains legible through hover and focus
 - Treat rapid pagination taps as button interactions without disabling page panning or pinch-to-zoom
+- Use 44px-high award and pagination controls on mobile for comfortable repeated tapping
 - Use a consistent 10px rhythm between catalogue dividers, pagination controls, and story cards across viewport sizes
 - Keep the mobile search input at 16px so focusing it does not trigger persistent iOS Safari zoom
 - Keep the footer at a fixed 45px height with a 44px About tap target; use a non-shrinking flex page shell so it sits at the bottom of short pages and follows long content naturally
@@ -296,7 +297,7 @@ Goal: help readers understand each story's opening premise without turning the c
 - [x] Connect the GitHub repository to Cloudflare Pages
 - [x] Configure Cloudflare Pages to run `npm run build` and publish `dist/`
 - [x] Verify the Cloudflare Pages deployment before changing the public domain
-- [ ] Choose and connect a custom domain
+- [x] Keep the existing `scifi-shorts.pages.dev` address rather than adding a custom domain for now
 - [ ] Add canonical URLs and sitemap details
 - [ ] Define the process for adding new annual award results
 
@@ -347,7 +348,7 @@ Goal: raise the mobile Lighthouse baseline without complicating the dependency-f
 - [x] Record the platform-font comparison run from Lighthouse 13.3.0 on August 9: Performance 100, Accessibility 100, Best Practices 100, SEO 100
 - [x] Rerun Lighthouse 13.3.0 after restoring self-hosted fonts: Performance 99, Accessibility 100, Best Practices 100, SEO 100
 - [x] Record the final self-hosted-font metrics: FCP 1.1 s, LCP 2.1 s, Speed Index 1.1 s, TBT 0 ms, CLS 0, and 40.5 KiB across four local font transfers
-- [ ] Recheck caching and compression on Cloudflare Pages only after an explicitly requested deployment
+- [x] Recheck Cloudflare Pages delivery: CSS and catalogue JSON use gzip compression; responses use ETag revalidation with `max-age=0, must-revalidate`
 
 ### Later possibilities
 

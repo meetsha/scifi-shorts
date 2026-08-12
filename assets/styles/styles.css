@@ -971,6 +971,7 @@ p {
 
   .award-options button {
     flex: 1;
+    min-height: 44px;
   }
 
   .story-card {
@@ -1039,7 +1040,7 @@ p {
   }
 
   .pagination button {
-    min-height: 40px;
+    min-height: 44px;
     padding: 0.45rem 0.75rem;
   }
 }
