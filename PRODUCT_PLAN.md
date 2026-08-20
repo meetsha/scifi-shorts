@@ -11,7 +11,7 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - Source repository: <https://github.com/meetsha/scifi-shorts>
 - Previous deployment: <https://scifi-short-story-collection.uiandgame.chatgpt.site/>
 - Last smoke-tested production content: commit `b34e55e`, verified on Cloudflare Pages on August 20, 2026
-- Current source status: `main` is production-smoke-tested through the future-proof catalogue-maintenance work; the low-brightness contrast experiment is local and not deployed
+- Current source status: contrast commit `d789c43` is pushed but not yet production-smoke-tested; the finished-card underline and state-aware hover refinements are local and not deployed
 - Deployed scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Deployed catalogue: 121 unique entries and 133 award records
 - Deployed reading availability: 115 selected reading links, including 104 web pages and 11 PDFs; 3 winners remain unavailable
@@ -362,10 +362,11 @@ Goal: keep the established dark terminal-library character readable when a phone
 - [x] Strengthen neutral borders, muted labels, and placeholders so controls and cards remain distinguishable
 - [x] Preserve the finished-card hierarchy without relying on near-black surfaces or heavy opacity reduction
 - [x] Keep resting checked and unchecked finished controls visually distinct after strengthening the shared neutral palette
-- [x] Remove card-wide mouse hover so desktop resting colours match touch devices; keep feedback on interactive controls and a restrained focus-within border
-- [x] Add a minimal border-only card hover for fine pointers, with finished cards retaining the quieter border tier and no hover background change
+- [x] Keep desktop hover from erasing progress by maintaining distinct finished and unfinished card treatments
+- [x] Restore a fine-pointer sci-fi hover: full surface and border lift for unfinished cards, with a smaller darker lift for finished cards
 - [x] Raise the unchecked finished-control boundary above 3:1 with a neutral border that remains distinct from the phosphor checked state
 - [x] Verify native focus order, representative visible focus, and exposed accessible names and checked states after the contrast changes
+- [x] Dim the author underline with the rest of a finished card while retaining the brighter underline on unfinished cards
 - [ ] Run a spoken traversal with VoiceOver or another real screen reader before making a formal accessibility claim
 - [x] Verify normal and finished cards on desktop and at a 390px mobile viewport before committing
 

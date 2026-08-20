@@ -36,12 +36,12 @@
   color-scheme: dark;
   --bg: #0a100d;
   --surface: #121b17;
+  --surface-hover: #17231d;
   --text: #e5dfd1;
   --text-soft: #c9c5b9;
   --muted: #aaa69b;
   --placeholder: #8fa098;
   --line: #3b4d42;
-  --line-hover: #465d4f;
   --line-strong: #58715f;
   --control-neutral: #5f6963;
   --phosphor: #5ee783;
@@ -423,11 +423,13 @@ p {
 
 @media (hover: hover) and (pointer: fine) {
   .story-card:hover {
-    border-color: var(--line-hover);
+    border-color: var(--line-strong);
+    background: var(--surface-hover);
   }
 
   .story-card.story-card--finished:hover {
     border-color: var(--line);
+    background: #101713;
   }
 }
 
@@ -448,6 +450,7 @@ p {
 
 .story-card.story-card--finished .meta-author {
   color: var(--muted);
+  text-decoration-color: var(--line);
 }
 
 .story-card.story-card--finished:focus-within {
