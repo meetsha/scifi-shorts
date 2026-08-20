@@ -253,19 +253,26 @@ p {
   line-height: 1.7;
 }
 
+.subtitle-line {
+  display: contents;
+}
+
 .subtitle-lead,
-.subtitle-tail {
+.subtitle-story,
+.subtitle-winners {
   white-space: nowrap;
 }
 
-.subtitle-tail {
+.subtitle-story,
+.subtitle-winners {
   margin-left: 0.35em;
 }
 
 .subtitle-context {
   display: inline-flex;
   flex: 1;
-  margin: 0 0.2rem;
+  gap: 0.4rem;
+  margin: 0 0.2rem 0 0.6rem;
   align-items: center;
   font-size: 0.875em;
 }
@@ -1106,30 +1113,40 @@ html[data-theme="sunprint"] .story-card.story-card--finished > .story-intro {
 
   .subtitle {
     display: grid;
-    grid-template-columns: auto minmax(0, 1fr) 44px;
+    grid-template-columns: minmax(0, 1fr) 44px;
     grid-template-rows: auto auto;
     padding-right: 0;
     align-items: center;
   }
 
-  .subtitle-lead {
-    grid-column: 1 / 3;
-    grid-row: 1;
+  .subtitle-line {
+    display: flex;
+    grid-column: 1;
+    align-items: center;
+    white-space: nowrap;
   }
 
-  .subtitle-tail {
-    grid-column: 1;
+  .subtitle-line--primary {
+    grid-row: 1;
+    gap: 0.3em;
+  }
+
+  .subtitle-line--secondary {
     grid-row: 2;
+    gap: 0.65rem;
+  }
+
+  .subtitle-story,
+  .subtitle-winners {
     margin-left: 0;
   }
 
   .subtitle-context {
     display: inline-flex;
-    grid-column: 2;
-    grid-row: 2;
+    flex: 0 1 auto;
     width: auto;
     min-width: 0;
-    margin: 0 0 0 0.4rem;
+    margin: 0;
     align-items: center;
     font-size: 0.85em;
     line-height: 1.5;
@@ -1139,14 +1156,10 @@ html[data-theme="sunprint"] .story-card.story-card--finished > .story-intro {
     position: relative;
     top: auto;
     right: auto;
-    grid-column: 3;
+    grid-column: 2;
     grid-row: 1 / 3;
     align-self: center;
     transform: none;
-  }
-
-  .subtitle-separator {
-    display: none;
   }
 
   .subtitle-separator--theme {
@@ -1257,39 +1270,6 @@ html[data-theme="sunprint"] .story-card.story-card--finished > .story-intro {
   .pagination button {
     min-height: 44px;
     padding: 0.45rem 0.75rem;
-  }
-}
-
-@media (max-width: 330px) {
-  .subtitle {
-    grid-template-columns: 4.1rem minmax(0, 1fr) 44px;
-  }
-
-  .subtitle-lead,
-  .subtitle-story {
-    grid-column: 1 / 3;
-    grid-row: 1;
-  }
-
-  .subtitle-lead {
-    justify-self: start;
-  }
-
-  .subtitle-tail {
-    display: contents;
-  }
-
-  .subtitle-story {
-    justify-self: end;
-  }
-
-  .subtitle-winners {
-    grid-column: 1;
-    grid-row: 2;
-  }
-
-  .subtitle-context {
-    grid-column: 2;
   }
 }
 

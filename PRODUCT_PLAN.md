@@ -11,7 +11,7 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - Source repository: <https://github.com/meetsha/scifi-shorts>
 - Previous deployment: <https://scifi-short-story-collection.uiandgame.chatgpt.site/>
 - Last smoke-tested production content: commit `b34e55e`, verified on Cloudflare Pages on August 20, 2026
-- Current source status: finished-card hover refinements are pushed but not yet production-smoke-tested; Sunprint theme integration is local and not deployed
+- Current source status: Sunprint theme integration and final responsive-header refinements are ready for deployment and not yet production-smoke-tested
 - Deployed scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Deployed catalogue: 121 unique entries and 133 award records
 - Deployed reading availability: 115 selected reading links, including 104 web pages and 11 PDFs; 3 winners remain unavailable
@@ -83,7 +83,7 @@ During an active working session, keep the local preview running on port `8000`.
 - Keep night as the first-visit default; offer Sunprint as an explicit reader-selected theme rather than automatically following the operating-system preference
 - Persist the selected theme locally and apply it consistently across the catalogue and About page
 - Use one simple 12px outlined disc: cream in night and amber in Sunprint, with a transparent centre, no solar dots, and no icon animation
-- Align the theme control to the far-right header edge on desktop; on mobile, reserve a right column for it beside a deliberately balanced two-line subtitle block
+- Align the theme control to the far-right header edge on desktop; on mobile, reserve a right column beside a two-line subtitle block that keeps **story** on the first line and uses a quiet dot before **Why these stories?** on the second
 - Frame the celestial theme icon with four independent, quiet L-shaped corner markers arranged on a true square, strengthening them on hover or keyboard focus while retaining a 44px pointer and touch target
 - Preserve IBM Plex Mono and Space Mono through local Latin-subset WOFF2 files; do not make runtime requests to Google Fonts
 - Use the subtitle **Hugo and Nebula short story winners**
