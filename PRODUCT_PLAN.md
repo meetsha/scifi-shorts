@@ -11,14 +11,14 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - Source repository: <https://github.com/meetsha/scifi-shorts>
 - Previous deployment: <https://scifi-short-story-collection.uiandgame.chatgpt.site/>
 - Last smoke-tested production content: commit `b34e55e`, verified on Cloudflare Pages on August 20, 2026
-- Current source status: contrast commit `d789c43` is pushed but not yet production-smoke-tested; the finished-card underline and state-aware hover refinements are local and not deployed
+- Current source status: finished-card hover refinements are pushed but not yet production-smoke-tested; Sunprint theme integration is local and not deployed
 - Deployed scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Deployed catalogue: 121 unique entries and 133 award records
 - Deployed reading availability: 115 selected reading links, including 104 web pages and 11 PDFs; 3 winners remain unavailable
 - Local working scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Local working catalogue: 121 unique entries and 133 award records
 - Local reading availability: 115 selected reading links, including 104 web pages and 11 PDFs; 3 winners remain unavailable
-- Latest local milestone: Improve low-brightness contrast while preserving the dark terminal-library aesthetic
+- Latest local milestone: Refine Sunprint with a lightweight celestial theme control, tighter mobile header spacing, and clearer numbered-pagination hover feedback
 - Local preview: <http://localhost:8000>
 
 During an active working session, keep the local preview running on port `8000`. Stop it only when explicitly requested.
@@ -39,6 +39,7 @@ During an active working session, keep the local preview running on port `8000`.
 - Link each author name to an all-awards catalogue view for that author
 - Explain the collection on a concise About page, link to official award introductions, and provide a corrections contact
 - Support desktop and mobile with a quiet terminal-library visual direction
+- Offer an optional Sunprint light theme that persists across the catalogue and About page
 - Use **SciFi Short Stories** as the product name throughout the site and repository documentation
 
 ## Product decisions
@@ -79,6 +80,11 @@ During an active working session, keep the local preview running on port `8000`.
 - Keep the 1957 Hugo category-not-presented record visible with the same compact treatment and distinct copy
 - Keep special-result award metadata above the result sentence on desktop and mobile
 - Keep the restrained near-black, monospaced terminal-library design
+- Keep night as the first-visit default; offer Sunprint as an explicit reader-selected theme rather than automatically following the operating-system preference
+- Persist the selected theme locally and apply it consistently across the catalogue and About page
+- Use one simple 12px outlined disc: cream in night and amber in Sunprint, with a transparent centre, no solar dots, and no icon animation
+- Align the theme control to the far-right header edge on desktop; on mobile, reserve a right column for it beside a deliberately balanced two-line subtitle block
+- Frame the celestial theme icon with four independent, quiet L-shaped corner markers arranged on a true square, strengthening them on hover or keyboard focus while retaining a 44px pointer and touch target
 - Preserve IBM Plex Mono and Space Mono through local Latin-subset WOFF2 files; do not make runtime requests to Google Fonts
 - Use the subtitle **Hugo and Nebula short story winners**
 - Add a quiet **Why these stories?** link beside the homepage subtitle and label the footer link **About this collection**
@@ -92,6 +98,7 @@ During an active working session, keep the local preview running on port `8000`.
 - Reserve one viewport of catalogue space only while data is loading, while keeping the bordered loading message compact at the top of that space
 - On mobile, place **Page X of Y** between the Previous and Next controls
 - Distinguish desktop pagination states with an outlined hover treatment and a solid green current-page treatment whose dark number remains legible through hover and focus
+- Give desktop page-number hover and focus a faint green fill and inset signal line while keeping the current page solid green
 - Treat rapid pagination taps as button interactions without disabling page panning or pinch-to-zoom
 - Use 44px-high award and pagination controls on mobile for comfortable repeated tapping
 - Use a consistent 10px rhythm between catalogue dividers, pagination controls, and story cards across viewport sizes
@@ -370,6 +377,17 @@ Goal: keep the established dark terminal-library character readable when a phone
 - [ ] Run a spoken traversal with VoiceOver or another real screen reader before making a formal accessibility claim
 - [x] Verify normal and finished cards on desktop and at a 390px mobile viewport before committing
 
+### 13. Add an optional Sunprint light theme
+
+Goal: complement the night-terminal identity with a warm, solar-powered light theme without turning the site into a generic white interface.
+
+- [x] Create three local-only responsive solarpunk directions using representative catalogue controls and card states
+- [x] Choose **Sunprint** as the solarpunk light-theme direction for refinement
+- [x] Design Sunprint as an explicit, locally persisted preference while preserving night as the first-visit default
+- [x] Apply Sunprint consistently to the catalogue, About page, controls, pagination, story states, and status messages
+- [x] Keep normal and finished cards distinct without lowering light-theme text below AA contrast
+- [x] Verify the production implementation across catalogue, special-result, empty, loading, error, disabled, finished, About, and responsive states
+
 ### Later possibilities
 
 - [ ] Decide whether to include nominees
@@ -522,3 +540,4 @@ Do not include the external-link checker in production smoke testing unless it w
 - [x] Added locally persisted finished-story tracking with a compact desktop and mobile toggle, clear checked and unchecked states, safe storage handling, and no additional catalogue filter or progress row
 - [x] Removed trailing external-link arrows from reading actions and clarified desktop pagination with distinct hover, focus, and solid current-page treatments
 - [x] Eliminated initial layout shifts, runtime Google font requests, contrast failures, and accessible-name mismatches, then restored the preferred typography through optimized local font assets
+- [x] Selected and integrated the optional Sunprint light theme with explicit switching, local persistence, responsive layout, and accessible contrast
