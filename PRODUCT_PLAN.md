@@ -10,15 +10,15 @@ An independent, spoiler-free index of award-winning science fiction and fantasy 
 - Current hosting: Cloudflare Pages through GitHub integration
 - Source repository: <https://github.com/meetsha/scifi-shorts>
 - Previous deployment: <https://scifi-short-story-collection.uiandgame.chatgpt.site/>
-- Last smoke-tested production content: commit `7f13c72`, verified on Cloudflare Pages on August 12, 2026
-- Current source status: `main` is production-smoke-tested through the finished-action and iOS search refinements; 44px mobile award and pagination targets are locally verified but not deployed
+- Last smoke-tested production content: commit `b34e55e`, verified on Cloudflare Pages on August 20, 2026
+- Current source status: `main` is production-smoke-tested through the future-proof catalogue-maintenance work; the low-brightness contrast experiment is local and not deployed
 - Deployed scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Deployed catalogue: 121 unique entries and 133 award records
 - Deployed reading availability: 115 selected reading links, including 104 web pages and 11 PDFs; 3 winners remain unavailable
 - Local working scope: Hugo short-fiction results for 1955-2025, including a category-not-presented marker for 1957, and Nebula Best Short Story results for 1965-2025
 - Local working catalogue: 121 unique entries and 133 award records
 - Local reading availability: 115 selected reading links, including 104 web pages and 11 PDFs; 3 winners remain unavailable
-- Latest local milestone: Raise mobile award and pagination controls to a 44px comfortable touch target
+- Latest local milestone: Improve low-brightness contrast while preserving the dark terminal-library aesthetic
 - Local preview: <http://localhost:8000>
 
 During an active working session, keep the local preview running on port `8000`. Stop it only when explicitly requested.
@@ -353,6 +353,21 @@ Goal: raise the mobile Lighthouse baseline without complicating the dependency-f
 - [x] Rerun Lighthouse 13.3.0 after restoring self-hosted fonts: Performance 99, Accessibility 100, Best Practices 100, SEO 100
 - [x] Record the final self-hosted-font metrics: FCP 1.1 s, LCP 2.1 s, Speed Index 1.1 s, TBT 0 ms, CLS 0, and 40.5 KiB across four local font transfers
 - [x] Recheck Cloudflare Pages delivery: CSS and catalogue JSON use gzip compression; responses use ETag revalidation with `max-age=0, must-revalidate`
+
+### 12. Improve low-brightness contrast
+
+Goal: keep the established dark terminal-library character readable when a phone or laptop display is used at reduced brightness.
+
+- [x] Lift the page and card colour floor without changing the cream, phosphor-green, or amber identity
+- [x] Strengthen neutral borders, muted labels, and placeholders so controls and cards remain distinguishable
+- [x] Preserve the finished-card hierarchy without relying on near-black surfaces or heavy opacity reduction
+- [x] Keep resting checked and unchecked finished controls visually distinct after strengthening the shared neutral palette
+- [x] Remove card-wide mouse hover so desktop resting colours match touch devices; keep feedback on interactive controls and a restrained focus-within border
+- [x] Add a minimal border-only card hover for fine pointers, with finished cards retaining the quieter border tier and no hover background change
+- [x] Raise the unchecked finished-control boundary above 3:1 with a neutral border that remains distinct from the phosphor checked state
+- [x] Verify native focus order, representative visible focus, and exposed accessible names and checked states after the contrast changes
+- [ ] Run a spoken traversal with VoiceOver or another real screen reader before making a formal accessibility claim
+- [x] Verify normal and finished cards on desktop and at a 390px mobile viewport before committing
 
 ### Later possibilities
 

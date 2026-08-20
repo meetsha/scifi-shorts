@@ -34,14 +34,16 @@
 
 :root {
   color-scheme: dark;
-  --bg: #050807;
-  --surface: #0b100e;
-  --surface-hover: #0e1512;
+  --bg: #0a100d;
+  --surface: #121b17;
   --text: #e5dfd1;
-  --text-soft: #c4c0b5;
-  --muted: #918f86;
-  --line: #26352d;
-  --line-strong: #3e5c4b;
+  --text-soft: #c9c5b9;
+  --muted: #aaa69b;
+  --placeholder: #8fa098;
+  --line: #3b4d42;
+  --line-hover: #465d4f;
+  --line-strong: #58715f;
+  --control-neutral: #5f6963;
   --phosphor: #5ee783;
   --amber: #e0a64b;
   --signal-yellow: #e3ca62;
@@ -346,7 +348,7 @@ p {
 }
 
 .control input::placeholder {
-  color: #74877f;
+  color: var(--placeholder);
 }
 
 .control input:focus,
@@ -415,15 +417,23 @@ p {
   transition: border-color 140ms ease, background-color 140ms ease;
 }
 
-.story-card:hover,
 .story-card:focus-within {
   border-color: var(--line-strong);
-  background: var(--surface-hover);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .story-card:hover {
+    border-color: var(--line-hover);
+  }
+
+  .story-card.story-card--finished:hover {
+    border-color: var(--line);
+  }
 }
 
 .story-card.story-card--finished {
-  border-color: #1c2822;
-  background: #080c0a;
+  border-color: #33443a;
+  background: #0d1411;
 }
 
 .story-card.story-card--finished h3 {
@@ -433,17 +443,15 @@ p {
 .story-card.story-card--finished > .award-badges,
 .story-card.story-card--finished > h3,
 .story-card.story-card--finished > .story-intro {
-  opacity: 0.68;
+  opacity: 0.8;
 }
 
 .story-card.story-card--finished .meta-author {
   color: var(--muted);
 }
 
-.story-card.story-card--finished:hover,
 .story-card.story-card--finished:focus-within {
   border-color: var(--line);
-  background: #0a100d;
 }
 
 .story-card--special-result {
@@ -454,7 +462,6 @@ p {
     var(--surface);
 }
 
-.story-card--special-result:hover,
 .story-card--special-result:focus-within {
   border-left-color: var(--signal-yellow);
 }
@@ -597,8 +604,8 @@ p {
   flex: 0 0 44px;
   width: 44px;
   height: 44px;
-  border: 1px solid var(--line-strong);
-  background: rgba(94, 231, 131, 0.035);
+  border: 1px solid var(--control-neutral);
+  background: rgba(229, 223, 209, 0.015);
   cursor: pointer;
   place-items: center;
   transition:
@@ -617,7 +624,7 @@ p {
   border-radius: 0;
   appearance: none;
   background: transparent;
-  color: var(--phosphor);
+  color: var(--muted);
   cursor: pointer;
   place-content: center;
   transition:
@@ -659,6 +666,10 @@ p {
 .finished-toggle:has(.finished-toggle__input:checked) {
   border-color: var(--phosphor);
   background: rgba(94, 231, 131, 0.09);
+}
+
+.finished-toggle__input:checked {
+  color: var(--phosphor);
 }
 
 .finished-toggle__input:checked::before {
